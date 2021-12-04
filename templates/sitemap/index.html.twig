@@ -1,0 +1,31 @@
+{% extends 'v2/base.html.twig' %}
+{% block header_line %}
+    {{ include('v2/blocks/include/header.html.twig', {brands : brands ?? null}) }}
+{% endblock %}
+
+{% block header_banner %}
+
+    {{ include('v2/blocks/section/hero.html.twig',{ h1 : block('h1') ?? page.h1 }) }}
+{% endblock %}
+
+{% block breadcrumbs %}{% endblock %}
+{% block body %}
+    <div class="container">
+        <h2 class="section__h2">Карта сайта</h2>
+    </div>
+    <div class="sitemap-container container d-flex justify-content-between" style="margin-top: 30px">
+        {% for row in pagination|batch(50) %}
+        <ul>
+            {% for item in row %}
+                <li><a href="{{ item.path }}">{{ item.h1 }}</a></li>
+            {% endfor %}
+        </ul>
+        {% endfor %}
+
+    </div>
+    <div class="navigation container">
+        {{ knp_pagination_render(pagination) }}
+    </div>
+
+
+{% endblock %}

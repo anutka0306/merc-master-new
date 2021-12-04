@@ -1,0 +1,10 @@
+{% extends 'v2/base.html.twig' %}
+
+{% block body %}
+    {{ include('v2/blocks/section/content.html.twig',{text:page.text }) }}
+    {% embed 'v2/embed/black-services-block.html.twig' %}
+        {% block content %}
+            {{ include('v2/blocks/section/services.html.twig') }}
+        {% endblock %}
+    {% endembed %}
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'v2/base.html.twig' %}
+
+{% block header_line %}
+    {{ include('v2/blocks/include/header.html.twig', {brands : brands ?? null, 'topMenu': topMenu, 'leftMenu': leftMenu}) }}
+{% endblock %}
+
+{% block header_banner %}
+
+    {{ include('v2/blocks/section/hero.html.twig',{ h1 : block('h1') ?? page.h1 }) }}
+{% endblock %}
+
+{% block breadcrumbs %}{% endblock %}
+
+{% block body %}
+    {{ include('elements/_content.html.twig', {'page':page}) }}
+    {{ price_list(page) }}
+    {{ brands_service_block() }}
+    {{ service_list(page) }}
+    {{ include('elements/_advantages.html.twig') }}
+    {{ include('elements/_advantages2.html.twig') }}
+    {{ special_offers(page.brandAndModelName) }}
+    {{ include('elements/_about_company.html.twig') }}
+    {{ include('elements/_quote.html.twig') }}
+    {{ include('elements/_team.html.twig') }}
+{% endblock %}

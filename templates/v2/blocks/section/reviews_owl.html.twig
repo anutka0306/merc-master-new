@@ -1,0 +1,54 @@
+{% set ratingItems = [
+    {
+        'link' : 'https://zoon.ru/msk/autoservice/avtomasterskaya_detejlingof_na_sevastopolskom_prospekte/reviews/',
+        'img': 'zoon.png',
+        'alt': 'Zoon.ru',
+        'stars': 'stars-4_5.png',
+        'rating': 4.2
+    },
+    {
+        'link' : 'https://yandex.ru/maps/-/CCQ8IAtFKD',
+        'img': 'yandex.png',
+        'alt': 'Yandex',
+        'stars': 'stars-4_5.png',
+        'rating': 4.2
+    },
+    {
+        'link' : 'https://goo.gl/maps/pgEW4NmfVtwFrgL26',
+        'img': 'google.png',
+        'alt': 'Google',
+        'stars': 'stars-5.png',
+        'rating': 5.0
+    },
+    {
+        'link' : 'https://go.2gis.com/8ea8s',
+        'img': '2gis.png',
+        'alt': '2 Gis',
+        'stars': 'stars-5.png',
+        'rating': 5.0
+    },
+] %}
+
+<div class="section-reviews">
+
+                        <ul class="owl-carousel owl-theme">
+                            {% for ratingItem in ratingItems %}
+                                <li>
+                                    <div class="reviews-item">
+                                        <div class="reviews-item__logo">
+                                            <a href="{{ ratingItem.link }}" target="_blank"><img
+                                                        src="/assets/images/rating/{{ ratingItem.img }}"
+                                                        alt="{{ ratingItem.alt }}"/></a>
+                                        </div>
+                                        <div class="reviews-item__stars"><span>Рейтинг</span><img
+                                                    src="/assets/images/rating/{{ ratingItem.stars }}" alt="star"/>
+                                        </div>
+                                        <div class="reviews-item__rating"><span>{{ ratingItem.rating }}</span><span>от  5</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            {% endfor %}
+                        </ul>
+
+</div>
+

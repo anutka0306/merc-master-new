@@ -1,0 +1,34 @@
+<div class="uk-container">
+    <div {{ lazy_load_bg('/img/works-bg.png',['video_block']) }}>
+        <div class="uk-grid uk-grid-small uk-child-width-1-2@l"
+             data-uk-grid="data-uk-grid">
+            <div class="uk-flex-last@l">
+                <h2 class="video_block__title">
+                    {% if item.category is not empty %}
+                        <a href="{{ path('videoblog_item',{'categoryAlias':item.category.alias,'id':item.id}) }}">
+                            {{ item.name }}
+                        </a>
+                    {% else %}
+                        {{ item.name }}
+                    {% endif %}
+                </h2>
+                <div class="video_block__text">
+                    {{ item.text ? item.text|raw }}
+                </div>
+            </div>
+            <div class="uk-flex-first@l uk-first-column">
+                <div class="video_block__video">
+                    {% if item.imageUrl is not empty %}
+                        <video controls="" alt="{{ item.name }}"
+                               class="lazy videoblog__video" width="100%" style="max-height: 600px">
+                            <source type="video/mp4" data-src="{{ item.imageUrl }}">
+                            <source type="video/mp4" media="all and (max-width: 600px)" data-src="{{ item.imageUrl }}">
+                        </video>
+                    {% else %}
+                        {{ lazy_youtube(item.link) }}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="container brands__list_h3">
+    <h3>выберите марку Вашего авто</h3>
+</div>
+<div class="container brands__list">
+    <div class="row">
+        <div class="col-md-9">
+        <div class="brands__list_slider">
+            {% for brand in items %}
+            <div class="brands__list_slider_item">
+                <a class="brands__list_slider_item_link" href="{{ brand.path }}">
+                <img src="/img/brands/{{ brand.photo }}" alt="{{ brand.name }}" width="160" height="90">
+                </a>
+                <a class="brands__list_slider_item_link" href="{{ brand.path }}">{{ brand.name }}</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+        <div class="quiz_content-push col-md-3">
+            <div class="content-push-header">
+                <img data-src="/img/WhatsApp_Image.png" src="{{ asset('img/WhatsApp_Image.png') }}" alt="Директор" class="director_pic lazyloaded">
+                <h3>Константин Олегович</h3>
+                <span class="quiz-slide-1_dolzhnost">руководитель</span>
+                <span class="quiz-slide-1_header-descr">Обслуживаться в Автоцентре ПИК выгодно, Вы получаете бонусы и скидки!</span>
+            </div>
+            {#<div class="content-push-main">
+                <img data-src="images/quiz/MAGAZINE.png" src="{{ asset('img/MAGAZINE.png') }}" alt="" class="content-push-image lazyloaded">
+            </div>#}
+
+        </div>
+    </div>
+</div>

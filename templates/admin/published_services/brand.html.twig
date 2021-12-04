@@ -1,0 +1,24 @@
+{% extends '@EasyAdmin/page/blank.html.twig' %}
+
+{% block page_title 'Матрица услуг' %}
+
+{% block content %}
+    <div class="content">
+        <div class="container py-3">
+            <div class="alert alert-primary" role="alert">
+                <p>Серым цветом выделены категории прайса, без выделения - услуги. Данные по моделям находятся по ссылкам в названиях брендов</p>
+                <p><span  class="border border-danger">Для обновления данных необходимо чистить кэш</span></p>
+                <a href="{{ path('admin_published_services_index') }}">Назад</a>
+                <table  border="1" cellspacing="0">
+                    <tr>
+                        <th>Категория/Услуга</th>
+                        {% for model in models %}
+                            <th>{{ model.name }}</th>
+                        {% endfor %}
+                    </tr>
+                	{{ service_table_rows(priceCategories, models, brand) }}
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}

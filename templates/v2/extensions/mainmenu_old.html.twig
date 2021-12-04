@@ -1,0 +1,24 @@
+<nav class="nav">
+    <ul class="nav-list" data-uk-navbar="">
+        <li class="uk-parent"><a href="{{ path('uslugi') }}">Услуги</a>
+            <div class="uk-navbar-dropdown" uk-drop="boundary: .page-header__bottom-inner; boundary-align: true; pos: bottom-justify;">
+                <div class="uk-grid-small uk-child-width-1-4" data-uk-grid="">
+                    {% for item in items %}
+                        {# @var item \App\Dto\ServiceMenuItemDto #}
+                        <div>
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-nav-header">{{ item.name }}</li>
+                                {% for service in item.items %}
+                                    {# @var service \App\Entity\RootService #}
+                                    <li><a href="{{ service.path }}#content">{{ service.name }}</a></li>
+                                {% endfor %}
+                                <li><a href="{{ item.mainLink }}#content">Все услуги</a></li>
+                            </ul>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </li>
+        {{ include('v2/blocks/include/main_menu_items.html.twig') }}
+    </ul>
+</nav>

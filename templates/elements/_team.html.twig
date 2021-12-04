@@ -1,0 +1,135 @@
+<section id="team" class="team-section">
+    <div class="section__heading">
+        <h2 class="section__h2">Команда ПИК</h2>
+        <p class="section__heading-text">Только опытные диагносты, сертифицированные <br>
+            механики и квалифицированные консультанты.</p>
+    </div>
+    <div class="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 col-12 team__member">
+                    <div class="team__photo">
+                        <img loading="lazy" src="{{ asset('img/team-1.png') }}" alt="">
+                    </div>
+                    <h5 class="team__name">
+                        Павел  <br>
+                        Леонидович
+                    </h5>
+                    <h5 class="team__post">Мастер {% if brandName is defined %}{{ brandName }}{% else %}{% endif %}</h5>
+                    <p class="team__text">Имеет более 10 лет работы
+                        с авто, специалист в капитальных ремонтах двигателя.</p>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 team__member">
+                    <div class="team__photo">
+                        <img loading="lazy" src="{{ asset('img/team-2.png') }}" alt="">
+                    </div>
+                    <h5 class="team__name">
+                        Павел  <br>
+                        Николаевич
+                    </h5>
+                    <h5 class="team__post">Мастер {% if brandName is defined %}{{ brandName }}{% else %}{% endif %}</h5>
+                    <p class="team__text">Опыт работы
+                        более 10 лет, ведущий специалист ПИК.</p>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 team__member">
+                    <div class="team__photo">
+                        <img loading="lazy" src="{{ asset('img/team-3.png') }}" alt="">
+                    </div>
+                    <h5 class="team__name">
+                        Дмитрий  <br>
+                        Владимирович
+                    </h5>
+                    <h5 class="team__post">Мастер {% if brandName is defined %}{{ brandName }}{% else %}{% endif %}</h5>
+                    <p class="team__text">Специалист высокого класса. Имеет большой опыт в решение сложных задач по мотора.</p>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 team__member">
+                    <div class="team__photo">
+                        <img loading="lazy" src="{{ asset('img/team-4.png') }}" alt="">
+                    </div>
+                    <h5 class="team__name">
+                        Валентин  <br>
+                        Валентинович
+                    </h5>
+                    <h5 class="team__post">Мастер {% if brandName is defined %}{{ brandName }}{% else %}{% endif %}</h5>
+                    <p class="team__text">Опыт работы с авто
+                        более 10 лет, ведущий специалист ПИК.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="FBForm3"></div>
+
+
+    <div class="container container_subscribe">
+        <div class="row message-row">
+            <div class="col-lg-8 col-12 message-wrapper">
+                <div class="message">
+                    <h2 class="message__heading subscribe__message-heading">Остались <span class="highlighted">вопросы?</span></h2>
+                    <p class="message__text">Оставьте заявку и наш специалист рассчитает стоимость ремонта
+                        вашего автомобиля
+                        в течении 10 минут</p>
+                </div>
+            </div>
+            <div class="col-10 border-col"></div>
+            <div class="col-lg-4 col-12">
+                <div class="subscribe__form form-wrapper">
+                    <h3 class="form__heading subscribe__heading">Свяжитесь с нами</h3>
+                    <p class="form__text">Оставьте заявку или звоните
+                        по  <span class="phone-number"><a href="{% if phone is defined %}tel:{{ phone.value }}{% endif %}">{% if phone is defined %}{{ phone.title }}{% endif %}</a></span></p>
+                    <form class="form" action="/" method="POST">
+
+                        <div class="form__inner">
+                            <div class="form__item">
+                                <label for="phoneN3">Введите телефон</label>
+                                <input class="form__input phoneN1-popup" type="tel" id="phoneN3" name="phone" required="" inputmode="text">
+                                <input type="hidden" id="urlN1" name="url" value="{{ path(app.request.attributes.get('_route'),
+                                    app.request.attributes.get('_route_params')) }}">
+                            </div>
+
+                        </div>
+                        <button class="button contact-send-button">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    $(document).ready(function(){
+
+        $(".contact-send-button").click(function (e){
+            e.preventDefault();
+            if($('.phoneN1-popup').val() == ''){
+                alert('Заполните поле телефон');
+                return;
+            }
+            if($('.phoneN1-popup').val().length < 17){
+                alert('Неверный формат номер телефона');
+                return;
+            }
+            let phone = $('.phoneN1-popup').val();
+            let url = $('#urlN1').val();
+            $.ajax({
+                url:     "/callback_form",
+                type:     "POST", //метод отправки
+                dataType: "html", //формат данных
+
+                data: {
+                    'phone' : phone,
+                    'url': url,
+                },
+                success: function(response) { //Данные отправлены успешно
+                    //$('.callback-popup-body').html('<p style="text-align: center; font-weight: 700; padding: 20px;">Спасибо! Ваша заявка отправлена.</p>');
+                    console.log(response);
+                },
+                error: function(response) { // Данные не отправлены
+                    console.log('error');
+                }
+            });
+
+            ResultShow();
+        });
+    });
+
+</script>

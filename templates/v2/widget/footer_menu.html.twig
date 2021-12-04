@@ -1,0 +1,11 @@
+<ul class="footer_menu">
+    {% for item in items %}
+            <li>
+                <a href="{% if item.realPath is not null %}/{{ item.realPath }} {% else %}#{% endif %}"> {{ item.name }}</a>
+            </li>
+    {% endfor %}
+    <li><a href="{{ path('naschiraboty_index') }}">Наши работы</a> </li>
+    <li><a href="/sitemap">Карта сайта</a> </li>
+    <li><a href="#">О нас</a> </li>
+    <li><a href="#">Контакты</a> </li>
+</ul>

@@ -1,0 +1,27 @@
+{#
+{% if page is defined and page is not empty and page.ratingValue is defined and page.ratingValue is not empty %}
+    <div class="rating_schema">
+        <div
+                class="rating_schema_wrapper"
+                itemprop="aggregateRating"
+                itemscope="itemscope"
+                itemtype="http://schema.org/AggregateRating"
+        >
+
+            <div class="rating-box">
+                {{ stars(4.5) }}
+                <meta itemprop="worstRating" content="1">
+            </div>
+
+            <div class="rating-details">
+              <span>
+                    <span class="ratingValue" itemprop="ratingValue">{{ page.ratingValue }}</span>
+                    <span class="text-muted">из&nbsp;
+                        <span itemprop="bestRating">5</span>
+                    </span>
+                 (<span itemprop="ratingCount">{{ page.ratingCount }}</span>&nbsp;оценок)
+              </span>
+            </div>
+        </div>
+    </div>
+{% endif %}#}

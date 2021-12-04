@@ -1,0 +1,9 @@
+{
+  "build/app2.css": "/build/app2.css",
+  "build/app2.js": "/build/app2.js",
+  "build/reviews.css": "/build/reviews.css",
+  "build/reviews.js": "/build/reviews.js",
+  "build/runtime.js": "/build/runtime.js",
+  "build/vendors~app2.css": "/build/vendors~app2.css",
+  "build/vendors~app2.js": "/build/vendors~app2.js"
+}

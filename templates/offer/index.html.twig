@@ -1,0 +1,19 @@
+{% extends 'v2/base.html.twig' %}
+
+{#{% block title %}Акции, скидки, предложения{% endblock %}
+{% block description %} {% endblock %}#}
+{% block canonical %}{{ app.request.schemeAndHttpHost~'/offers' }}{% endblock %}
+
+{% block header_line %}
+    {{ include('v2/blocks/include/header.html.twig', {brands : brands ?? null, 'topMenu': topMenu, 'leftMenu': leftMenu}) }}
+{% endblock %}
+{% block header_banner %}
+    {{ include('v2/blocks/section/hero.html.twig',{ 'customH1' : page.h1 }) }}
+{% endblock %}
+
+{% block body %}
+    {% block breadcrumbs %}
+    {% endblock %}
+    {{ include('elements/_content.html.twig') }}
+    {{ special_offers(page.brandAndModelName) }}
+{% endblock %}

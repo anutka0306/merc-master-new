@@ -1,0 +1,23 @@
+<div class="block-form">
+    <form class="js-callback-form" action="{{ path('mail.callback_consultation') }}" method="post">
+        <div class="uk-background-secondary">
+            <div class="uk-section uk-container uk-container-small">
+                <div class="uk-grid uk-grid-small" data-uk-grid="data-uk-grid">
+
+                    <div class="uk-width-2-5@m">
+                        <input class="uk-input" name="name" type="text" placeholder="Имя"/>
+                        <p class="error-input">Поле обязательно для заполнения</p>
+                    </div>
+                    <div class="uk-width-2-5@m">
+                        <input class="uk-input js-phone" name="phone" type="text" placeholder="Телефон" required/>
+                        <p class="error-input">Поле обязательно для заполнения</p>
+                    </div>
+                    <div class="uk-width-1-5@m">
+                        <input class="uk-button uk-button-default uk-width-1-1" type="submit"
+                               value="Отправить"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

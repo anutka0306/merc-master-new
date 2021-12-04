@@ -1,0 +1,15 @@
+<div class="section-seo">
+    <div class="uk-container">
+        <div class="seo-box">
+            <div class="seo-box__text">
+                {{ visible_text|raw }}
+            </div>
+            {% if hidden_text is not empty %}
+                <div class="seo-box__text-hide">
+                    {{ hidden_text|raw }}
+                </div>
+            {% endif %}
+            <div class="seo-box__more">Развернуть</div>
+        </div>
+    </div>
+</div>

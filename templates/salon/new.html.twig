@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>New Salon</title>
+        {% block stylesheets %}
+            {# <link rel="stylesheet" href="/bundles/easyadmin/app.css">
+            <link rel="stylesheet" href="/css/admin.css"> 
+            <link rel="stylesheet" href="/css/jquery.dm-uploader.css"> #}
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <style type="text/css">
+                .form-group .col-form-label.required:after, .form-group label.required:after {
+                    bottom: 4px;
+                    color: red;
+                    content: "\2022";
+                    filter: opacity(75%);
+                    position: relative;
+                    right: -2px;
+                }
+                .col-form-label, .form-group > label {
+                    font-weight: bold;
+                }
+            </style>
+            
+
+        {% endblock %}
+    </head>
+    {% block body %}
+        <div class="container">
+            <h1>Создать новый салон</h1>
+            {{ include('salon/_form.html.twig') }}
+
+            <a href="{{ path('home') }}">На главную страницу</a>
+        </div>
+    {% endblock %}
+    <script src="/bundles/easyadmin/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            bsCustomFileInput.init()
+        })
+    </script>
+</html>

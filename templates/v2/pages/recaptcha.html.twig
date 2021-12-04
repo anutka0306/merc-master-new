@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+    <div style="font-size: 1.5rem;" class="text-center p-3">
+        <div class="container d-flex justify-content-center">
+            <div class="row">
+                <form method="post">
+                    <div class="form-group">
+                        <p>Пожалуйста, поставьте галочку и нажмите кнопку Войти</p>
+                        <div class="g-recaptcha d-flex justify-content-center" data-sitekey="{{ gg_recaptcha_site_key }}">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Войти</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    </body>
+</html>

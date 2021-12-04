@@ -1,0 +1,27 @@
+{% if models|length > 0 %}
+<table class="table-style2" width="100%" border="1" cellspacing="0" align="center">
+    <tbody>
+    <tr><td colspan="3" align="center">Модели: </td></tr>
+    {% for row in models|batch(3) %}
+    <tr>
+        {% for model in row %}
+
+        <td>
+            {% if(model.path) %}
+                <a href="{{ curBrand[0].path }}{{ model.code }}"
+                   title="Ремонт АКПП {{ curBrand[0].name }} {{ model.name }} ({{ curBrand[0].nameRus }} {{ model.nameRus }})">
+                    Ремонт АКПП {{ curBrand[0].name }}  {{ model.name}} ({{ curBrand[0].nameRus }} {{ model.nameRus }}) в Москве
+                </a>
+                {% else %}
+                    <span style="color: blue">
+                        Ремонт АКПП {{ curBrand[0].name }}  {{ model.name}} ({{ curBrand[0].nameRus }} {{ model.nameRus }}) в Москве
+                    </span>
+            {% endif %}
+        </td>
+        {% endfor %}
+    </tr>
+
+    {% endfor %}
+    </tbody>
+</table>
+{% endif %}

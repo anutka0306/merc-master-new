@@ -1,0 +1,45 @@
+<h2>{{ price_list_title }}</h2>
+<div class="price-list-orders">
+  <div class="container container2">
+    <div class="row">
+      <div class="col-sm-12 col-lg-2 mb-4">
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            {% for section in sections %}
+          <a class="price-list-category nav-link {% if(loop.index == 1) %} active {% endif %}"
+             id="v-pills-settings{{ section.id }}-tab" data-toggle="pill" href="#v-pills-settings{{ section.id }}" role="tab" aria-controls="v-pills-settings{{ section.id }}" aria-selected="false">
+              {{ section.name }}
+          </a>
+            {% endfor %}
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-lg-10">
+        <div class="tab-content" id="v-pills-tabContent">
+            {% for section in sections %}
+          <div class="tab-pane fade {% if(loop.index == 1) %} active show{% endif %}" id="v-pills-settings{{ section.id }}" role="tabpanel" aria-labelledby="v-pills-home-tab">
+              {% for service in section.priceServices|filter(service => service.published ) %}
+
+                 <div class="price_list_orders-line">
+                <div class="price_list_orders-line-text">
+
+                   {# {% if(loop.index == 1) %} {{ dump(service) }}{% endif %}#}
+
+                    {% if service.path %}
+                    <a href="{{ service.path }}">{{ service.nameInPriceList ?? service.name }}</a>
+                    {% elseif service.slug %}
+                           <a {#style="color:blue"#} href="{{ service.slug }}">{{ service.nameInPriceList ?? service.name }}</a>
+                        {% else %}
+                        <span style="color: red">{{ service.nameInPriceList ?? service.name }}</span>
+                    {% endif %}
+                    <b> &nbsp;от {{ service.price }}&nbsp;р.</b>
+                </div>
+                <div class="price_list_orders-line-url"><a href="#" type="button" data-title="ЗАПИСАТЬСЯ ОНЛАЙН" data-toggle="modal" data-target="#callback_popup">Записаться</a></div>
+            </div>
+              {% endfor %}
+          </div>
+            {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

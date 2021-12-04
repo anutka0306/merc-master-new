@@ -1,0 +1,9 @@
+{% extends 'v2/base.html.twig' %}
+
+{% block body %}
+    {% if isMobile %}
+        <iframe width="100%" height="2000" src="/calkuliator_zch/calculator/cal2.php"></iframe>
+    {% else %}
+        <iframe width="100%" height="2000" src="/calkuliator_zch/calculator/index2.php"></iframe>
+    {% endif %}
+{% endblock %}

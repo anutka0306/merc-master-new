@@ -1,0 +1,42 @@
+<div class="popup">
+    <div id="callback-popup" class="popup__wrap">
+        <div class="close">&#215;</div>
+        <form class="form js-callback-form" method="post" action="#">
+            <div class="form-body">
+                <p class="middle_text_form">Запись на сервис</p>
+
+                <div class="row-form">
+                    <div class="form-group">
+                        <label for="phone">Телефон*:</label>
+                        <input type="tel" name="phone" id="phone" class="phone js-phone" required="">
+                        <span class="error-input"></span>
+                    </div>
+                </div>
+                <div class="row-form">
+                    <div class="input-block">
+                        <label for="location">Выберите Центр:</label>
+                        <select class="dropdown" id="location" name="location">
+                            <option value="lobn" selected="">На Лобненской</option>
+                            <option value="udal">На Удальцова</option>
+                            <option value="sev">На Севастопольском</option>
+                        </select>
+                        <p class="error-input"></p>
+                    </div>
+                </div>
+                <input type="hidden" name="subject" value="Запись на сервис в техцентр «ДетейлингофЪ»">
+                <button type="submit" class="btn btn_full">Отправить</button>
+                <div class="agreement_row">
+                    <input type="checkbox" class="agreement_checkbox" name="agreement" id="agreement" checked required>
+                    <label for="agreement">
+                        <a href="/agreement/" target="_blank">Согласен с политикой конфиденциальности</a>
+                    </label>
+                </div>
+            </div>
+            <div class="form-msg">
+                <div class="form-msg__text">Ваша заявка принята.</div>
+                <div class="form-msg__text">Мы Вам перезвоним!</div>
+            </div>
+        </form>
+    </div>
+
+</div>

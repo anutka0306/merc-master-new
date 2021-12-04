@@ -1,0 +1,75 @@
+{% extends 'v2/base.html.twig' %}
+{#{% block title %} {{ page.h1~' - наши работы – ' }} {% endblock %}
+{% block description %}{{ '⭐⭐⭐⭐⭐ '~ page.h1~' – примеры наших работ. Портфолио. ' }}{% endblock %}#}
+{% block canonical %}{{ app.request.schemeAndHttpHost~'/blog/'~page.id~'/' }}{% endblock %}
+{% block header_line %}
+{{ include('v2/blocks/include/header.html.twig', {'brands' : brands, 'topMenu' : topMenu, 'leftMenu': leftMenu}) }}
+{% endblock %}
+{% block header_banner %}
+    {{ include('v2/blocks/section/hero.html.twig',{ h1 : block('h1') ?? page.h1, 'customH1': page.h1, 'nashirabotyPhotoBig': page.mainImg }) }}
+{% endblock %}
+{% block breadcrumbs %}
+    <section id="breadcrumbs" style="margin-top: 100px;">
+        <div class="breadcrumbs_wrapper">
+                <span class="navigation_item">
+                    <a href="/">Главная</a>
+                    <span>&#8646;</span>
+                </span>
+            <span class="navigation_item">
+                    <a href="/blog">Наши работы</a>
+                    <span>&#8646;</span>
+                </span>
+
+            <span class="navigation_item">
+                    <a href="#">{{ page.h1 }}</a>
+                </span>
+
+
+        </div>
+    </section>
+{% endblock %}
+
+{% block body %}
+    {#{{ include('v2/blocks/section/content.html.twig',{text:page.text }) }}
+    <div class="uk-container">
+        <div class="row mb-4 our_works">
+            #}{#{{ swiper_slider(item.imgFolder) }}#}{#
+        </div>
+    </div>#}
+    <div class="uk-container">
+        <div class="h1__inner-page">
+            <div class="uk-section uk-container">
+                <h1>{{ page.name }} примеры</h1>
+            </div>
+        </div>
+        <div class="nashiraboty__text">
+            {{ page.text|raw }}
+        </div>
+
+        {% if page.gallery is not null and page.gallery is not empty %}
+            <div class="nashiraboty__gallery">
+                {% for galleryImage in page.gallery  %}
+                    <div class="nashiraboty__gallery_item">
+                        <a class="image-link" href="/images/ourworks/{{ galleryImage }}">
+                            <img src="/images/ourworks/{{ galleryImage }}" alt="">
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        {% if images is not empty %}
+            <div class="nashiraboty__photo">
+                {% for image in images %}
+                    <figure class="figure">
+                        <figcaption class="figure-caption">{{ image.description }}</figcaption>
+                        <img src="/img/naschiraboty/{{ page.id }}/{{ image.image }}" class="figure-img img-fluid rounded" alt="...">
+                    </figure>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}
+{% block extraModules %}
+    {{ our_works_slider(page) }}
+{% endblock %}

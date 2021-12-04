@@ -1,0 +1,64 @@
+<section id="diagnostics" class="diagnostics-section">
+    <div class="diagnostics-section__inner">
+        <div class="section__heading">
+            <h2 class="section__h2">Диагностика {% if brandName is defined %}{{ brandName }}{% else %}авто{% endif %}</h2>
+            <p class="section__heading-text">Быстро выявим проблему и предложим оптимальное решение. <br>
+                Используем современные сканеры и фирменное ПО.</p>
+        </div>
+
+        <div class="diagnostics">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-3">
+                        <div class="diagnostics__item">
+                            <div class="diagnostics__img">
+                                <img loading="lazy" src="{{ asset('img/diagnostica/1.jpg') }}" alt="">
+                            </div>
+                            <h5><a href="/diagnostika/diagnostika-podveski/"> Диагностика <br>
+                                    подвески {% if brandName is defined %}{{ brandName }}{% endif %}</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="diagnostics__item">
+                            <div class="diagnostics__img">
+                                <img loading="lazy" src="{{ asset('img/diagnostica/2.jpg') }}" alt="">
+                            </div>
+                            <h5><a href="/diagnostika/kompyuternaya-diagnostika/"> Компьютерная <br>
+                                    диагностика {% if brandName is defined %}{{ brandName }}{% else %}авто{% endif %}</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="diagnostics__item">
+                            <div class="diagnostics__img">
+                                <img loading="lazy" src="{{ asset('img/diagnostica/3.jpg') }}" alt="Диагностика Лексус Nx200">
+                            </div>
+                            <h5><a href="/diagnostika/polnaya-diagnostika/"> Диагностика {% if brandName is defined %}{{ brandName }}{% else %}авто{% endif %}<br>
+                                    перед покупкой</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="diagnostics__item">
+                            <div class="diagnostics__img">
+                                <img loading="lazy" src="{{ asset('img/diagnostica/4.jpg')}}" alt="">
+                            </div>
+                            <h5><a href="/diagnostika/diagnostika-kpp/"> Диагностика <br>
+                                    ДВС и КПП {% if brandName is defined %}{{ brandName }}{% else %}авто{% endif %}</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section__heading">
+            <p class="section__heading-text">
+                Наши мастера проводят диагностику и ремонт с использованием программного обеспечения и инструментов,
+                <br>одобренных изготовителем.
+                <br>Мы всегда стараемся отремонтировать неисправный элемент, прежде чем менять его на новый.
+            </p><br><br>
+
+        </div>
+
+        <a class="button" href="#FBForm2">Записаться на диагностику</a>
+    </div>
+
+</section>

@@ -1,0 +1,13 @@
+{% extends 'v2/base.html.twig' %}
+
+{% block body %}
+    {% embed 'v2/embed/content.html.twig' %}
+        {% block content %}
+            <div class="date">{{ item.date|date("d.m.Y") }}</div>
+            <h2>{{ item.name }}</h2>
+            <div>Вопрос: <p>{{ item.text|raw }}</p></div>
+            <br>
+            <div>Ответ: {{ item.otvetAdmin|raw }}</div>
+        {% endblock %}
+    {% endembed %}
+{% endblock %}

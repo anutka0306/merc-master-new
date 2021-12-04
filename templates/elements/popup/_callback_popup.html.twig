@@ -1,0 +1,139 @@
+{#<div class="modal fade" id="callback_popup" tabindex="-1" role="dialog" aria-labelledby="feedbackLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header callback-popup-title">
+                <h5 class="modal-title" id="callback_popup_title">Запись на ремонт / ТО</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="callback-popup-body">
+                <p>Для отправки заявки заполните форму:</p>
+                <div class="form-group">
+                    <label for="callback_popup_name">Имя</label>
+                    <input type="text" class="form-control" id="callback_popup_name">
+                </div>
+                <div class="form-group">
+                    <label for="callback_popup_phone">Телефон *</label>
+                    <input type="text" class="form-control" id="callback_popup_phone" placeholder="+7(___) ___-__-__">
+                </div>
+                <div class="form-group">
+                    <label for="callback_popup_service">Выберите автосервис</label>
+                    <select class="form-control" id="callback_popup_service">
+                        <option value="">Укажите сервис</option>
+                        <option value="sevastopolskoy">Автосервис на Севастопольском</option>
+                        <option value="dmitrovka">Автосервис на Дмитровке</option>
+                        <option value="michurinskiy">Автосервис на Мичуринском</option>
+                        <option value="ydalcovo">Автосервис на Удальцово</option>
+                    </select>
+                </div>
+            </div>
+            <div class="callback-popup-footer">
+                <button type="button" class="btn" onclick="send_form()">Отправить</button>
+            </div>
+        </div>
+    </div>
+</div>#}
+
+
+<div class="modal fade" id="callback_popup" tabindex="-1" role="dialog" aria-labelledby="feedbackLabel" aria-hidden="true">
+    <div id="modal_2" class="popwindow modal-dialog" role="document" style="width: 100%; display: flex; justify-content: center; align-items: center; height: 100%;">
+        <div class="popup-wrap1 modal-content" style="background-color: #78B729; width: 280px;">
+            <div>
+                <div class="modal-header callback-popup-title">
+                    <div style="width: 100%">
+                        <h5 class="modal-title" id="callback_popup_title">Оставить заявку</h5>
+                    </div>
+                    <button type="button" class="close modal2-close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+
+                <div class="callback-popup-body">
+                    <form class="ajax_form" action="" method="post" id="call-form">
+                        <input style="margin: 20px 25px; width: 80%;" type="text" id="callback_popup_name" class="form-control" name="user_name" value="" placeholder="Ваше имя">
+                        <input  style="margin: 20px 25px; width: 80%;" type="text" id="callback_popup_phone" class="form-control" name="user_phone" value="" placeholder="+7 (___) ___-____" class="mask-phone">
+
+                        <span id="csCall"></span>
+
+                        <div class="callback-popup-footer d-flex justify-content-center">
+                            <input type="submit" name="submit" class="btn" value="Заявка"  style="padding: 10px 50px; border-radius: 10px; background: #fff; margin-bottom: 25px; font-weight: 700;">
+                           {# <div class="agreement_row">
+                                <input type="checkbox" name="agreement" id="agreement" checked="" required="">
+                                <label for="agreement">
+                                    <a href="/agreement/" target="_blank">Согласен с политикой конфиденциальности</a>
+                                </label>
+                            </div>#}
+
+                            <input type="hidden" name="af_action" value="8566d34660c02b3a933bde1b479492cb">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        </div>
+</div>
+
+<script>
+
+    let my_func = function (event){
+        event.preventDefault();
+
+        let name_field = $(this).find( "input[name=user_name]" );
+        if (!name_field.length) {
+            name_field = $(this).find( "input[name=pagetitle]" );
+        }
+
+        let name = name_field.val();
+        let phone = $(this).find( "input[name=user_phone]" ).val();
+
+        phone = Number(phone.replace(/\D+/g,""));
+/* Проверка полей */
+        if(name===''){alert('Заполните поле имя!'); return false;}
+        else if (/[a-zA-Z]/.test(name) ) {alert('В поле Имя не могут содержаться английские буквы!'); return false;}
+        else if (/[0-9]/.test(name) ) {alert('В поле Имя не могут содержаться цифры!');return false;}
+        else if(phone===''){alert('Заполните поле телефон!'); return false;}
+        else if(!/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/.test(phone)){alert('Некорретный номер телефона!'); return false;}
+
+        sendAjaxPopupForm('/callback_form', name, phone);
+        console.log('Send: ' + name + ' ' + phone);
+
+        $('#callback_popup').modal('hide');
+    }
+
+
+
+    $( document ).ready(function() {
+        $('#callback_popup').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget);
+            var title = button.data('title');
+            $('#callback_popup_title').html(title);
+        });
+        /*$("#callback_popup_phone").mask("+7(999) 999-99-99");*/
+
+        let form = document.getElementById('call-form');
+        form.addEventListener('submit', my_func, true);
+    });
+
+    function sendAjaxPopupForm(url, name, phone) {
+        $.ajax({
+            url:     url,
+            type:     "POST", //метод отправки
+            dataType: "html", //формат данных
+
+            data: {
+                'name' : name,
+                'phone' : phone,
+            },
+            success: function(response) { //Данные отправлены успешно
+                $('.callback-popup-body').html('<p style="text-align: center; font-weight: 700; padding: 20px;">Спасибо! Ваша заявка отправлена.</p>');
+               // console.log(response);
+            },
+            error: function(response) { // Данные не отправлены
+                console.log('error');
+            }
+        });
+    }
+
+</script>

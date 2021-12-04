@@ -1,0 +1,226 @@
+<style>
+
+    .b-container{
+        width:200px;
+        height:150px;
+        background-color: #ccc;
+        margin:0px auto;
+        padding:10px;
+        font-size:30px;
+        color: #fff;
+    }
+    .b-popup{
+        width:100%;
+        min-height:100%;
+        background-color: rgba(0,0,0,0.5);
+        overflow:hidden;
+        position:fixed;
+        top:0px;
+        z-index: 1000;
+    }
+    .b-popup .b-popup-content{
+        margin:40px auto 0px auto;
+        width:320px;
+        height: auto;
+        padding:10px;
+        background-color: #f0f0f0;
+        border-radius:5px;
+        box-shadow: 0px 0px 10px #000;
+        position: relative;
+    }
+    .b-popup-content .form-wrapper{
+        padding: 10px 0 10px 10px;
+    }
+    .b-popup-content .subscribe__form{
+        max-width: 97%;
+    }
+    .b-popup-content .form__heading.subscribe__heading{
+        font-size: 18px !important;
+    }
+    .b-popup-content .close-popup_perezvon{
+        top: 2px;
+        right: -2px;
+    }
+    .white-popup .close-popup_perezvon{
+        top: 0;
+        right: -3px;
+    }
+    #popup1{
+        display: none;
+    }
+    #popup2{
+        display: none;
+    }
+    #popup4{
+        display: none;
+    }
+    .white-popup{
+        margin:40px auto 0px auto;
+        width:320px;
+        height: auto;
+        padding:10px;
+        background-color: #f0f0f0;
+        border-radius:5px;
+        box-shadow: 0px 0px 10px #000;
+        position: relative;
+    }
+</style>
+<div class="b-popup" id="popup2">
+<div class="white-popup">
+    <a class="close-popup_perezvon" href="javascript:ResultHide()">X</a>
+    <div class="message-wrapper"><br>
+        <big>Спасибо за заявку!<br><br>Наш мастер свяжется с<br>Вами в ближайшее время.</big>
+    </div>
+</div>
+</div>
+
+<div class="b-popup" id="popup1">
+    <div class="b-popup-content">
+        <div class="col-lg-12 col-12">
+           <a class="close-popup_perezvon" href="javascript:PopUpHide()">X</a>
+            <div class="subscribe__form form-wrapper">
+                <h3 class="form__heading subscribe__heading">Заявка на обратный звонок</h3>
+
+                <form class="form" action="/" method="POST">
+
+                    <div class="form__inner">
+                        <div class="form__item">
+                            <label for="phoneN3">Введите телефон</label>
+                            <input class="form__input phoneN3-popup" type="tel" id="phoneN3" name="phone" required="" inputmode="text">
+                            <input type="hidden" id="urlN3" name="url" value="{{ path(app.request.attributes.get('_route'),
+                                app.request.attributes.get('_route_params')) }}">
+                        </div>
+
+                    </div>
+                    <button class="button popup-send-button">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="b-popup" id="popup4">
+    <div class="b-popup-content">
+        <div class="col-lg-12 col-12">
+            <a class="close-popup_perezvon" href="javascript:PopUp2Hide()">X</a>
+            <div class="subscribe__form form-wrapper">
+                <h3 class="form__heading subscribe__heading">Заявка на обслуживание</h3>
+
+                <form class="form" action="/" method="POST">
+
+                    <div class="form__inner">
+                        <div class="form__item">
+                            <label for="phoneN3">Введите телефон</label>
+                            <input class="form__input phoneN4-popup" type="tel" id="phoneN4" name="phone" required="" inputmode="text">
+                            <input type="hidden" id="urlN4" name="url" value="{{ path(app.request.attributes.get('_route'),
+                                app.request.attributes.get('_route_params')) }}">
+                        </div>
+
+                    </div>
+                    <button class="button popup-send-button4">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        //Скрыть PopUp при загрузке страницы
+        PopUpHide();
+        PopUp2Hide();
+
+        $(".popup-send-button").click(function (e){
+            e.preventDefault();
+            if($('.phoneN3-popup').val() == ''){
+                alert('Заполните поле телефон');
+                return;
+            }
+            if($('.phoneN3-popup').val().length < 17){
+                alert('Неверный формат номер телефона');
+                return;
+            }
+                let phone = $('.phoneN3-popup').val();
+                let url = $('#urlN3').val();
+            $.ajax({
+                url:     "/callback_form",
+                type:     "POST", //метод отправки
+                dataType: "html", //формат данных
+
+                data: {
+                    'phone' : phone,
+                    'url': url,
+                },
+                success: function(response) { //Данные отправлены успешно
+                    //$('.callback-popup-body').html('<p style="text-align: center; font-weight: 700; padding: 20px;">Спасибо! Ваша заявка отправлена.</p>');
+                     console.log(response);
+                },
+                error: function(response) { // Данные не отправлены
+                    console.log('error');
+                }
+            });
+
+
+           PopUpHide();
+           ResultShow();
+        });
+
+        $(".popup-send-button4").click(function (e){
+            e.preventDefault();
+            if($('.phoneN4-popup').val() == ''){
+                alert('Заполните поле телефон');
+                return;
+            }
+            if($('.phoneN4-popup').val().length < 17){
+                alert('Неверный формат номер телефона');
+                return;
+            }
+            let phone = $('.phoneN4-popup').val();
+            let url = $('#urlN4').val();
+            $.ajax({
+                url:     "/callback_form",
+                type:     "POST", //метод отправки
+                dataType: "html", //формат данных
+
+                data: {
+                    'phone' : phone,
+                    'url': url,
+                },
+                success: function(response) { //Данные отправлены успешно
+                    //$('.callback-popup-body').html('<p style="text-align: center; font-weight: 700; padding: 20px;">Спасибо! Ваша заявка отправлена.</p>');
+                    console.log(response);
+                },
+                error: function(response) { // Данные не отправлены
+                    console.log('error');
+                }
+            });
+
+
+            PopUp2Hide();
+            ResultShow();
+        });
+    });
+    //Функция отображения PopUp
+    function PopUpShow(){
+        $("#popup1").show();
+    }
+    //Функция скрытия PopUp
+    function PopUpHide(){
+        $("#popup1").hide();
+    }
+
+    function PopUp2Show(){
+        $("#popup4").show();
+    }
+    //Функция скрытия PopUp
+    function PopUp2Hide(){
+        $("#popup4").hide();
+    }
+
+    function ResultShow(){
+        $("#popup2").show();
+    }
+    function ResultHide(){
+        $("#popup2").hide();
+    }
+</script>

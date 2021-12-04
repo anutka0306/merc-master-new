@@ -1,0 +1,29 @@
+<div class="section-auto">
+    <div class="uk-container">
+        <ul class="auto-switcher-nav"
+            data-uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium; swiping: false">
+            <li><a href="#">Популярные</a></li>
+            <li><a href="#">Седаны/Хэтчбеки</a></li>
+            <li><a href="#">Кроссоверы</a></li>
+            <li><a href="#">Внедорожники</a></li>
+            <li><a href="#">Фургоны</a></li>
+        </ul>
+        <ul class="auto-switcher-content uk-switcher">
+            <li>
+                {{ models_popular(brand) }}
+            </li>
+            <li>
+                {{ models_sedan_hatchback(brand) }}
+            </li>
+            <li>
+                {{ models_crossover(brand) }}
+            </li>
+            <li>
+                {{ models_suv(brand) }}
+            </li>
+            <li>
+                {{ models_van(brand) }}
+            </li>
+        </ul>
+    </div>
+</div>

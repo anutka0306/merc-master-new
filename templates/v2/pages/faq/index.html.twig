@@ -1,0 +1,21 @@
+{% extends 'v2/base.html.twig' %}
+
+{% block body %}
+    {% embed 'v2/embed/content.html.twig' %}
+        {% block content %}
+            <h2>Вопросы от пользователей нашим специалистам</h2>
+            {% for item in items %}
+                <div class="faq-item">
+                    <div class="faq-item__header">
+                        <a href="{{ path('faq_item',{'id': item.id}) }}">{{ item.name }}</a>
+                    </div>
+                    <div class="faq-item__text">{{ item.text}}</div>
+                    <div class="faq-item__go_full">
+                        <a href="{{ path('faq_item',{'id': item.id}) }}">Читать полностью</a>
+                    </div>
+                </div>
+                <hr/>
+            {% endfor %}
+        {% endblock %}
+    {% endembed %}
+{% endblock %}

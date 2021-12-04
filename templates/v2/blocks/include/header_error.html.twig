@@ -1,0 +1,79 @@
+<header class="container-fluid">
+    <div class="container">
+        <div class="row header__top-line">
+            <div class="col-xs-12 col-sm-12 col-md-3">
+                <ul class="header__top-line_left">
+                    {% if topMenu is defined and topMenu is not empty %}
+                        {% for menuItem in topMenu %}
+                            <li><a href="{{ menuItem.link.path }}">{{ menuItem.name }}</a></li>
+                        {% endfor %}
+                    {% endif %}
+                </ul>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-9">
+                <ul class="header__top-line_right">
+                    {% if brands is not null %}
+                        {% for brand in brands %}
+                            <li><a href="/{{ brand.code }}">{{ brand.name }}</a></li>
+                        {% endfor %}
+                    {%  endif %}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid container_nav">
+        <div class="col-1">
+            <div class="btn-mobile-menu d-flex justify-content-start">
+                <a data-bs-toggle="offcanvas" class="offcanvas__burger" href="#offcanvasMenu" role="button" aria-controls="offcanvasMenu">
+                    ☰
+                </a>
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">X</button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            <ul class="uk-nav uk-nav-default uk-nav-parent-icon mobile-menu__ul" data-uk-nav="multiple: true">
+
+                                <li><a href="/">Главная</a></li>
+                                <li><a href="/offers/">Наши акции</a></li>
+                                <li><a href="/blog/">Примеры работ</a></li>
+                                <li><a href="/contacts/">Контакты</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="header__logo">
+            <a href="/"><img src="/img/lexus/logo.png" alt="ПИК" width="199" height="44"></a>
+        </div>
+        <span class="nav__description">Специализированный <br>
+            автосервис</span>
+
+        <div class="nav__address">
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            <a target="__blank" href="https://yandex.ru/maps/2/saint-petersburg/?um=constructor%3A0b426416135d33a3e9907c055362662e47f0382f0994f673e33c6d4b4799f7f8">г. Москва, <br>
+                ул. Монтажная, д.4"Б" стр.5</a>
+        </div>
+
+        <div class="nav__contacts">
+            <i class="fas fa-phone" aria-hidden="true"></i>
+            <div class="nav__phone">
+                <span class="phone-number"> <span class="phone-number"><a href="tel:+78129159153">+7(812) 915-91-53</a></span></span>
+                <a class="phone-message" href="javascript:PopUpShow();">Заказать обратный звонок</a>
+            </div>
+        </div>
+        <div class="nav__contacts trubka">
+            <a href="tel:+78129159153"><span>
+                        <i class="fas fa-phone" aria-hidden="true" style="font-size:40px"></i></span></a>
+        </div>
+    </div>
+
+   {{ include('v2/blocks/include/header_fixed.html.twig') }}
+</header>

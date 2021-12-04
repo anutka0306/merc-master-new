@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}{{ page.metaTitle ?? (page.h1~' Автосервис ПИК в Москве.') }}{% endblock %}</title>
+    <meta name="author">
+
+    <meta name="description" content="{% block description %}{% if phone is defined %}{{ (page.h1 ~ '  в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день  обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ '~phone.value) }}{% else %}{{ (page.h1 ~ '  в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день  обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ ') }}{% endif %}{% endblock %}"/>
+    <meta name="keywords" content="{% block keywords %}{% endblock %}"/>
+    <meta http-equiv="Last-Modified" content="{% block last_modified %}{{ page.modifyDate|date('D, d M Y H:i:s') }}{% endblock%} GMT">
+    <link rel="canonical" href="{% block canonical %}{{ app.request.schemeAndHttpHost~page.path }}{% endblock %}"/>
+
+    <meta property="og:title" content="{{ block('title') }}"/>
+    <meta property="og:keywords" content="{{ block('keywords') }}"/>
+    <meta property="og:description" content="{{ block('description') }}"/>
+    <meta property="og:url" content="{% block ogUrl %}{{ app.request.schemeAndHttpHost~page.path }}{% endblock %}"/>
+    <meta property="og:image" content="{{ app.request.schemeAndHttpHost }}/img/og-logo.png"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="preload" href="{{ asset('assets/fonts/Montserrat-SemiBold.woff') }}" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="{{ asset('assets/fonts/Montserrat-Bold.woff') }}" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="{{ asset('assets/fonts/LabGrotesque-Black.woff') }}" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="{{ asset('assets/fonts/Montserrat-Medium.woff') }}" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="{{ asset('assets/fonts/Montserrat-Black.woff') }}" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="{{ asset('assets/fonts/Montserrat-Regular.woff') }}" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="{{ asset('assets/fonts/LabGrotesque-Bold.woff') }}" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="{{ asset('assets/fonts/LabGrotesque-Regular.woff') }}" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="{{ asset('assets/fonts/Montserrat-Light.woff') }}" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="{{ asset('assets/fonts/cambria.woff') }}" as="font" type="font/woff" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <meta property="schema:name" content="{{ block('title') }}"/>
+    <meta property="schema:description" content="{{ block('description') }}"/>
+    {% block stylesheets %}
+        {#{{ encore_entry_link_tags('app2') }}#}
+        <link rel="stylesheet" type="text/css" href="{{ asset('build/vendors~app2.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('build/app2.css') }}">
+        <link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/uikit.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/hover-min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/custom.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/animations.css') }}">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+        <link rel="stylesheet" href="{{ asset('js/magnific-popup.css') }}">
+
+        <script src="{{ asset('js/jquery.min.js') }}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        {#<script src="{{ asset('js/bootstrap.min.js') }}"></script>#}
+        <script src="{{ asset('js/jquery.mask.min.js') }}"></script>
+    {% endblock %}
+    <meta name="yandex-verification" content="5440d1539bdcce3d"/>
+    {{ include('v2/scripts/_schema.html.twig') }}
+    {{ schema_breadcrumbs(page ?? null) }}
+</head>
+
+<body itemscope="itemscope" itemtype="https://schema.org/Product">
+
+
+{# Roistat #}
+{{ include('v2/scripts/roistat.html.twig') }}
+{# Yandex Метрика #}
+{{ include('v2/scripts/_yandex_metrics.html.twig') }}
+
+<div class="page-wrapper">
+    {% block header_line %}
+
+    {% endblock %}
+    <main class="page-main">
+        {% block header_banner %}
+        {% endblock %}
+
+        {% block breadcrumbs %}
+            {{ breadcrumbs(page ?? null) }}
+        {% endblock %}
+        <div id="content">
+            {% block body %}{% endblock %}
+        </div>
+
+        {% block extraModules %}
+
+        {% endblock %}
+
+       {# {{ render_map(page) }}#}
+    </main>
+    {{ include('v2/blocks/include/contacts.html.twig') }}
+    {{ include('v2/blocks/include/footer.html.twig') }}
+    {{ include('elements/popup/popup1.html.twig') }}
+</div>
+{% block javascripts %}
+    <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('js/uikit.js') }}"></script>
+    <script src="{{ asset('js/uikit-icons.js') }}"></script>
+
+
+    <script type="text/javascript" src="{{ asset('build/vendors~app2.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('build/app2.js') }}"></script>
+    <script src="{{ asset('js/roistat.js') }}"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="{{ asset('js/custom.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.magnific-popup.js') }}"></script>
+
+    <script>
+        $(".form__item input[name=phone]").mask("+7(999) 999-99-99");
+        /*$("#modal_2 input[name=user_phone]").mask("+7(999) 999-99-99");*/
+
+        //Старый вызов magnific-popup
+        /*$('.image-link').magnificPopup({type:'image'});*/
+
+        //Новый вызов magnific-popup
+        $('.nashiraboty__gallery').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            closeOnContentClick: false,
+            closeBtnInside: false,
+            mainClass: 'mfp-with-zoom mfp-img-mobile',
+            image: {
+                verticalFit: true,
+
+            },
+            gallery: {
+                enabled: true
+            },
+            zoom: {
+                enabled: true,
+                duration: 300, // don't foget to change the duration also in CSS
+                opener: function(element) {
+                    return element.find('img');
+                }
+            }
+
+        });
+    </script>
+    {#{{ encore_entry_script_tags('app2') }}#}
+{% endblock %}
+</body>
+</html>

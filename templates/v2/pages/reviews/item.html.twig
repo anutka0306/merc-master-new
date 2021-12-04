@@ -1,0 +1,31 @@
+{% extends 'v2/base.html.twig' %}
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('reviews') }}
+{% endblock %}
+{% block body %}
+    {% embed 'v2/embed/content.html.twig' %}
+        {% block content %}
+            <h2>{{ page.h1 }}</h2>
+            <p><i class="review_item__ocenka">{{ stars(item.ocenka) }}</i></p>
+            <p>{{ item.autor }}</p>
+            <div class="review_item">
+                <div class="clr"></div>
+                <div uk-lightbox class="review_item__left_col">
+                    <a href="{{ vich_uploader_asset(item,'imageFile') }}">
+                        <img {{ lazy_load(vich_uploader_asset(item,'imageFile')) }} />
+                    </a>
+                </div>
+                <div class="review_item__text">
+                    {{ item.text|raw }}
+                </div>
+                <div class="clr"></div>
+            </div>
+        {% endblock %}
+    {% endembed %}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('reviews') }}
+{% endblock %}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="{{ 'now'|date('Y-m-d H:i') }}">
+    <shop>
+        <name>«Автосервис ПИК»</name>
+        <company>Профессиональный автосервис в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</company>
+        <url>{{ app.request.schemeAndHttpHost }}/</url>
+        <currencies>
+            <currency id="RUR" rate="1" />
+        </currencies>
+        <categories>
+            <category id="1">Товары в наличии</category>
+        </categories>
+        <offers>
+            {% for offer in offers -%}
+            <offer id="{{ offer.id }}" available="true">
+                <url>{{ app.request.schemeAndHttpHost~offer.path }}</url>
+                <price>{{ offer.price }}</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>{{ offer.meta_title }}</name>
+                <description>{{ offer.meta_description|raw }}</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>{{ app.request.schemeAndHttpHost }}/img/yml/product.jpg</picture>
+            </offer>
+            {% endfor -%}
+        </offers>
+    </shop>
+</yml_catalog>

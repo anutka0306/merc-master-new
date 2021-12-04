@@ -1,0 +1,24 @@
+<div class="seo-box">
+  <div class="block_content_background">
+    <div class="seo-box__text">
+      {{ first_part|raw }}
+    </div>
+    {% if second_part is not null %}
+    <div id="more_content" class="collapse">
+      {{ second_part|raw }}
+    </div>
+    <div class="seo-box__more" id="button_more_content" data-toggle="collapse" data-target="#more_content">Развернуть</div>
+    {% endif %}
+  </div>
+</div>
+
+<script>
+    $('#more_content').on('hide.bs.collapse', function () {
+        $('#button_more_content').removeClass('is-show');
+        $('#button_more_content').html('Развернуть');
+    });
+    $('#more_content').on('shown.bs.collapse', function () {
+        $('#button_more_content').addClass('is-show');
+        $('#button_more_content').html('Свернуть');
+    });
+</script>

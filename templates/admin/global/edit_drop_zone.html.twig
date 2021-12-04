@@ -1,0 +1,19 @@
+{% extends '@EasyAdmin/default/edit.html.twig' %}
+
+{% block main %}
+    {% block entity_form %}
+
+       {{ form(form) }}
+        <div class="p-3 uploader-wrapper" data-url="{{ path('admin_files_images_upload',{folder : entity.imgFolder }) }}">
+       {{ include('admin/global/_drop_zone.html.twig', {files: files_from_folder(entity.imgFolder)} ) }}
+
+        </div>
+    {% endblock %}
+{% endblock %}
+
+
+{% block body_javascript %}
+    {{ parent() }}
+    <script src="{{ asset('js/jquery.dm-uploader.js') }}"></script>
+    <script src="{{ asset('js/uploader-init.js') }}"></script>
+{% endblock %}

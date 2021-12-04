@@ -1,0 +1,23 @@
+{% extends '@EasyAdmin/page/blank.html.twig' %}
+
+{% block page_title 'Массовый редактор страниц' %}
+
+{% block content %}
+<div class="content">
+    <div class="container py-3">
+        <div class="alert alert-primary" role="alert">
+            <p>Переменные для мета-тэгов и текста:</p>
+            <ul>
+                <li><strong>SERVICE</strong> - Название услуги</li>
+                <li><strong>BRAND MODEL</strong> - название марки и модели с переводом</li>
+                <li><strong>BRAND</strong> - название марки без перевода</li>
+            </ul>
+        </div>
+    {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+    {{ form_widget(form) }}
+    <button type="submit" class="btn btn-primary">Импортировать</button>
+    {{ form_end(form) }}
+    </div>
+</div>
+    {{ include('@EasyAdmin/default/includes/_select2_widget.html.twig') }}
+{% endblock %}

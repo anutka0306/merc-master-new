@@ -1,0 +1,47 @@
+:root {
+    /* make the backend contents as wide as the browser window */
+    --body-max-width: 100%;
+}
+
+.form-widget input.form-control, .form-widget select.form-control, .form-widget textarea.form-control {
+    max-width: 83%;
+}
+.form-group label, .form-group legend.col-form-label {
+    flex: 15% 0 0;
+}
+.form-widget {
+    flex: 0 0 79%;
+}
+.header_custom_menu{
+    display: flex;
+}
+.header_custom_menu > div{
+    margin: 0 20px;
+}
+.header_custom_menu .btn-primary a{
+    color: white;
+}
+.header_custom_menu .alert{
+    display: none;
+    padding: 3px 1.25rem;
+}
+.form-control{
+    width: 83%;
+}
+.select2-container--bootstrap .select2-selection{
+    max-width: 100%;
+}
+.unpublished-cell {
+    background-color: red;
+}
+
+.published-with-text-cell {
+    background-color: green;
+}
+
+.published-empty-cell {
+    background-color: yellow;
+}
+.price-category-cell {
+    background-color: blue;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>404 - Страница не найдена</title>
+    <meta name=viewport content="width=device-width,user-scalable=no,initial-scale=1">
+    <meta name="description" content="">
+    {# Run `composer require symfony/webpack-encore-bundle`
+       and uncomment the following Encore helpers to start using Symfony UX #}
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="preload" href="{{ asset('assets/fonts/Montserrat-SemiBold.woff') }}" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="{{ asset('assets/fonts/Montserrat-Bold.woff') }}" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="{{ asset('assets/fonts/LabGrotesque-Black.woff') }}" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="{{ asset('assets/fonts/Montserrat-Medium.woff') }}" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="{{ asset('assets/fonts/Montserrat-Black.woff') }}" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="{{ asset('assets/fonts/Montserrat-Regular.woff') }}" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="{{ asset('assets/fonts/LabGrotesque-Bold.woff') }}" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="{{ asset('assets/fonts/LabGrotesque-Regular.woff') }}" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="{{ asset('assets/fonts/Montserrat-Light.woff') }}" as="font" type="font/woff" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    {% block stylesheets %}
+        <link rel="stylesheet" type="text/css" href="{{ asset('build/vendors~app2.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('build/app2.css') }}">
+        <link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/uikit.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/hover-min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/custom.css') }}">
+        <script src="{{ asset('js/jquery.min.js') }}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    {% endblock %}
+
+    {% block javascripts %}
+        <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+        <script src="{{ asset('js/uikit.js') }}"></script>
+        <script src="{{ asset('js/uikit-icons.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('build/vendors~app2.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('build/app2.js') }}"></script>
+
+    {% endblock %}
+</head>
+<body itemscope="itemscope" itemtype="https://schema.org/Product">
+{{ include('v2/scripts/_yandex_metrics.html.twig') }}
+<div class="page-wrapper">
+    {% block header_line %}
+        {{ include('v2/blocks/include/header_error.html.twig') }}
+    {% endblock %}
+
+    {% block header_banner %}
+
+        {{ include('v2/blocks/section/hero.html.twig',{ h1 : block('h1') ?? page.h1 }) }}
+    {% endblock %}
+    <main style="" class="page-main">
+
+        {% block breadcrumbs %}
+            {{ breadcrumbs(page ?? null) }}
+        {% endblock %}
+        <div id="content">
+            {% block body %}{% endblock %}
+        </div>
+    </main>
+    {{ include('v2/blocks/include/contacts.html.twig') }}
+    {{ include('v2/blocks/include/footer.html.twig') }}
+    {{ include('elements/popup/popup1.html.twig') }}
+</div>
+</body>
+</html>

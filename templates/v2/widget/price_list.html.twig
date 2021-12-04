@@ -1,0 +1,43 @@
+
+
+<section class="container price-list__block">
+<div class="services-prices">
+    <h3>{#{{ price_list_title }}#} Цены:</h3>
+    <div class="price-list__ul-wrapper">
+        {% for row in sections|batch(sections|length/2) %}
+            <ul data-uk-accordion="collapsible: true">
+
+                    {% for section in row %}
+                        {% if section.priceServices is not empty %}
+                            <li><a class="uk-accordion-title" href="#">{{ section.name }}</a>
+                                <div class="uk-accordion-content">
+                                    <ul class="price-list">
+                                        {% for service in section.priceServices|filter(service => service.published ) %}
+                                            <li>
+                                            <span>
+                                                {% if service.path  and service.published %}
+                                                    {% if withoutLinks is defined and withoutLinks %}
+                                                        <span>{{ service.nameInPriceList ?? service.name }}</span>
+                                                        {% else %}
+                                                    <a href="{{ service.path }}">{{ service.nameInPriceList ?? service.name }}</a>
+                                                        {% endif %}
+                                                {% else %}
+                                                    {{ service.name }} {{ page.brandAndModelName }}
+                                                {% endif %}
+                                                <b>от {{ service.price|number_format(0, '', ' ') }}&nbsp;р.</b>
+                                            </span>
+                                                <span class="border"></span>
+                                                <span><a class="callback js-popup-trigger zayavka-link" data-toggle="modal" data-target="#callback_popup" href="javascript:PopUp2Show()">Оставить заявку</a></span>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+
+            </ul>
+        {% endfor %}
+    </div>
+</div>
+</section>

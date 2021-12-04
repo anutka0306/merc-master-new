@@ -1,0 +1,2491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="2021-11-30 17:36">
+    <shop>
+        <name>«Автосервис ПИК»</name>
+        <company>Профессиональный автосервис в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</company>
+        <url>https://127.0.0.1:8000/</url>
+        <currencies>
+            <currency id="RUR" rate="1" />
+        </currencies>
+        <categories>
+            <category id="1">Товары в наличии</category>
+        </categories>
+        <offers>
+            <offer id="6350" available="true">
+                <url>https://127.0.0.1:8000/tejnicheskoe-obslugivanie/zamena-masla-v-dvigatele/</url>
+                <price>1400</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена масла в двигателе</name>
+                <description>Замена масла в двигателе в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="6399" available="true">
+                <url>https://127.0.0.1:8000/tejnicheskoe-obslugivanie/zamena-maslyanogo-filtra/</url>
+                <price>400</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена масляного фильтра</name>
+                <description>Замена масляного фильтра в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="6448" available="true">
+                <url>https://127.0.0.1:8000/tejnicheskoe-obslugivanie/zamena-vozdushnogo-filtra/</url>
+                <price>600</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена воздушного фильтра</name>
+                <description>Замена воздушного фильтра в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="6497" available="true">
+                <url>https://127.0.0.1:8000/tejnicheskoe-obslugivanie/zamena-salonnogo-filtra/</url>
+                <price>1200</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена салонного фильтра</name>
+                <description>Замена салонного фильтра в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="6546" available="true">
+                <url>https://127.0.0.1:8000/tejnicheskoe-obslugivanie/zamena-masla-v-akpp/</url>
+                <price>3600</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена масла в АКПП</name>
+                <description>Замена масла в АКПП в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="6595" available="true">
+                <url>https://127.0.0.1:8000/tejnicheskoe-obslugivanie/zamena-filtra-akpp/</url>
+                <price>4000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена фильтра АКПП</name>
+                <description>Замена фильтра АКПП в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="6644" available="true">
+                <url>https://127.0.0.1:8000/tejnicheskoe-obslugivanie/zamena-masla-v-mkpp/</url>
+                <price>1000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена масла в МКПП</name>
+                <description>Замена масла в МКПП в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="6693" available="true">
+                <url>https://127.0.0.1:8000/tejnicheskoe-obslugivanie/zamena-masla-v-razdatke/</url>
+                <price>1200</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена масла в раздатке</name>
+                <description>Замена масла в раздатке в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="6742" available="true">
+                <url>https://127.0.0.1:8000/tejnicheskoe-obslugivanie/zamena-masla-v-mostah/</url>
+                <price>1600</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена масла в мостах</name>
+                <description>Замена масла в мостах в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="6791" available="true">
+                <url>https://127.0.0.1:8000/tejnicheskoe-obslugivanie/zamena-tormoznoy-zhidkosti/</url>
+                <price>2400</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена тормозной жидкости</name>
+                <description>Замена тормозной жидкости в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="6840" available="true">
+                <url>https://127.0.0.1:8000/tejnicheskoe-obslugivanie/zamena-ohlazhdayushchey-zhidkosti/</url>
+                <price>2200</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена охлаждающей жидкости</name>
+                <description>Замена охлаждающей жидкости в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="6889" available="true">
+                <url>https://127.0.0.1:8000/tejnicheskoe-obslugivanie/zamena-remnya-grm/</url>
+                <price>8000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена ремня ГРМ</name>
+                <description>Замена ремня ГРМ в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="6938" available="true">
+                <url>https://127.0.0.1:8000/tejnicheskoe-obslugivanie/zamena-cepi-grm/</url>
+                <price>8000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена цепи ГРМ</name>
+                <description>Замена цепи ГРМ в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="6987" available="true">
+                <url>https://127.0.0.1:8000/tejnicheskoe-obslugivanie/zamena-privodnyh-remney/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена приводных ремней</name>
+                <description>Замена приводных ремней в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="7036" available="true">
+                <url>https://127.0.0.1:8000/tejnicheskoe-obslugivanie/zamena-rolika-natyazhitelya-privodnogo-remnya/</url>
+                <price>1000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена ролика натяжителя приводного ремня</name>
+                <description>Замена ролика натяжителя приводного ремня в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="7085" available="true">
+                <url>https://127.0.0.1:8000/tejnicheskoe-obslugivanie/zamena-pompy/</url>
+                <price>7000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена помпы (замена водяного насоса)</name>
+                <description>Замена помпы (замена водяного насоса) в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="7134" available="true">
+                <url>https://127.0.0.1:8000/tejnicheskoe-obslugivanie/zamena-toplivnogo-filtra/</url>
+                <price>2800</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена топливного фильтра</name>
+                <description>Замена топливного фильтра в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="7183" available="true">
+                <url>https://127.0.0.1:8000/tejnicheskoe-obslugivanie/zamena-svechey-zazhiganiya/</url>
+                <price>1600</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена свечей зажигания</name>
+                <description>Замена свечей зажигания в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="7232" available="true">
+                <url>https://127.0.0.1:8000/tejnicheskoe-obslugivanie/sbros-mezhservisnogo-intervala/</url>
+                <price>400</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Сброс межсервисного интервала</name>
+                <description>Сброс межсервисного интервала в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="7282" available="true">
+                <url>https://127.0.0.1:8000/tejnicheskoe-obslugivanie/zamena-tormoznoj-zhidkosti/</url>
+                <price>2400</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена тормозной жидкости</name>
+                <description>Замена тормозной жидкости в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="7331" available="true">
+                <url>https://127.0.0.1:8000/tejnicheskoe-obslugivanie/zamena-ohlazhdayushchej-zhidkosti/</url>
+                <price>2200</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена охлаждающей жидкости</name>
+                <description>Замена охлаждающей жидкости в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="7380" available="true">
+                <url>https://127.0.0.1:8000/tejnicheskoe-obslugivanie/zamena-privodnyh-remnej/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена приводных ремней</name>
+                <description>Замена приводных ремней в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="7429" available="true">
+                <url>https://127.0.0.1:8000/tejnicheskoe-obslugivanie/chistka-drosselnoy-zaslonki/</url>
+                <price>1600</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Чистка дроссельной заслонки</name>
+                <description>Чистка дроссельной заслонки в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="7478" available="true">
+                <url>https://127.0.0.1:8000/tejnicheskoe-obslugivanie/chastichnaya-zamena-masla-v-akpp/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Частичная замена масла в АКПП</name>
+                <description>Частичная замена масла в АКПП в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="7527" available="true">
+                <url>https://127.0.0.1:8000/tejnicheskoe-obslugivanie/polnaya-zamena-masla/</url>
+                <price>3600</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Полная замена масла в АКПП</name>
+                <description>Полная замена масла в АКПП в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="7576" available="true">
+                <url>https://127.0.0.1:8000/tejnicheskoe-obslugivanie/zamena-antifriza/</url>
+                <price>1200</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена антифриза</name>
+                <description>Замена антифриза в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="7625" available="true">
+                <url>https://127.0.0.1:8000/tejnicheskoe-obslugivanie/ekspress-zamena-masla/</url>
+                <price>3000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Экспресс-замена масла</name>
+                <description>Экспресс-замена масла в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="7674" available="true">
+                <url>https://127.0.0.1:8000/tejnicheskoe-obslugivanie/planovoe-to/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Плановое ТО</name>
+                <description>Плановое ТО в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="7723" available="true">
+                <url>https://127.0.0.1:8000/tejnicheskoe-obslugivanie/apparatnaya-zamena-masla-v-akpp/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Аппаратная замена масла в АКПП</name>
+                <description>Аппаратная замена масла в АКПП в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="7772" available="true">
+                <url>https://127.0.0.1:8000/tejnicheskoe-obslugivanie/snyatie-i-ustanovka-zaschity-kartera/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Снятие и установка защиты картера</name>
+                <description>Снятие и установка защиты картера в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="7870" available="true">
+                <url>https://127.0.0.1:8000/shod-razval/regulirovka-shod-razvala/</url>
+                <price>2800</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Регулировка сход развала</name>
+                <description>Регулировка сход развала в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="7919" available="true">
+                <url>https://127.0.0.1:8000/shod-razval/shod-razval-3d/</url>
+                <price>4000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Сход развал 3d</name>
+                <description>Сход развал 3d в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="8017" available="true">
+                <url>https://127.0.0.1:8000/deteyling/himchistka-salona/</url>
+                <price>10000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Химчистка салона</name>
+                <description>Химчистка салона в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="8066" available="true">
+                <url>https://127.0.0.1:8000/deteyling/polirovka-kuzova/</url>
+                <price>10000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Полировка кузова</name>
+                <description>Полировка кузова в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="8115" available="true">
+                <url>https://127.0.0.1:8000/deteyling/detejling/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Детейлинг</name>
+                <description>Детейлинг в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="8164" available="true">
+                <url>https://127.0.0.1:8000/deteyling/pokraska-rulya/</url>
+                <price>5000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Покраска руля</name>
+                <description>Покраска руля в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="8262" available="true">
+                <url>https://127.0.0.1:8000/diagnostika/diagnostika-inzhektora/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Диагностика инжектора</name>
+                <description>Диагностика инжектора в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="8311" available="true">
+                <url>https://127.0.0.1:8000/diagnostika/diagnostika-dvigatelya/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Диагностика двигателя</name>
+                <description>Диагностика двигателя в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="8360" available="true">
+                <url>https://127.0.0.1:8000/diagnostika/diagnostika-dizelnogo-dvigatelya/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Диагностика дизельного двигателя</name>
+                <description>Диагностика дизельного двигателя в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="8409" available="true">
+                <url>https://127.0.0.1:8000/diagnostika/diagnostika-akpp/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Диагностика АКПП</name>
+                <description>Диагностика АКПП в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="8458" available="true">
+                <url>https://127.0.0.1:8000/diagnostika/diagnostika-mkpp/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Диагностика МКПП</name>
+                <description>Диагностика МКПП в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="8507" available="true">
+                <url>https://127.0.0.1:8000/diagnostika/diagnostika-zadnego-mosta/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Диагностика заднего моста</name>
+                <description>Диагностика заднего моста в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="8556" available="true">
+                <url>https://127.0.0.1:8000/diagnostika/diagnostika-hodovoy-chasti/</url>
+                <price>1000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Диагностика ходовой части</name>
+                <description>Диагностика ходовой части в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="8605" available="true">
+                <url>https://127.0.0.1:8000/diagnostika/diagnostika-podveski/</url>
+                <price>1000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Диагностика подвески автомобиля</name>
+                <description>Диагностика подвески автомобиля в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="8654" available="true">
+                <url>https://127.0.0.1:8000/diagnostika/diagnostika-tormoznoy-sistemy-avtomobilya/</url>
+                <price>3000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Диагностика тормозной системы автомобиля</name>
+                <description>Диагностика тормозной системы автомобиля в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="8703" available="true">
+                <url>https://127.0.0.1:8000/diagnostika/diagnostika-rulevogo-upravleniya/</url>
+                <price>3000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Диагностика рулевого управления</name>
+                <description>Диагностика рулевого управления в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="8752" available="true">
+                <url>https://127.0.0.1:8000/diagnostika/polnaya-diagnostika/</url>
+                <price>5000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Полная диагностика</name>
+                <description>Полная диагностика в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="8801" available="true">
+                <url>https://127.0.0.1:8000/diagnostika/kompleksnaya-diagnostika/</url>
+                <price>5000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Комплексная диагностика</name>
+                <description>Комплексная диагностика в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="8850" available="true">
+                <url>https://127.0.0.1:8000/diagnostika/elektronnaya-diagnostika-avtomobilya/</url>
+                <price>1200</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Электронная диагностика автомобиля</name>
+                <description>Электронная диагностика автомобиля в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="8899" available="true">
+                <url>https://127.0.0.1:8000/diagnostika/diagnostika-sistem-avtomobilya/</url>
+                <price>5000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Диагностика систем автомобиля</name>
+                <description>Диагностика систем автомобиля в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="8948" available="true">
+                <url>https://127.0.0.1:8000/diagnostika/diagnostika-neispravnostey-avtomobilya/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Диагностика неисправностей автомобиля</name>
+                <description>Диагностика неисправностей автомобиля в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="8997" available="true">
+                <url>https://127.0.0.1:8000/diagnostika/diagnostika-elektriki-avtomobilya/</url>
+                <price>2400</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Диагностика электрики автомобиля</name>
+                <description>Диагностика электрики автомобиля в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="9046" available="true">
+                <url>https://127.0.0.1:8000/diagnostika/diagnostika-elektrooborudovaniya-avtomobilya/</url>
+                <price>2400</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Диагностика электрооборудования автомобиля</name>
+                <description>Диагностика электрооборудования автомобиля в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="9095" available="true">
+                <url>https://127.0.0.1:8000/diagnostika/diagnostika-kuzova-avtomobilya/</url>
+                <price>3000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Диагностика кузова автомобиля</name>
+                <description>Диагностика кузова автомобиля в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="9144" available="true">
+                <url>https://127.0.0.1:8000/diagnostika/diagnostika-kpp/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Диагностика КПП</name>
+                <description>Диагностика КПП в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="9193" available="true">
+                <url>https://127.0.0.1:8000/diagnostika/kompyuternaya-diagnostika/</url>
+                <price>1200</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Компьютерная диагностика</name>
+                <description>Компьютерная диагностика в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="9242" available="true">
+                <url>https://127.0.0.1:8000/diagnostika/dignostika-transmissii/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Диагностика трансмиссии</name>
+                <description>Диагностика трансмиссии в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="9341" available="true">
+                <url>https://127.0.0.1:8000/remont-dizelnij-dvigateley/remont-dizelnyh-avtomobiley/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт дизельных автомобилей</name>
+                <description>Ремонт дизельных автомобилей в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="9390" available="true">
+                <url>https://127.0.0.1:8000/remont-dizelnij-dvigateley/remont-dizelnyh-dvigatelej/</url>
+                <price>44000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт дизельных двигателей</name>
+                <description>Ремонт дизельных двигателей в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="9439" available="true">
+                <url>https://127.0.0.1:8000/remont-dizelnij-dvigateley/obsluzhivanie-dizelnogo-dvigatelya/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Обслуживание дизельного двигателя</name>
+                <description>Обслуживание дизельного двигателя в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="9488" available="true">
+                <url>https://127.0.0.1:8000/remont-dizelnij-dvigateley/remont-forsunok/</url>
+                <price>12000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт форсунок (1 шт.)</name>
+                <description>Ремонт форсунок (1 шт.) в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="9537" available="true">
+                <url>https://127.0.0.1:8000/remont-dizelnij-dvigateley/remont-turbin-dizelnyh-dvigateley/</url>
+                <price>16000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт турбин дизельных двигателей</name>
+                <description>Ремонт турбин дизельных двигателей в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="9586" available="true">
+                <url>https://127.0.0.1:8000/remont-dizelnij-dvigateley/zamena-tnvd/</url>
+                <price>5200</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена ТНВД</name>
+                <description>Замена ТНВД в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="9635" available="true">
+                <url>https://127.0.0.1:8000/remont-dizelnij-dvigateley/remont-tnvd/</url>
+                <price>20000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт ТНВД</name>
+                <description>Ремонт ТНВД в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="9684" available="true">
+                <url>https://127.0.0.1:8000/remont-dizelnij-dvigateley/diagnostika-dizelnogo-dvigatelya/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Диагностика дизельных двигателей</name>
+                <description>Диагностика дизельных двигателей в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="9733" available="true">
+                <url>https://127.0.0.1:8000/remont-dizelnij-dvigateley/diagnostika-toplivnoy-sistemy-dizelnogo-dvigatelya/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Диагностика топливной системы дизельного двигателя</name>
+                <description>Диагностика топливной системы дизельного двигателя в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="9782" available="true">
+                <url>https://127.0.0.1:8000/remont-dizelnij-dvigateley/remont-turbin-dizelnyh-dvigatelej/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Диагностика турбины дизельного двигателя</name>
+                <description>Диагностика турбины дизельного двигателя в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="9831" available="true">
+                <url>https://127.0.0.1:8000/remont-dizelnij-dvigateley/diagnostika-tnvd-dizelnogo-dvigatelya/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Диагностика ТНВД дизельного двигателя</name>
+                <description>Диагностика ТНВД дизельного двигателя в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="9880" available="true">
+                <url>https://127.0.0.1:8000/remont-dizelnij-dvigateley/diagnostoka-forsunok-dizelnogo-dvigatelya/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Диагностика форсунок дизельного двигателя</name>
+                <description>Диагностика форсунок дизельного двигателя в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="9978" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/remont-kolenchatogo-vala/</url>
+                <price>30000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт коленчатого вала</name>
+                <description>Ремонт коленчатого вала в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="10027" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/zamena-kolenchatogo-vala/</url>
+                <price>30000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена коленчатого вала</name>
+                <description>Замена коленчатого вала в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="10076" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/zamena-salnika-raspredvala/</url>
+                <price>4000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена сальника распредвала</name>
+                <description>Замена сальника распредвала в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="10125" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/zamena-cepi-grm/</url>
+                <price>8000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена цепи ГРМ</name>
+                <description>Замена цепи ГРМ в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="10174" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/zamena-raspredvala/</url>
+                <price>9800</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена распредвала</name>
+                <description>Замена распредвала в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="10223" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/zamena-remnya-grm/</url>
+                <price>8000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена ремня ГРМ</name>
+                <description>Замена ремня ГРМ в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="10272" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/diagnostika-dvigatelya/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Диагностика двигателя</name>
+                <description>Диагностика двигателя в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="10321" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/obslugivsnie-dvigatelya/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Обслуживание двигателя</name>
+                <description>Обслуживание двигателя в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="10370" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/promyvka-dvigatelya/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Промывка двигателя</name>
+                <description>Промывка двигателя в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="10419" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/pereborka-dvigatelya/</url>
+                <price>20000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Переборка двигателя</name>
+                <description>Переборка двигателя в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="10468" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/kapitalnyi-remont-dvigatelya/</url>
+                <price>20000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Капитальный ремонт двигателя</name>
+                <description>Капитальный ремонт двигателя в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="10517" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/zamena-perednego-salnika-kolenvala/</url>
+                <price>9000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена переднего сальника коленвала</name>
+                <description>Замена переднего сальника коленвала в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="10566" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/zamena-zadnego-salnika-kolenvala/</url>
+                <price>9000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена заднего сальника коленвала</name>
+                <description>Замена заднего сальника коленвала в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="10615" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/zamena-privodnogo-remnya/</url>
+                <price>2400</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена приводного ремня</name>
+                <description>Замена приводного ремня в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="10664" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/zamena-rolika-natyagenia-privodnogo-remnya/</url>
+                <price>2400</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена ролика натяжителя приводного ремня</name>
+                <description>Замена ролика натяжителя приводного ремня в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="10713" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/zamena-porshnevyh-kolec/</url>
+                <price>44000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена поршневых колец</name>
+                <description>Замена поршневых колец в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="10762" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/zamena-porshnevoy-gruppy/</url>
+                <price>44000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена поршневой группы</name>
+                <description>Замена поршневой группы в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="10811" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/remont-bloka-cilindrov/</url>
+                <price>10000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт блока цилиндров  (1 шт.)</name>
+                <description>Ремонт блока цилиндров  (1 шт.) в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="10860" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/zamena-golovki-bloka-cilindrov/</url>
+                <price>12000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена головки блока цилиндров (1 шт.)</name>
+                <description>Замена головки блока цилиндров (1 шт.) в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="10909" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/remont-gbc/</url>
+                <price>12000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт ГБЦ  (1 шт.)</name>
+                <description>Ремонт ГБЦ  (1 шт.) в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="10958" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/zamena-klapanov-s-pritirkoy/</url>
+                <price>12000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена клапанов с притиркой</name>
+                <description>Замена клапанов с притиркой в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="11007" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/zamena-napravlyayushchih-vtulok-klapanov/</url>
+                <price>12000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена направляющих втулок клапанов</name>
+                <description>Замена направляющих втулок клапанов в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="11056" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/zamena-maslyanogo-nasosa/</url>
+                <price>6400</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена масляного насоса</name>
+                <description>Замена масляного насоса в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="11105" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/zamena-prokladok-svechnij-kolodtsev/</url>
+                <price>4000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена прокладок свечных колодцев</name>
+                <description>Замена прокладок свечных колодцев в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="11154" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/zamena-svechey-nakalivaniya/</url>
+                <price>1000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена свечей накаливания</name>
+                <description>Замена свечей накаливания в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="11203" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/zamena-poddona-kartera/</url>
+                <price>6000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена поддона картера</name>
+                <description>Замена поддона картера в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="11252" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/zamena-vkladyshey/</url>
+                <price>6000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена вкладышей</name>
+                <description>Замена вкладышей в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="11301" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/remont-turbiny/</url>
+                <price>10000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт турбины</name>
+                <description>Ремонт турбины в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="11350" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/remont-sistemy-ohlazhdeniya/</url>
+                <price>10000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт системы охлаждения</name>
+                <description>Ремонт системы охлаждения в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="11399" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/zamena-gidrokompensatorov/</url>
+                <price>6000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена гидрокомпенсаторов</name>
+                <description>Замена гидрокомпенсаторов в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="11448" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/zamena-podushek-dvigatelya/</url>
+                <price>6000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена подушек двигателя</name>
+                <description>Замена подушек двигателя в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="11497" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/zamena-salnika-kolenvala/</url>
+                <price>12000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена сальника коленвала</name>
+                <description>Замена сальника коленвала в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="11546" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/zamena-turbiny/</url>
+                <price>6000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена турбины</name>
+                <description>Замена турбины в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="11595" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/remont-i-zamena-kolenvala/</url>
+                <price>3000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт и замена коленвала</name>
+                <description>Ремонт и замена коленвала в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="11644" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/promyvka-avtomobilnogo-radiatora/</url>
+                <price>3000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Промывка автомобильного радиатора</name>
+                <description>Промывка автомобильного радиатора в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="11693" available="true">
+                <url>https://127.0.0.1:8000/remont-dvigatelya/udalenie-saghevogo-filtra/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Удаление сажевого фильтра</name>
+                <description>Удаление сажевого фильтра в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="11791" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/remont-pechek/</url>
+                <price>8000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт печек</name>
+                <description>Ремонт печек в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="11840" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-datchika-temperatury-ohlazhdayushchey-zhidkosti/</url>
+                <price>6000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена датчика температуры охлаждающей жидкости</name>
+                <description>Замена датчика температуры охлаждающей жидкости в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="11889" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-datchika-kolenvala/</url>
+                <price>400</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена датчика коленвала</name>
+                <description>Замена датчика коленвала в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="11938" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-datchika-raspredvala/</url>
+                <price>3000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена датчика распредвала</name>
+                <description>Замена датчика распредвала в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="11987" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/remont-i-zamena-datchikov/</url>
+                <price>4000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт и замена датчиков</name>
+                <description>Ремонт и замена датчиков в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="12036" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-mufty-kompressora-kondicionera/</url>
+                <price>8000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена муфты компрессора кондиционера</name>
+                <description>Замена муфты компрессора кондиционера в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="12085" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-kompressora-kondicionera/</url>
+                <price>4000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена компрессора кондиционера</name>
+                <description>Замена компрессора кондиционера в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="12134" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-podshipnika-kompressora-kondicionera/</url>
+                <price>8000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена подшипника компрессора кондиционера</name>
+                <description>Замена подшипника компрессора кондиционера в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="12183" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/dezinfekciya-avtokondicionera/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Дезинфекция автокондиционера</name>
+                <description>Дезинфекция автокондиционера в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="12232" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/diagnostika-avtokondicionerov/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Диагностика автокондиционеров</name>
+                <description>Диагностика автокондиционеров в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="12281" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/remont-avtokondicionera/</url>
+                <price>3000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт автокондиционера</name>
+                <description>Ремонт автокондиционера в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="12330" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/obsluzhivanie-avtomobilnyh-kondicionerov/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Обслуживание автомобильных кондиционеров</name>
+                <description>Обслуживание автомобильных кондиционеров в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="12379" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-startera/</url>
+                <price>3800</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена стартера</name>
+                <description>Замена стартера в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="12428" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/remont-startera/</url>
+                <price>8000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт стартера</name>
+                <description>Ремонт стартера в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="12477" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-podshipnika-generatora/</url>
+                <price>8000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена подшипника генератора</name>
+                <description>Замена подшипника генератора в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="12526" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-shchetok-generatora/</url>
+                <price>8000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена щеток генератора</name>
+                <description>Замена щеток генератора в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="12575" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-remnya-generatora/</url>
+                <price>1600</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена ремня генератора</name>
+                <description>Замена ремня генератора в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="12624" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-generatora/</url>
+                <price>1400</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена генератора</name>
+                <description>Замена генератора в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="12673" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/remont-generatorov/</url>
+                <price>6000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт генераторов</name>
+                <description>Ремонт генераторов в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="12722" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/remont-ehlektriki/</url>
+                <price>4000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт электрики</name>
+                <description>Ремонт электрики в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="12771" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/remont-elektroprovodki/</url>
+                <price>4000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт электропроводки</name>
+                <description>Ремонт электропроводки в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="12820" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/remont-i-zamena-radiatora-pechki/</url>
+                <price>12000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт и замена радиатора печки</name>
+                <description>Ремонт и замена радиатора печки в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="12869" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-motora-pechki/</url>
+                <price>1400</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена мотора печки</name>
+                <description>Замена мотора печки в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="12918" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-privodnogo-remnya/</url>
+                <price>2400</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена приводного ремня</name>
+                <description>Замена приводного ремня в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="12967" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-rele-regulyatora/</url>
+                <price>4000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена реле регулятора</name>
+                <description>Замена реле регулятора в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="13016" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-toplivnogo-nasosa/</url>
+                <price>2600</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена топливного насоса</name>
+                <description>Замена топливного насоса в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="13065" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-predohranitelej/</url>
+                <price>600</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена предохранителей</name>
+                <description>Замена предохранителей в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="13114" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zapravka-avtokondicionera/</url>
+                <price>1000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Заправка автокондиционера</name>
+                <description>Заправка автокондиционера в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="13163" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/remont-pechki/</url>
+                <price>1000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт и замена печки</name>
+                <description>Ремонт и замена печки в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="13212" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-lamp/</url>
+                <price>600</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена ламп освещения</name>
+                <description>Замена ламп освещения в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="13261" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/ustanovka-signalizacii/</url>
+                <price>5000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Установка автосигнализации</name>
+                <description>Установка автосигнализации в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="13310" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/chistka-kondicionera/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Чистка кондиционера</name>
+                <description>Чистка кондиционера в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="13359" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/promyvka-kondicionera/</url>
+                <price>3000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Промывка кондиционера</name>
+                <description>Промывка кондиционера в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="13408" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/remont-radiatora-kondicionera/</url>
+                <price>4800</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт радиатора кондиционера</name>
+                <description>Ремонт радиатора кондиционера в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="13457" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/proverka-kondicionera/</url>
+                <price>1400</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Проверка кондиционера</name>
+                <description>Проверка кондиционера в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="13506" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/profilaktika-kondicionera/</url>
+                <price>1600</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Профилактика кондиционера</name>
+                <description>Профилактика кондиционера в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="13555" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/antibakterialnaya-obrabotka-kondicionera/</url>
+                <price>2400</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Антибактериальная обработка кондиционера</name>
+                <description>Антибактериальная обработка кондиционера в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="13604" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/ochistka-sistemy-kondicionirovaniya/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Очистка автокондиционера</name>
+                <description>Очистка автокондиционера в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="13653" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-datchika-dmrv/</url>
+                <price>1000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена датчика массового расхода воздуха (ДМРВ)</name>
+                <description>Замена датчика массового расхода воздуха (ДМРВ) в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="13702" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-datchika-abs/</url>
+                <price>1600</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена датчика ABS</name>
+                <description>Замена датчика ABS в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="13751" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-datchika-zadnego-hoda/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена датчика заднего хода</name>
+                <description>Замена датчика заднего хода в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="13800" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-datchika-vklyuchenia-ventilyatora/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена датчика включения вентилятора</name>
+                <description>Замена датчика включения вентилятора в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="13849" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-shetok-startera/</url>
+                <price>3000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена щеток стартера</name>
+                <description>Замена щеток стартера в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="13898" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-datchika-urovnya-topliva/</url>
+                <price>1400</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена датчика уровня топлива</name>
+                <description>Замена датчика уровня топлива в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="13947" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-regulyatora-holostogo-hoda/</url>
+                <price>3000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена регулятора холостого хода</name>
+                <description>Замена регулятора холостого хода в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="13996" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-datchika-parktronika/</url>
+                <price>1400</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена датчика парктроника</name>
+                <description>Замена датчика парктроника в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="14045" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-datchika-skorosti/</url>
+                <price>1600</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена датчика скорости</name>
+                <description>Замена датчика скорости в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="14094" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-datchika-vpusknogo-vozduja/</url>
+                <price>1000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена датчика впускного воздуха</name>
+                <description>Замена датчика впускного воздуха в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="14143" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-datchika-detonatsii/</url>
+                <price>3000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена датчика детонации</name>
+                <description>Замена датчика детонации в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="14192" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-datchika-urovnya-masla/</url>
+                <price>3000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена датчика уровня масла</name>
+                <description>Замена датчика уровня масла в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="14241" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-datchika-drosselnoi-zaslonki/</url>
+                <price>3000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена датчика дроссельной заслонки</name>
+                <description>Замена датчика дроссельной заслонки в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="14290" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-datchika-davleniya-masla/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена датчика давления масла</name>
+                <description>Замена датчика давления масла в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="14339" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-datchika-temperaturi-ohlagdaushei-gidkosti/</url>
+                <price>1000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена датчика температуры охлаждающей жидкости</name>
+                <description>Замена датчика температуры охлаждающей жидкости в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="14389" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/ustanovka-kamery-zadnego-vida/</url>
+                <price>4000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Установка камеры заднего вида</name>
+                <description>Установка камеры заднего вида в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="14438" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/regulirovka-far/</url>
+                <price>1600</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Регулировка фар</name>
+                <description>Регулировка фар в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="14487" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/opressovka-avtokondicionera/</url>
+                <price>3000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Опрессовка автокондиционера</name>
+                <description>Опрессовка автокондиционера в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="14536" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-avtomobilnogo-termostata/</url>
+                <price>3000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена автомобильного термостата</name>
+                <description>Замена автомобильного термостата в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="14585" available="true">
+                <url>https://127.0.0.1:8000/remont-elektrooborudovania/zamena-far-avtomobilya/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена фар автомобиля</name>
+                <description>Замена фар автомобиля в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="14683" available="true">
+                <url>https://127.0.0.1:8000/remont-hodovoy/remont-hodovoy-chasti/</url>
+                <price>8000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт ходовой части</name>
+                <description>Ремонт ходовой части в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="14732" available="true">
+                <url>https://127.0.0.1:8000/remont-hodovoy/diagnostika-abs/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Диагностика  ABS</name>
+                <description>Диагностика  ABS в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="14781" available="true">
+                <url>https://127.0.0.1:8000/remont-hodovoy/remont-rulevogo-upravleniya/</url>
+                <price>4000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт рулевого управления</name>
+                <description>Ремонт рулевого управления в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="14830" available="true">
+                <url>https://127.0.0.1:8000/remont-hodovoy/diagnostika-rulevogo-upravleniya/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Диагностика рулевого управления</name>
+                <description>Диагностика рулевого управления в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="14879" available="true">
+                <url>https://127.0.0.1:8000/remont-hodovoy/remont-gidrousilitelya-rulya/</url>
+                <price>8000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт гидроусилителя руля</name>
+                <description>Ремонт гидроусилителя руля в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="14928" available="true">
+                <url>https://127.0.0.1:8000/remont-hodovoy/remont-rulevoj-rejki/</url>
+                <price>20000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт рулевой рейки</name>
+                <description>Ремонт рулевой рейки в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="14977" available="true">
+                <url>https://127.0.0.1:8000/remont-hodovoy/zamena-rulevoj-rejki/</url>
+                <price>7000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена рулевой рейки</name>
+                <description>Замена рулевой рейки в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="15026" available="true">
+                <url>https://127.0.0.1:8000/remont-hodovoy/diagnostika-rulevoy-reyki/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Диагностика рулевой рейки</name>
+                <description>Диагностика рулевой рейки в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="15075" available="true">
+                <url>https://127.0.0.1:8000/remont-hodovoy/zamena-rulevyh-nakonechnikov/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена рулевых наконечников</name>
+                <description>Замена рулевых наконечников в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="15124" available="true">
+                <url>https://127.0.0.1:8000/remont-hodovoy/zamena-rulevoj-tyagi/</url>
+                <price>3000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена рулевой тяги</name>
+                <description>Замена рулевой тяги в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="15173" available="true">
+                <url>https://127.0.0.1:8000/remont-hodovoy/diagnostika-hodovoj-chasti/</url>
+                <price>1000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Диагностика ходовой части</name>
+                <description>Диагностика ходовой части в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="15222" available="true">
+                <url>https://127.0.0.1:8000/remont-hodovoy/zamena-sharovoj-opory/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена шаровой опоры</name>
+                <description>Замена шаровой опоры в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="15320" available="true">
+                <url>https://127.0.0.1:8000/remont-podveski/remont-i-zamena-zadney-podveski/</url>
+                <price>12000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена задней подвески</name>
+                <description>Замена задней подвески в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="15369" available="true">
+                <url>https://127.0.0.1:8000/remont-podveski/remont-zadney-podveski/</url>
+                <price>12000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт задней подвески</name>
+                <description>Ремонт задней подвески в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="15418" available="true">
+                <url>https://127.0.0.1:8000/remont-podveski/zamena-zadnego-stabilizatora/</url>
+                <price>8000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена заднего стабилизатора</name>
+                <description>Замена заднего стабилизатора в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="15467" available="true">
+                <url>https://127.0.0.1:8000/remont-podveski/zamena-rychaga-zadney-podveski/</url>
+                <price>4000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена рычага задней подвески</name>
+                <description>Замена рычага задней подвески в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="15516" available="true">
+                <url>https://127.0.0.1:8000/remont-podveski/remont-i-zamena-peredney-podveski/</url>
+                <price>1800</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена рычага передней подвески</name>
+                <description>Замена рычага передней подвески в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="15565" available="true">
+                <url>https://127.0.0.1:8000/remont-podveski/zamena-rychaga-peredney-podveski/</url>
+                <price>12000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт передней подвески</name>
+                <description>Ремонт передней подвески в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="15614" available="true">
+                <url>https://127.0.0.1:8000/remont-podveski/zamena-pruzhin-podveski/</url>
+                <price>2800</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена пружин подвески</name>
+                <description>Замена пружин подвески в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="15663" available="true">
+                <url>https://127.0.0.1:8000/remont-podveski/zamena-saylentblokov-peredney-podveski/</url>
+                <price>2400</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена сайлентблоков передней подвески</name>
+                <description>Замена сайлентблоков передней подвески в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="15712" available="true">
+                <url>https://127.0.0.1:8000/remont-podveski/zamena-sajlentblokov-podveski/</url>
+                <price>2400</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена сайлентблоков подвески</name>
+                <description>Замена сайлентблоков подвески в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="15761" available="true">
+                <url>https://127.0.0.1:8000/remont-podveski/zamena-saylentblokov-zadney-podveski/</url>
+                <price>2400</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена сайлентблоков задней подвески</name>
+                <description>Замена сайлентблоков задней подвески в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="15810" available="true">
+                <url>https://127.0.0.1:8000/remont-podveski/remont-kompressora-podveski/</url>
+                <price>6000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт компрессора подвески</name>
+                <description>Ремонт компрессора подвески в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="15859" available="true">
+                <url>https://127.0.0.1:8000/remont-podveski/remont-pnevmopodveski/</url>
+                <price>4000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена и ремонт пневмоподвески</name>
+                <description>Замена и ремонт пневмоподвески в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="15908" available="true">
+                <url>https://127.0.0.1:8000/remont-podveski/zamena-zadnih-amortizatorov/</url>
+                <price>4000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена задних амортизаторов</name>
+                <description>Замена задних амортизаторов в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="15957" available="true">
+                <url>https://127.0.0.1:8000/remont-podveski/zamena-perednih-amortizatorov/</url>
+                <price>4000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена передних амортизаторов</name>
+                <description>Замена передних амортизаторов в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="16006" available="true">
+                <url>https://127.0.0.1:8000/remont-podveski/zamena-zadnih-stoek-amortizatorov/</url>
+                <price>2600</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена задних стоек амортизаторов</name>
+                <description>Замена задних стоек амортизаторов в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="16055" available="true">
+                <url>https://127.0.0.1:8000/remont-podveski/zamena-opory-amortizatora/</url>
+                <price>3200</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена опоры амортизатора</name>
+                <description>Замена опоры амортизатора в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="16104" available="true">
+                <url>https://127.0.0.1:8000/remont-podveski/zamena-podshipnika-stoiki-amortizatora/</url>
+                <price>3000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена подшипника стойки амортизатора</name>
+                <description>Замена подшипника стойки амортизатора в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="16153" available="true">
+                <url>https://127.0.0.1:8000/remont-podveski/zamena-stoek-stabilizatora/</url>
+                <price>1800</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена стоек стабилизатора</name>
+                <description>Замена стоек стабилизатора в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="16202" available="true">
+                <url>https://127.0.0.1:8000/remont-podveski/zamena-vtulok-stabilizatora/</url>
+                <price>1800</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена втулок стабилизатора</name>
+                <description>Замена втулок стабилизатора в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="16252" available="true">
+                <url>https://127.0.0.1:8000/remont-podveski/zamena-rychaga-podveski/</url>
+                <price>2400</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена рычага подвески</name>
+                <description>Замена рычага подвески в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="16301" available="true">
+                <url>https://127.0.0.1:8000/remont-podveski/zamena-pruzhiny-perednej-podveski/</url>
+                <price>4200</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена пружины подвески</name>
+                <description>Замена пружины подвески в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="16350" available="true">
+                <url>https://127.0.0.1:8000/remont-podveski/zamena-podshipnika-perednej-stupicy/</url>
+                <price>1000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена подшипника передней ступицы</name>
+                <description>Замена подшипника передней ступицы в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="16399" available="true">
+                <url>https://127.0.0.1:8000/remont-podveski/diagnostika-podveski/</url>
+                <price>1000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Диагностика подвески</name>
+                <description>Диагностика подвески в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="16448" available="true">
+                <url>https://127.0.0.1:8000/remont-podveski/zamena-stabilizatorov/</url>
+                <price>3600</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена стабилизаторов</name>
+                <description>Замена стабилизаторов в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="16497" available="true">
+                <url>https://127.0.0.1:8000/remont-podveski/zapravka-pnevmopodveski-azotom/</url>
+                <price>7600</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Заправка пневмоподвески азотом</name>
+                <description>Заправка пневмоподвески азотом в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="16546" available="true">
+                <url>https://127.0.0.1:8000/remont-podveski/zamena-vyghimnogo-podshipnika/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена выжимного подшипника</name>
+                <description>Замена выжимного подшипника в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="16595" available="true">
+                <url>https://127.0.0.1:8000/remont-podveski/zamena-podshipnika-pervichnogo-vala/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена подшипника первичного вала</name>
+                <description>Замена подшипника первичного вала в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="16694" available="true">
+                <url>https://127.0.0.1:8000/shinomontag/shinomontazh/</url>
+                <price>4000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Шиномонтаж</name>
+                <description>Шиномонтаж в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="16792" available="true">
+                <url>https://127.0.0.1:8000/tormoznaya-sistema/remont-tormoznoj-sistemy/</url>
+                <price>3000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт тормозной системы</name>
+                <description>Ремонт тормозной системы в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="16841" available="true">
+                <url>https://127.0.0.1:8000/tormoznaya-sistema/diagnostika-tormoznoy-sistemy/</url>
+                <price>3000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Диагностика тормозной системы</name>
+                <description>Диагностика тормозной системы в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="16890" available="true">
+                <url>https://127.0.0.1:8000/tormoznaya-sistema/zamena-perednih-tormoznyh-kolodok/</url>
+                <price>1000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена передних тормозных колодок</name>
+                <description>Замена передних тормозных колодок в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="16939" available="true">
+                <url>https://127.0.0.1:8000/tormoznaya-sistema/zamena-tormoznyh-kolodok/</url>
+                <price>1000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена тормозных колодок</name>
+                <description>Замена тормозных колодок в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="16988" available="true">
+                <url>https://127.0.0.1:8000/tormoznaya-sistema/zamena-zadnih-tormoznyh-kolodok/</url>
+                <price>1000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена задних тормозных колодок</name>
+                <description>Замена задних тормозных колодок в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="17037" available="true">
+                <url>https://127.0.0.1:8000/tormoznaya-sistema/zamena-tormoznyh-diskov/</url>
+                <price>1600</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена тормозных дисков</name>
+                <description>Замена тормозных дисков в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="17086" available="true">
+                <url>https://127.0.0.1:8000/tormoznaya-sistema/zamena-perednih-tormoznyh-diskov/</url>
+                <price>1200</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена передних тормозных дисков</name>
+                <description>Замена передних тормозных дисков в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="17135" available="true">
+                <url>https://127.0.0.1:8000/tormoznaya-sistema/zamena-zadnih-tormoznyh-diskov/</url>
+                <price>1800</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена задних тормозных дисков</name>
+                <description>Замена задних тормозных дисков в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="17184" available="true">
+                <url>https://127.0.0.1:8000/tormoznaya-sistema/remont-i-obsluzhivanie-tormoznogo-supporta/</url>
+                <price>1000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт и обслуживание тормозного суппорта</name>
+                <description>Ремонт и обслуживание тормозного суппорта в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="17233" available="true">
+                <url>https://127.0.0.1:8000/tormoznaya-sistema/zamena-pilnika-tormoznogo-supporta/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена пыльника тормозного суппорта</name>
+                <description>Замена пыльника тормозного суппорта в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="17282" available="true">
+                <url>https://127.0.0.1:8000/tormoznaya-sistema/zamena-porshnya-tormoznogo-supporta/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена поршня тормозного суппорта</name>
+                <description>Замена поршня тормозного суппорта в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="17331" available="true">
+                <url>https://127.0.0.1:8000/tormoznaya-sistema/zamena-supporta-tormoznogo/</url>
+                <price>1000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена суппорта тормозного</name>
+                <description>Замена суппорта тормозного в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="17380" available="true">
+                <url>https://127.0.0.1:8000/tormoznaya-sistema/zamena-tormoznoj-zhidkosti/</url>
+                <price>2400</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена тормозной жидкости</name>
+                <description>Замена тормозной жидкости в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="17429" available="true">
+                <url>https://127.0.0.1:8000/tormoznaya-sistema/remont-tormoznogo-supporta/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Ремонт и замена тормозного суппорта</name>
+                <description>Ремонт и замена тормозного суппорта в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="17478" available="true">
+                <url>https://127.0.0.1:8000/tormoznaya-sistema/prokachka-tormozov/</url>
+                <price>1400</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Прокачка тормозов</name>
+                <description>Прокачка тормозов в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="17527" available="true">
+                <url>https://127.0.0.1:8000/tormoznaya-sistema/zamena-vakyymnogo-usilitelya/</url>
+                <price>3400</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена вакуумного усилителя</name>
+                <description>Замена вакуумного усилителя в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="17576" available="true">
+                <url>https://127.0.0.1:8000/tormoznaya-sistema/zamena-zadnego-tormoznogo-tsilindra/</url>
+                <price>1400</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена заднего тормозного цилиндра</name>
+                <description>Замена заднего тормозного цилиндра в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="17625" available="true">
+                <url>https://127.0.0.1:8000/tormoznaya-sistema/zamena-glavnogo-tormoznogo-tsilindra/</url>
+                <price>1600</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена главного тормозного цилиндра</name>
+                <description>Замена главного тормозного цилиндра в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="17674" available="true">
+                <url>https://127.0.0.1:8000/tormoznaya-sistema/zamena-tormoznij-trubok/</url>
+                <price>1800</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена тормозных трубок</name>
+                <description>Замена тормозных трубок в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="17723" available="true">
+                <url>https://127.0.0.1:8000/tormoznaya-sistema/zamena-kolodok-stoyanochnogo-tormoza/</url>
+                <price>1800</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена колодок стояночного тормоза</name>
+                <description>Замена колодок стояночного тормоза в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="17772" available="true">
+                <url>https://127.0.0.1:8000/tormoznaya-sistema/zamena-tormoznij-shlangov/</url>
+                <price>1400</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена тормозных шлангов</name>
+                <description>Замена тормозных шлангов в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            <offer id="17821" available="true">
+                <url>https://127.0.0.1:8000/tormoznaya-sistema/zamena-trosa-ruchnogo-rormoza/</url>
+                <price>2000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>1</categoryId>
+                <name>Замена троса ручного тормоза</name>
+                <description>Замена троса ручного тормоза в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <delivery>false</delivery>
+                <picture>https://127.0.0.1:8000/img/yml/product.jpg</picture>
+            </offer>
+            </offers>
+    </shop>
+</yml_catalog>

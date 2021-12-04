@@ -1,0 +1,10 @@
+{% if ourWorksImages is not empty %}
+    <h2>Примеры выполненных работ</h2>
+    <div data-block="slider" data-view="landscape">
+        {% for image in ourWorksImages|slice(0,5) %}
+            <figure>
+                <img src="{{ app.request.schemeAndHttpHost ~ image }}"/>
+            </figure>
+        {% endfor %}
+    </div>
+{% endif %}

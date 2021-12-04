@@ -1,0 +1,25 @@
+<div type="button" class="callback-bt_perezvon"
+     id='perethvon0' style="display: block;">
+    <div class="text-call_perezvon">
+        <i class="mango__phone"></i>
+        <span>Заказать<br>звонок</span>
+    </div>
+</div>
+
+<div class="callback-blok_perezvon" id='perethvon' style="display: none;">
+    <div class="close-popup_perezvon"></div>
+    <div class="title-widget_perezvon">Заказать звонок</div>
+    <p class="text-widget_perezvon">
+        {% if 'now'|date('H') in 9..18 %}
+            Мы перезвоним<br>через 30 секунд
+        {% else %}
+            Мы перезвоним<br>утром после 9
+        {% endif %}
+    </p>
+    <img class="flag-ru_perezvon">
+    <span class="box-phone-span-input_perezvon ru-box-phone-span-input_perezvon" data-content="+7">
+            <input id="phoneperezvon" placeholder="(ххх) ххх-хх-хх" class="phone_mask_perezvon"
+                   style="padding-left: 30px; height: 35px; width: 190px;"></span>
+
+    <div class="button-call_perezvon button-widget_perezvon">Позвоните мне</div>
+</div>

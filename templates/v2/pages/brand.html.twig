@@ -1,0 +1,33 @@
+
+{% extends 'v2/base.html.twig' %}
+{% block title %} {{ 'Ремонт '~page.priceBrand.name~'. Автосервис '~page.priceBrand.name~' ПИК в Москве.' }} {% endblock %}
+{% block description %} {% if phone is defined %}{{'Качественный ремонт '~ page.priceBrand.name~' в Москве. Работаем без выходных 9:00 - 21:00 ✔ Заезд в день обращения ✔ Расчет стоимость ремонта '~page.priceBrand.nameRus~'. Автосервис '~page.priceBrand.name|upper~ ' «ПИК» - ☎ '~phone.value }} {% else%} {{'Качественный ремонт '~ page.priceBrand.name~' в Москве.Работаем без выходных 9:00 - 21:00 ✔ Заезд в день обращения ✔ Расчет стоимость ремонта '~page.priceBrand.nameRus~'. Автосервис '~page.priceBrand.name|upper~ ' «ПИК» - ☎ '}}{% endif %}{% endblock %}
+
+{% block header_line %}
+    {{ include('v2/blocks/include/header_models.html.twig', {models : models ?? null, brandPath, brandName : page.priceBrand.name, logo : page.priceBrand.imgLogo, 'topMenu': topMenu, 'leftMenu': leftMenu}) }}
+{% endblock %}
+{% block header_banner %}
+    {{ include('v2/blocks/section/hero.html.twig',{ h1 : block('h1') ?? page.h1, photoBig : page.priceBrand.photoBig, brandName : page.priceBrand.name }) }}
+{% endblock %}
+
+{% block body %}
+    {{ include('elements/_content.html.twig') }}
+    {{ price_list(page) }}
+    {{ brand_models_service(page.priceBrand, page.priceBrand.path) }}
+    {{ service_list(page) }}
+    {{ include('elements/_advantages.html.twig',{brandName: page.priceBrand.name, 'utpImg': page.priceBrand.utpImg}) }}
+    {{ include('elements/_advantages2.html.twig', {brandName: page.priceBrand.name}) }}
+    {{ special_offers(page.brandAndModelName) }}
+    {{ include('elements/_about_company.html.twig', {brandName: page.priceBrand.name, 'aboutImg': page.priceBrand.aboutImg}) }}
+
+    {% if pageWork is not empty %}
+        {% if pageWork is iterable %}
+            {{ include('elements/examples.html.twig', {'pageWork' : pageWork[0]}) }}
+        {% else %}
+            {{ include('elements/examples.html.twig', {'pageWork' : pageWork}) }}
+        {% endif %}
+    {% endif %}
+
+    {{ include('elements/_quote.html.twig') }}
+    {{ include('elements/_team.html.twig', {brandName: page.priceBrand.name}) }}
+{% endblock %}

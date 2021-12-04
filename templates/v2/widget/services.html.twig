@@ -1,0 +1,5 @@
+<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+    {% for service in items %}
+        <a class="price-list-category nav-link {% if(loop.index == 1) %} active {% endif %}" id="v-pills-brands{{ service.id }}-tab" data-toggle="pill" href="#v-pills-brands{{ service.id }}" role="tab" aria-controls="v-pills-brands{{ service.id }}" aria-selected="true">{{ service.name }}</a>
+    {% endfor %}
+</div>

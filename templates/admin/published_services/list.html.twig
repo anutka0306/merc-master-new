@@ -1,0 +1,14 @@
+{% extends '@EasyAdmin/page/blank.html.twig' %}
+
+{% block page_title 'Матрица услуг' %}
+
+{% block content %}
+    <div class="content">
+        <div class="container py-3">
+            <div class="alert alert-primary" role="alert">
+                <p>{{ description }}</p>
+                <a class="btn" href="{{ pathToFile }}" download>Скачать файл<a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

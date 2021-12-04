@@ -1,0 +1,38 @@
+<div class="section-works">
+    <div class="uk-section-large uk-container">
+        <div class="uk-position-relative" data-uk-slideshow="min-height: 410; max-height: 410">
+            <h3 class="section-title"><span>Наши работы</span></h3>
+            <div class="works-block">
+                <ul class="uk-slideshow uk-slideshow-items">
+                    {% for item in items %}
+                        <li>
+                            <div class="works-block__before works-block__big_img">
+                                <img {{ lazy_load(item.beforeImgUrl) }} alt="до"/>
+                                <span>до</span>
+                            </div>
+                            <div class="works-block__after works-block__big_img">
+                                <img {{ lazy_load(item.afterImgUrl) }} alt="после"/>
+                                <span>после</span>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+
+            </div>
+            <div class="works-slider uk-margin-top uk-position-relative">
+                <div tabindex="-1" data-uk-slider="">
+                    <ul class="uk-thumbnav uk-slider-items uk-grid uk-grid-small uk-child-width-1-5@l uk-child-width-1-3@m uk-child-width-1-2">
+                        {% for item in items %}
+                            <li data-uk-slideshow-item="{{ loop.index0 }}">
+                                <img {{ lazy_load(item.afterImgUrl,['uk-width-1-1']) }} alt="work-thumb"/>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                    <a class="uk-position-center-left" href="#" data-uk-slidenav-previous=""
+                       data-uk-slider-item="previous"></a><a class="uk-position-center-right" href="#"
+                                                             data-uk-slidenav-next="" data-uk-slider-item="next"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

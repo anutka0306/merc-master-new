@@ -1,0 +1,23 @@
+<div class="section-gallery">
+    <div class="container container2">
+      <div class="uk-container">
+        <div class="uk-margin-medium-top uk-margin-medium-bottom gallery-slider uk-position-relative">
+          <div tabindex="-1" data-uk-slider="" class="uk-slider uk-slider-container">
+            <ul class="uk-slider-items uk-grid uk-child-width-1-4@l uk-child-width-1-3@m uk-child-width-1-2@s" data-uk-lightbox="data-uk-lightbox" style="transform: translate3d(0px, 0px, 0px);">
+
+{% for item in gallery %}
+              <li tabindex="-1" class="" style="order: 1;">
+                <a href={{ item }}>
+                  <img data-src={{ item}} alt="gallery" uk-img="" src={{ item }}>
+                </a>
+              </li>
+
+{% endfor %}
+            </ul>
+            <a class="uk-position-center-left uk-icon uk-slidenav-previous uk-slidenav" href="#" data-uk-slidenav-previous="" data-uk-slider-item="previous"><svg width="14px" height="24px" viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg" data-svg="slidenav-previous"><polyline fill="none" stroke="#000" stroke-width="1.4" points="12.775,1 1.225,12 12.775,23 "></polyline></svg></a>
+            <a class="uk-position-center-right uk-icon uk-slidenav-next uk-slidenav" href="#" data-uk-slidenav-next="" data-uk-slider-item="next"><svg width="14px" height="24px" viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg" data-svg="slidenav-next"><polyline fill="none" stroke="#000" stroke-width="1.4" points="1.225,23 12.775,12 1.225,1 "></polyline></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

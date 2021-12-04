@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% for file in files %}
+        <sitemap>
+            <loc>{{ app.request.schemeAndHttpHost~'/'~parts_folder_name~'/'~file }}</loc>
+            <lastmod>{{ 'now'|date("Y-m-d") }}</lastmod>
+        </sitemap>
+{% endfor %}
+</sitemapindex>

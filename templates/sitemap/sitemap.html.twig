@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {% for i in 0..sitemaps_count-1 %}
+        <sitemap>
+            <loc>{{ hostname }}/sitemap_{{ i + 1 }}.xml</loc>
+            <lastmod>{{ 'now'|date("Y-m-d") }}</lastmod>
+        </sitemap>
+    {% endfor %}
+</sitemapindex>
+

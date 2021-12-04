@@ -1,0 +1,86 @@
+<div class="header">
+
+  <div class="container container2">
+    <div class="row">
+      <div class="col-sm-5 col-md-2 col-4 header-logo d-flex align-items-center justify-content-center">
+        <a href="/">
+          <img src="{{ asset('img/logo.png') }}" alt="*">
+        </a>
+      </div>
+      <div class="col-8 col-md-7 header_center d-flex align-items-center justify-content-center flex-wrap desktop-tablet">
+        <div class="header-address desktop">
+          <div class="header-address-item">
+            <div class="header-address-item-title">Севастопольский</div>
+            <span>Севастопольский пр. д. 95 б, стр 3</span>
+            <a href="tel:74994441437">+7 (499) 444-14-37</a>
+          </div>
+          <div class="header-address-item">
+            <div class="header-address-item-title">Калужская</div>
+            <span>Научный проезд д.14а, стр.7</span>
+            <a href="tel:74954773396">+7 (495) 477-33-96</a>
+          </div>
+          <div class="header-address-item">
+            <div class="header-address-item-title">Дмитровка</div>
+            <span>Лобненская д.17, стр.5</span>
+            <a href="tel:74994507383">+7 (499) 450-73-83</a>
+          </div>
+          <div class="header-address-item">
+            <div class="header-address-item-title">Удальцова</div>
+            <span>Удальцова, д.60 стр.7</span>
+            <a href="tel:74992880136">+7 (499) 288-01-36</a>
+          </div>
+        </div>
+        <!-- Main menu -->
+        <div class="container container2 text-center mt-3">
+          <div class="row">
+            <div class="col-12">
+              <ul style="margin: 0;">
+                <li>
+                  <a class="punkt" href="/uslugi/">Услуги</a>
+                </li>
+                <li>
+                  <a class="punkt" href="/czenyi/">Цены</a>
+                </li>
+                <li>
+                  <a class="punkt" href="/offers/">Акции</a>
+                </li>
+                {#<li>
+                  <a class="punkt" href="#">Портфолио</a>
+                </li>#}
+                <li>
+                  <a class="punkt" href="/vakancies/">Вакансии</a>
+                </li>
+                <li>
+                  <a class="punkt" href="/o-kompanii/">О нас</a>
+                </li>
+                <li>
+                  <a class="punkt" href="/kontaktyi/">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Main menu end -->
+      </div>
+      <div class="col-sm-5 col-md-2 col-6 header-phones d-flex align-items-center justify-content-center">
+        <div>
+          <div class="header-center-schedule">Время работы: с 08:00 до 22:00</div>
+          <div class="header-center-schedule">Ежедневно, без выходных.</div>
+          <div class="header-center-schedule"><a href="tel:74954773396">+8 (800) 800-88-88</a></div>
+          <div class="header-center-schedule"><a class="whatsapp-button" href="https://wa.me/79854289850">Написать в Whatsapp </a></div>
+        </div>
+      </div>
+      <div class="col-sm-2 col-2 mobil-flex d-flex align-items-center justify-content-center">
+        <button onclick="open_menu()">
+            <img src="{{ asset('img/menu.svg') }}" alt="menu">
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+    function open_menu(){
+        $('#mobile_menu').css({'display':'block'});
+    }
+</script>

@@ -1,0 +1,29 @@
+vich_uploader:
+  db_driver: orm
+
+  mappings:
+    our_works:
+      uri_prefix: /img/our_works
+      upload_destination: '%kernel.project_dir%/public/img/our_works'
+
+    attachments:
+      uri_prefix: /img/our-works
+      upload_destination: '%kernel.project_dir%/public/img/our-works'
+      directory_namer:
+        service: vich_uploader.namer_directory_property
+        options: { property: 'our_works.id' }
+
+    attach:
+      uri_prefix: /img/naschiraboty
+      upload_destination: '%kernel.project_dir%/public/img/naschiraboty'
+      directory_namer:
+        service: vich_uploader.namer_directory_property
+        options: { property: 'nashiraboty.id' }
+
+
+
+
+
+
+
+

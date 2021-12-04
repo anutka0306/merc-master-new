@@ -1,0 +1,12 @@
+{% set buttons = ['Записаться в сервис', 'Получить консультацию', 'Бесплатная диагностика', 'Заказать эвакуатор'] %}
+{% for button in buttons %}
+    <button
+            formaction="tel:{{ phone }}"
+            data-background-color="blue"
+            data-color="white"
+            data-turbo="false"
+            data-primary="true"
+    >
+        {{ button }}
+    </button>
+{% endfor %}

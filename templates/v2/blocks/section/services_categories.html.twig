@@ -1,0 +1,41 @@
+<div class="uk-container">
+    <section class="auto-services">
+        <div class="auto-service-item">
+            <a href="{{ app.request.pathinfo }}pokraska-kuzova/" title="Покраска кузова">
+                <img {{ lazy_load(asset('img/icon/painting.png')) }} alt="Покраска кузова" title="Покраска кузова">
+                <div class="auto-services-text">
+                    <div class="auto-services-name">Покраска кузова</div>
+                    <div class="auto-services-price">от 1 100 руб.</div>
+                </div>
+            </a>
+        </div>
+        <div class="auto-service-item">
+            <a href="{{ app.request.pathinfo }}kuzovnoj-remont/" title="Кузовной ремонт">
+                <img {{ lazy_load(asset('img/icon/body-repair.png')) }} alt="Кузовной ремонт" title="Кузовной ремонт">
+                <div class="auto-services-text">
+                    <div class="auto-services-name">Кузовной ремонт</div>
+                    <div class="auto-services-price">от 1 100 руб.</div>
+                </div>
+            </a>
+        </div>
+        <div class="auto-service-item">
+            <a href="{{ app.request.pathinfo }}ustanovka-avtostekol/" title="Ремонт автостекол">
+                <img {{ lazy_load(asset('img/icon/glasses-repair.png')) }} alt="Ремонт автостекол"
+                                                                           title="Ремонт автостекол">
+                <div class="auto-services-text">
+                    <div class="auto-services-name">Ремонт автостекол</div>
+                    <div class="auto-services-price">от 500 руб.</div>
+                </div>
+            </a>
+        </div>
+        <div class="auto-service-item">
+            <a href="{{ app.request.pathinfo }}detejling/" title="Детейлинг">
+                <img {{ lazy_load(asset('img/icon/detailing.png')) }} alt="Детейлинг" title="Детейлинг">
+                <div class="auto-services-text">
+                    <div class="auto-services-name">Детейлинг</div>
+                    <div class="auto-services-price">от 600 руб.</div>
+                </div>
+            </a>
+        </div>
+    </section>
+</div>

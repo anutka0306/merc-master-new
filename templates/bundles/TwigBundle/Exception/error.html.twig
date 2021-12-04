@@ -1,0 +1,21 @@
+{% extends 'v2/error.html.twig' %}
+{% block title %}{{ status_code }} {{ status_text }} - Произошла ошибка{% endblock %}
+{% block body %}
+    <div class="container">
+        <h2> Произошла ошибка: {{ status_code }} {{ status_text }}</h2>
+
+        <p>К сожалению, произошла ошибка на сервере</p>
+        <p>
+            <a href="{{ path('home') }}">Вернуться на главную</a>.
+        </p>
+    </div>
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    {{ include('v2/scripts/_yandex_metrics.html.twig') }}
+    <script>
+		window.onload = function (){
+			yaCounter41408589.reachGoal('500error');
+		}
+    </script>
+{% endblock %}

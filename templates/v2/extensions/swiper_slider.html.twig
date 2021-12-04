@@ -1,0 +1,14 @@
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        {% for image in files %}
+            <div class="swiper-slide swiper-lazy" data-background="{{ image }}"
+                 data-index="{{ loop.index0 }}">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>

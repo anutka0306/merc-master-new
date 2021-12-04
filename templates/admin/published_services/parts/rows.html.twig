@@ -1,0 +1,16 @@
+{% for priceCategory in priceCategories %}
+    <tr>
+        <td class="bg-dark text-white">{{ priceCategory.fullName }}</td>
+            {% for page in pages %}
+                {{ service_table_cell(page, priceCategory) }}
+            {% endfor %}
+            </tr>
+            {% for priceService in priceCategory.priceServices %}
+                <tr>
+                    <td>{{ priceCategory.fullName }} / {{priceService.name}}</td>
+                    {% for page in pages %}
+                {{ service_table_cell(page, priceService) }}
+            {% endfor %}
+        </tr>
+    {% endfor %}
+{% endfor %}

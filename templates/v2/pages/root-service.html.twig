@@ -1,0 +1,30 @@
+
+{% extends 'v2/base.html.twig' %}
+{#{% block title %} {{ page.metaTitle ? page.metaTitle : (page.h1~' - ') }} {% endblock %}#}
+
+{% block header_line %}
+    {{ include('v2/blocks/include/header.html.twig', {brands : brands ?? null, 'topMenu': topMenu, 'leftMenu': leftMenu}) }}
+{% endblock %}
+{% block header_banner %}
+    {{ include('v2/blocks/section/hero.html.twig',{ h1 : block('h1') ?? page.h1, 'customH1': page.h1 }) }}
+{% endblock %}
+
+{% block body %}
+    {{ include('elements/_content.html.twig') }}
+    {{ price_list(page) }}
+    {#{{ brand_models_service(page.priceBrand, page.priceBrand.path) }}#}
+    {#{{ service_list(page) }}#}
+    {{ include('elements/_advantages.html.twig') }}
+    {{ include('elements/_advantages2.html.twig') }}
+    {{ special_offers(page.brandAndModelName) }}
+    {{ include('elements/_about_company.html.twig') }}
+    {% if pageWork is not empty %}
+        {% if pageWork is iterable %}
+            {{ include('elements/examples.html.twig', {'pageWork' : pageWork[0]}) }}
+        {% else %}
+            {{ include('elements/examples.html.twig', {'pageWork' : pageWork}) }}
+        {% endif %}
+    {% endif %}
+    {{ include('elements/_quote.html.twig') }}
+    {{ include('elements/_team.html.twig') }}
+{% endblock %}

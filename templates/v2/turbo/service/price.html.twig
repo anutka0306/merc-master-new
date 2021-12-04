@@ -1,0 +1,17 @@
+<h2>{{ price_list_title }} цена</h2>
+<table>
+    {% for section in sections %}
+       {% for service in section.priceServices %}
+            <tr>
+                <td>
+                    {% if service.path %}
+                        <a href="{{ app.request.schemeAndHttpHost ~ service.path }}"> {{ service.name }}</a>
+                    {% else %}
+                        {{ service.name }}
+                    {% endif %}
+                </td>
+                <td>от {{ service.price }}&#8381</td>
+            </tr>
+        {% endfor %}
+    {% endfor %}
+</table>

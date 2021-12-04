@@ -1,0 +1,150 @@
+<section id="about" class="numbers-section">
+    <div class="numbers-section__inner">
+        <div class="container">
+            <div class="row row-numbers">
+                <div class="col-12 col-md-7">
+                    <h2 class="numbers__heading">О компании в цифрах</h2>
+                    <ul class="numbers">
+                        <li class="numbers__item">
+                            <span class="numbers__number">2010</span>
+                            <span class="numbers__text">год основания автоцентра</span>
+                        </li>
+                        <li class="numbers__item">
+                            <span class="numbers__number">60</span>
+                            <span class="numbers__text">сотрудников <br>
+                                    в штате</span>
+                        </li>
+                        <li class="numbers__item">
+                            <span class="numbers__number">1500 м²</span>
+                            <span class="numbers__text">площадь автоцентра</span>
+                        </li>
+                        <li class="numbers__item">
+                            <span class="numbers__number">14</span>
+                            <span class="numbers__text">подъемников <br>
+                                    в работе</span>
+                        </li>
+                        <li class="numbers__item">
+                            <span class="numbers__number">&gt;100 000</span>
+                            <span class="numbers__text">наименований запчастей <br>
+                                    на складе в наличии</span>
+                        </li>
+                        <li class="numbers__item">
+                            <span class="numbers__number">100%</span>
+                            <span class="numbers__text">сотрудников имеют <br>
+                                    более 5 лет опыта</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-5">
+                    <div class="numbers__photo">
+                        {% if aboutImg is defined and aboutImg is not null %}
+                            <img style="border-radius:50%" loading="lazy" src="/img/brands/about/{{ aboutImg }}" alt="">
+                            {% else %}
+                            <img loading="lazy" src="{{ asset('img/in_digits.jpg') }}" alt="">
+                        {% endif %}
+                        <ul class="numbers__switcher d-none">
+                            <li class="numbers__switch-wrapper">
+                                <button class="numbers__switch numbers__switch_active"></button>
+                            </li>
+                            <li class="numbers__switch-wrapper">
+                                <button class="numbers__switch"></button>
+                            </li>
+                            <li class="numbers__switch-wrapper">
+                                <button class="numbers__switch"></button>
+                            </li>
+                            <li class="numbers__switch-wrapper">
+                                <button class="numbers__switch"></button>
+                            </li>
+                            <li class="numbers__switch-wrapper">
+                                <button class="numbers__switch"></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="anchor" id="FBForm2"></div>
+
+        <div class="container container_subscribe">
+            <div class="row message-row">
+                <div class="col-lg-8 col-12 message-wrapper">
+                    <div class="message">
+                        <h2 class="message__heading subscribe__message-heading">Доверьте <span class="highlighted"> свой {% if brandName is defined %}{{ brandName }}{% else %}авто{% endif%} </span> <br> профессионалам</h2>
+                        <ul class="message__list">
+                            <li class="message__item">Ремонт {% if brandName is defined %}{{ brandName }}{% endif %} любой сложности</li>
+                            <li class="message__item">Техническое обслуживание {% if brandName is defined %}{{ brandName }}{% endif %}</li>
+                            <li class="message__item">Любые запчасти {% if brandName is defined %}{{ brandName }}{% endif %} в наличии</li>
+                            <li class="message__item">Возможность срочной записи</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-10 border-col"></div>
+                <div class="col-lg-4 col-12">
+                    <div class="subscribe__form form-wrapper">
+                        <h3 class="form__heading subscribe__heading">Записаться на СТО</h3>
+                        <p class="form__text">Оставьте заявку</p>
+                        <form class="form" action="/" method="POST">
+
+                            <div class="form__inner">
+                                <div class="form__item">
+                                    <label for="phoneN2">Введите телефон</label>
+                                    <input class="form__input phoneN2-popup" type="tel" id="phoneN2" name="phone" required="" inputmode="text">
+                                    <input type="hidden" id="urlN2" name="url" value="{{ path(app.request.attributes.get('_route'),
+                                        app.request.attributes.get('_route_params')) }}">
+                                </div>
+
+                            </div>
+                            <button class="button sto-send-button">Отправить заявку</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    $(document).ready(function(){
+        //Скрыть PopUp при загрузке страницы
+        //PopUpHide();
+
+        $(".sto-send-button").click(function (e){
+            e.preventDefault();
+            if($('.phoneN2-popup').val() == ''){
+                alert('Заполните поле телефон');
+                return;
+            }
+            if($('.phoneN2-popup').val().length < 17){
+                alert('Неверный формат номер телефона');
+                return;
+            }
+            let phone = $('.phoneN2-popup').val();
+            let url  = $('#urlN2').val();
+            $.ajax({
+                url:     "/callback_form",
+                type:     "POST", //метод отправки
+                dataType: "html", //формат данных
+
+                data: {
+                    'phone' : phone,
+                    'url' : url,
+                },
+                success: function(response) { //Данные отправлены успешно
+                    //$('.callback-popup-body').html('<p style="text-align: center; font-weight: 700; padding: 20px;">Спасибо! Ваша заявка отправлена.</p>');
+                    console.log(response);
+                },
+                error: function(response) { // Данные не отправлены
+                    console.log('error');
+                }
+            });
+
+
+            //PopUpHide();
+            ResultShow();
+        });
+    });
+
+</script>

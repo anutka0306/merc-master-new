@@ -1,0 +1,31 @@
+
+{% extends 'v2/base.html.twig' %}
+{% block title %} {{ 'Ремонт '~page.priceBrand.name~' '~ page.priceModel.name~'. Автосервис '~page.priceBrand.name~' '~ page.priceModel.name~' ПИК в Москве. '}} {% endblock %}
+{% block description %} {% if phone is defined %}{{'Качественный ремонт  '~ page.priceBrand.name~' '~ page.priceModel.name~' в Москве. Работаем без выходных 9:00 - 21:00 ✔ Заезд в день обращения ✔ Расчет стоимость ремонта '~page.priceBrand.nameRus~' '~ page.priceModel.name~'. Автосервис '~page.priceBrand.name|upper~' '~ page.priceModel.name|upper~ ' «ПИК» - ☎ '~phone.value }} {% else%} {{'Качественный ремонт '~ page.priceBrand.name~' '~ page.priceModel.name~' в Москве. Работаем без выходных 9:00 - 21:00 ✔ Заезд в день обращения ✔ Расчет стоимость ремонта '~page.priceBrand.nameRus~' '~ page.priceModel.name~'. Автосервис '~page.priceBrand.name|upper~' '~ page.priceModel.name|upper~ ' «ПИК» - ☎ '}}{% endif %}{% endblock %}
+
+{% block header_line %}
+    {{ include('v2/blocks/include/header_services.html.twig', {'popularServices': popularServices, logo : page.parent.priceBrand.imgLogo, 'topMenu': topMenu, 'leftMenu': leftMenu}) }}
+{% endblock %}
+{% block header_banner %}
+    {{ include('v2/blocks/section/hero.html.twig',{ h1 : block('h1') ?? page.h1, photoBig : page.priceBrand.photoBig, photoModelBig: page.priceModel.photoBig, brandName : page.priceBrand.name, modelName: page.priceModel.name }) }}
+{% endblock %}
+
+{% block body %}
+    {{ include('elements/_content.html.twig') }}
+    {{ price_list(page) }}
+   {# {{ brand_models_service(page.priceBrand, page.priceBrand.path) }}#}
+    {{ service_list(page) }}
+    {{ include('elements/_advantages.html.twig',{brandName: page.priceBrand.name, modelName: page.priceModel.name, 'utpImg': page.priceBrand.utpImg}) }}
+    {{ include('elements/_advantages2.html.twig', {brandName: page.priceBrand.name, modelName: page.priceModel.name}) }}
+    {{ special_offers(page.brandAndModelName) }}
+    {{ include('elements/_about_company.html.twig', {brandName: page.priceBrand.name, 'aboutImg': page.priceBrand.aboutImg}) }}
+    {% if pageWork is not empty %}
+        {% if pageWork is iterable %}
+            {{ include('elements/examples.html.twig', {'pageWork' : pageWork[0]}) }}
+        {% else %}
+            {{ include('elements/examples.html.twig', {'pageWork' : pageWork}) }}
+        {% endif %}
+    {% endif %}
+    {{ include('elements/_quote.html.twig') }}
+    {{ include('elements/_team.html.twig', {brandName: page.priceBrand.name}) }}
+{% endblock %}

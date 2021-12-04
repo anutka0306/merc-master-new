@@ -1,0 +1,36 @@
+
+  <div class="container-fluid">
+  <div class="row text-top__wrapper">
+    <div class="{% if textImg is not null %}col-md-6 col-12 {% else %}d-none {% endif %} text-top__image"
+            {% if textImg is not null %}
+              style="background: url(/images/page-images/{{ textImg }});"
+            {% endif %}
+    >
+    </div>
+    <div class="{% if textImg is not null %}col-md-6 {% else %}col-md-12 {% endif %} col-12">
+      <div class="text-top__text"> {{ text|raw }}</div>
+
+      <div class="producers d-flex flex-wrap justify-content-between align-items-center">
+          <div class="producer-item">
+            <img src="{{ asset('images/producers/producter1.png') }}" alt="Comfort"/>
+          </div>
+        <div class="producer-item">
+          <img src="{{ asset('images/producers/producter2.png') }}" alt="SunTek"/>
+        </div>
+        <div class="producer-item">
+          <img src="{{ asset('images/producers/producter3.png') }}" alt="EverGlass"/>
+        </div>
+        <div class="producer-item">
+          <img src="{{ asset('images/producers/producter4.png') }}" alt="Oracal"/>
+        </div>
+        <div class="producer-item">
+          <img src="{{ asset('images/producers/producter5.png') }}" alt="Aleaf"/>
+        </div>
+        <div class="producer-item">
+          <img src="{{ asset('images/producers/producter6.png') }}" alt="KochChemie"/>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

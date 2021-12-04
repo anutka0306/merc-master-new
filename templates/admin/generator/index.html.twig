@@ -1,0 +1,13 @@
+{% extends '@EasyAdmin/page/blank.html.twig' %}
+
+{% block page_title 'Генератор' %}
+
+{% block content %}
+    <div class="content">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-md-4 col-12"><a class="btn btn-warning" href="{{ path('admin_generator_rating') }}">Перегенерировать рейтинги</a></div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,88 @@
+<div class="container container2">
+    <div class="row">
+        <div id="feedback-contacts" class="col-md-12">
+            <div class="title5 fs24">Откликнуться на вакансию</div>
+            <form class="ajax_form" action="" method="post" id="form-contact" data-callibri_parse_form="true" />
+                <div class="row">
+                    <div class="col-md-4 col-xs-12">
+                        <input type="text" name="user_name_contact"  placeholder="Ваше имя" class="input-name">
+                        <input type="text" name="user_email_contact"  placeholder="Ваш E-mail" class="input-email">
+                        <input type="text" name="user_phone_contact"  placeholder="+7 (___) ___-____" class="input-phone mask-phone error">
+                        <div class="form-group">
+                            <div class="form__select">
+                                <select name="salon_contact" class="salon form-control error">
+                                    <option value="">Выберите автосервис*</option>
+                                    <option value="Научный">Автосервис на Научном</option>
+                                    <option value="Лобненская">Автосервис на Лобненской</option>
+                                    <option value="Севастопольский">Автосервис на Севастопольском</option>
+                                    <!--<option value="Нижегородка">Автосервис на Нижегородской</option>-->
+                                    <option value="Удальцова">Автосервис на Удальцова</option>
+                                    <!--<option value="Тест">Тест</option>-->
+                                </select></div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-xs-12">
+
+                        <textarea placeholder="Оставьте комментарий" name="comment_contact" id="comment_contact"></textarea>
+                        <span id="csContact" class="countsymbols"></span>
+                    </div>
+
+                    <div class="col-md-6 col-xs-12">
+                        <div class="agreement_row">
+                            <input type="checkbox" name="agreement" id="agreement" checked="" required="">
+                            <label for="agreement">
+                                <a href="/agreement/" target="_blank">Согласен с политикой конфиденциальности</a>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xs-12">
+                        <div class="submit-wrapper">
+                            <input type="submit" name="submit" value="Отправить" class="btn" data-callibri_parse_form="true" id="btn">
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div id="result_form"></div>
+        </div>
+
+    </div>
+</div>
+
+
+<script>
+    $( document ).ready(function() {
+        $("#btn").click(
+            function(event){
+                event.preventDefault();
+                $('#result_form').empty();
+                sendAjaxForm('result_form', 'ajax_form', '{{ (path("vakancy_form")) }}');
+            }
+        );
+    });
+
+    function sendAjaxForm(result_form, ajax_form, url) {
+        $.ajax({
+            url:     url,
+            type:     "POST", {#//метод отправки#}
+            dataType: "html", {#//формат данных#}
+
+            data: $("#form-contact").serialize(),
+            success: function(response) {
+                let result = JSON.parse(response);
+                if(result['errors']){
+                    result['errors'].forEach(function (error) {
+                        $('#result_form').append('<p class="alert alert-danger">' + error + '</p>');
+                    });
+                }else if (result['success']) {
+                    $('#result_form').html('<p class="alert alert-success">Спасибо! Ваше сообщение отправлено.</p>');
+                }
+            },
+            error: function(response) {
+                $('#result_form').html('<p class="alert alert-danger">Ошибка. Данные не отправлены.</p>');
+            }
+        });
+    }
+</script>

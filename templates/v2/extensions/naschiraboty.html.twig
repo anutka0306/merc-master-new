@@ -1,0 +1,64 @@
+
+<div class="services-example">
+    <h3>ПРИМЕРЫ РАБОТ</h3>
+    <div data-uk-slider="data-uk-slider">
+        <ul class="uk-slider-items uk-gird uk-child-width-1-1">
+            {% for item in items %}
+            <li>
+                <div class="uk-grid uk-grid-small uk-child-width-1-2@l" data-uk-grid="data-uk-grid">
+                    <div class="uk-flex-last@l">
+                        <div class="services-example__gallery">
+                            <div data-uk-slideshow="min-height: 410; max-height: 410">
+                                <ul class="uk-slideshow-items" data-uk-lightbox="data-uk-lightbox">
+                                    {% for image in files_from_folder(item.imgFolder,3) %}
+                                        <li><a href="{{ image }}"><img {{ lazy_load(asset(image)) }} alt="" data-uk-cover="data-uk-cover" /></a></li>
+                                    {% endfor %}
+                                </ul>
+                                <ul class="uk-thumbnav uk-margin-top uk-grid uk-grid-small uk-child-width-1-3" data-uk-grid="data-uk-grid">
+                                    {% for image in files_from_folder(item.imgFolder,3) %}
+                                        <li data-uk-slideshow-item="{{ loop.index0 }}"><a href="#"><img {{ lazy_load(asset(image)) }} alt="" /></a></li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-flex-first@l">
+                        <div class="services-example__box">
+                            <div class="services-example__box-title">{{ item.name }}</div>
+                            <p>Выполненные работы:</p>
+                            <div class="services-example__box-list">
+                                {{ item.shortText }}
+                            </div>
+                            {% if item.sum > 0 %}
+                                <p class="accent">В стоимость включены материалы и работа</p>
+                                <div class="services-example__box-price">
+                                    <span>Сумма:</span>
+                                    <span class="value">{{ item.sum|number_format(0, '.', ' ')}} руб.</span>
+                                </div>
+                            {% endif %}
+
+                            <div class="uk-margin-top">
+                                <a class="uk-button uk-button-danger uk-width-1-1" href="{{ path('naschiraboty_item',{'id': item.id}) }}">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+        <div class="uk-margin-top uk-grid uk-grid-small uk-child-width-1-2@s" data-uk-grid="data-uk-grid">
+            <div>
+                <a class="uk-button uk-button-danger uk-width-1-1" href="#" data-uk-slider-item="previous">
+                    Предыдущая работа
+                </a>
+            </div>
+            <div>
+                <a class="uk-button uk-button-danger uk-width-1-1" href="#" data-uk-slider-item="next">
+                    Следующая работа
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

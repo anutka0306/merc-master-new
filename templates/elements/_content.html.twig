@@ -1,0 +1,15 @@
+{% if page.text is not empty %}
+<section class="content__text">
+    <div class="section__heading">
+        <div class="section__heading-text">
+            {% if page.text is not empty %}
+            <h2 class="section__h2">{{ page.h1 }}</h2>
+            {% endif %}
+            {% if page.text is not empty %}
+        {{ page.text|raw }}
+            {% endif %}
+        </div><br><br>
+
+    </div>
+</section>
+{% endif %}

@@ -1,0 +1,60 @@
+{#
+<div id="mobile-menu" data-uk-offcanvas="mode: reveal">
+    <div class="uk-offcanvas-bar"><button class="uk-offcanvas-close" type="button" data-uk-close=""></button>
+        <div class="uk-margin-remove-top">
+            <div class="logo"><img class="logo__img" src="{{ asset('img/Logo.jpg') }}" alt="STYLED.CC" /></div>
+        </div>
+        <div class="uk-margin">
+            <ul class="uk-nav uk-nav-default uk-nav-parent-icon" data-uk-nav="multiple: true">
+                {{ include('v2/blocks/include/main_menu_items.html.twig') }}
+            </ul>
+        </div>
+        <div class="uk-margin">
+            {% for salon in salons(page ?? null) %}
+
+#}{# @var salon \App\Entity\Salon #}{#
+
+                <div class="contact-item">
+                    <a class="phone-link mgo-number-{{ salon.mangoId }}" href="tel:{{ salon.phoneDigits }}" onclick="yaCounter41408589.reachGoal ('{{ salon.yandexTarget }}');location.href='tel:{{ salon.phoneDigits }}'; return true;">
+                        {{ salon.phone }}
+                    </a>
+                    <a class="adress-link" href="{{ salon.googleMapLink }}" target="_blank">
+                        {{ salon.address }}
+                    </a>
+                </div>
+                <hr/>
+            {% endfor %}
+        </div>
+    </div>
+</div>#}
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+    <div class="offcanvas-header">
+        <div class="logo"><img class="logo__img" src="{{ asset('img/Logo.jpg') }}" alt="STYLED.CC" /></div>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">X</button>
+    </div>
+    <div class="offcanvas-body">
+        <div>
+            <ul class="uk-nav uk-nav-default uk-nav-parent-icon mobile-menu__ul" data-uk-nav="multiple: true">
+                {{ include('v2/blocks/include/main_menu_items.html.twig') }}
+            </ul>
+        </div>
+        <div class="uk-margin d-flex justify-content-center">
+            {% for salon in salons(page ?? null) %}
+
+                {# @var salon \App\Entity\Salon #}
+
+                <div class="contact-item">
+                    <a class="phone-link mgo-number-{{ salon.mangoId }}" href="tel:+74956400010{#{{ salon.phoneDigits }}#}" onclick="yaCounter41408589.reachGoal ('{{ salon.yandexTarget }}');location.href='tel:{{ salon.phoneDigits }}'; return true;">
+                        +7(495) 640-00-10{#{{ salon.phone }}#}
+                    </a>
+                    <a class="adress-link" href="{{ salon.googleMapLink }}" target="_blank">
+                        {{ salon.address }}
+                    </a>
+                </div>
+                <hr/>
+            {% endfor %}
+        </div>
+
+    </div>
+</div>

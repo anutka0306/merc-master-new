@@ -1,0 +1,9 @@
+{% extends '@EasyAdmin/page/blank.html.twig' %}
+{% block page_title 'Дерево категорий' %}
+{% block content %}
+    <div class="content">
+        <div class="container py-3">
+            {{ include('admin/price_category_tree/_tree.html.twig',{"categories":categories}) }}
+        </div>
+    </div>
+{% endblock %}

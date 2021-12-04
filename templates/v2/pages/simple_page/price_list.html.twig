@@ -1,0 +1,10 @@
+{% extends 'v2/base.html.twig' %}
+
+{% block body %}
+    {% embed 'v2/embed/black-services-block.html.twig' %}
+        {% block content %}
+            {{ price_list_full() }}
+        {% endblock %}
+    {% endembed %}
+    {{ include('v2/blocks/section/content.html.twig',{text:page.text }) }}
+{% endblock %}

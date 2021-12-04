@@ -1,0 +1,56 @@
+<div class="block_advantages-home">
+    <div class="container container2">
+        <div class="block_advantages-home__wrapper d-flex justify-content-between flex-column flex-sm-row">
+            <div class="block_advantages-home__item d-flex flex-column justify-content-center align-items-center">
+                {% if page.advIcon1 %}
+                <img src="/images/advantages_icons/{{ page.advIcon1 }}" class="hvr-bounce-in" alt="Много лет на рынке"/>
+                {% else %}
+                    <img src="{{ asset('img/advantages-icon1.png') }}" class="hvr-grow" alt="Много лет на рынке"/>
+                {% endif %}
+                {% if page.advText1 %}
+                <span class="hvr-bounce-in">{{ page.advText1 }}</span>
+                {% else %}
+                    <span class="hvr-grow">С 2010 года на рынке</span>
+                {% endif %}
+            </div>
+            <div class="block_advantages-home__item d-flex flex-column justify-content-center align-items-center">
+                {% if page.advIcon2 %}
+                <img src="/images/advantages_icons/{{ page.advIcon2 }}" class="hvr-rotate" alt="Гарантия на все виды работ"/>
+                {% else %}
+                <img src="{{ asset('img/advantages-icon2.png') }}" class="hvr-grow" alt="Гарантия на все виды работ"/>
+                {% endif %}
+                {% if page.advText2 %}
+                <span class="hvr-rotate">{{ page.advText2 }}</span>
+                {% else %}
+                <span class="hvr-grow">Гарантия на все виды работе</span>
+                {% endif %}
+            </div>
+            <div class="block_advantages-home__item d-flex flex-column justify-content-center align-items-center">
+                {% if page.advIcon3 %}
+                <img src="/images/advantages_icons/{{ page.advIcon3 }}" class="hvr-rotate" alt="Свое печатное производство"/>
+                {% else %}
+                <img src="{{ asset('img/advantages-icon3.png') }}" class="hvr-grow" alt="Свое печатное производство"/>
+                {% endif %}
+                {% if page.advText3 %}
+                <span class="hvr-rotate">{{ page.advText3 }}</span>
+                {% else %}
+                <span class="hvr-grow">Свое печатное производство</span>
+                {% endif %}
+
+            </div>
+            <div class="block_advantages-home__item d-flex flex-column justify-content-center align-items-center">
+                {% if page.advIcon4 %}
+                <img src="/images/advantages_icons/{{ page.advIcon4 }}" class="hvr-skew-forward" alt="Свой отдел дизайна"/>
+                {% else %}
+                <img src="{{ asset('img/advantages-icon4.png') }}" class="hvr-grow" alt="Свой отдел дизайна"/>
+                {% endif %}
+                {% if page.advText4 %}
+                <span class="hvr-skew-forward">{{ page.advText4 }}</span>
+                {% else %}
+                <span class="hvr-grow">Свой отдел дизайна</span>
+                {% endif %}
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,20 @@
+{% if page.description is not empty or page.name is not empty %}
+<section class="content__text">
+    <div class="section__heading">
+        <div class="section__heading-text">
+            {% if page.h1 is not empty %}
+            <h2 class="section__h2">{{ page.name|replace({'BRAND':''}) }}</h2>
+            {% endif %}
+            {% if page.description is not empty %}
+        {{ page.description|raw|replace({'BRAND':''}) }}
+            {% endif %}
+            {% if page.text is not empty %}
+                <div class="container">
+            {{ page.text|raw }}
+                </div>
+            {% endif %}
+        </div><br><br>
+
+    </div>
+</section>
+{% endif %}

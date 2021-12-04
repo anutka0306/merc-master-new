@@ -1,0 +1,27 @@
+{% extends 'error.html.twig' %}
+
+{% block breadcrumbs %}
+    <section id="breadcrumbs" style="margin-top: 100px;">
+        <div class="breadcrumbs_wrapper">
+                    <span class="navigation_item">
+                    <a href="/">Главная</a>
+                        <span>&#8646;</span>
+                </span>
+                    <span class="navigation_item">
+                    <span>Старница не найдена</span>
+
+                </span>
+        </div>
+    </section>
+{% endblock %}
+
+{% block body %}
+    <div class="container container2">
+        <div class="alert alert-info" role="alert">
+            <h1 class="title">Данная страница не найдена!</h1>
+        </div>
+        <p >Возможно, Вы неправильно ввели адрес в адресной строке браузера.</p>
+        <p>Что можно сделать?</p>
+        <p>Вы можете посетить другие разделы ресурса, воспользовавшись основным меню сайта или перейти на <a href="/">главную страницу</a> сайта.</p>
+    </div>
+{% endblock %}

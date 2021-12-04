@@ -1,0 +1,46 @@
+{% if items|length > 0 %}
+    <div class="container-fluid partners__wrapper">
+    <div class="row">
+        <div class="col-12">
+
+            <div class="block_promotions">
+                <div class="section-gallery">
+
+                    <h2>Наши партнеры</h2>
+                    <div class="uk-margin-medium-top uk-margin-medium-bottom gallery-slider uk-position-relative" >
+                        <div tabindex="-1" data-uk-slider="" class="uk-slider uk-slider-container" uk-slider="autoplay: true; autoplay-interval: 5000">
+                            <ul class="uk-slider-items uk-grid uk-child-width-1-1@l uk-child-width-1-1@m uk-child-width-1-1@s">
+                                {% for item in items %}
+
+                                    <li tabindex="-1" class="" style="order: 1;">
+                                        <div class="post-slide post-slide__inner-menu_item d-flex align-items-center justify-content-center">
+                                            <div class="post-review">
+
+                                                    {% if item.image is not null %}
+                                                        <img src="/images/partners/{{ item.image }}" alt="{{ item.name }}"/>
+                                                    {% endif %}
+
+
+                                            </div>
+                                        </div>
+                                    </li>
+
+
+                                {% endfor %}
+                            </ul>
+                            <a class="uk-position-center-left uk-icon uk-slidenav-previous uk-slidenav" href="#" data-uk-slidenav-previous="" data-uk-slider-item="previous">
+                                <i class="fa fa-chevron-left"></i>
+                            </a>
+                            <a class="uk-position-center-right uk-icon uk-slidenav-next uk-slidenav" href="#" data-uk-slidenav-next="" data-uk-slider-item="next">
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+        <a id="priceListAnchor"></a>
+</div>
+{% endif %}

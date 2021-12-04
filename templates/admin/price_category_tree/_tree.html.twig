@@ -1,0 +1,10 @@
+<ul>
+    {% for category in categories %}
+        <li>
+                <a target="_blank" href="{{ path('easyadmin',{'entity':'PriceCategory','action':'edit','id':category.id}) }}"><i class="fa fa-pen"></i></a> {{ category.id }}.{{ category.name }} . Услуг - {{ category.priceServices|length }}
+            {% if category.children|length > 0 %}
+                {{ include('admin/price_category_tree/_tree.html.twig',{ "categories" : category.children }) }}
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>

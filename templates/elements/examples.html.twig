@@ -1,0 +1,41 @@
+{% if pageWork is defined and pageWork is not empty %}
+<section class="work-examples__section">
+
+    <!-- example.phtml -->
+    <div class="rey_box">	<div class="rey_examples_box">
+            <div class="rey_bg_dark rey_examples_box_left">
+                <div class="rey_text_white rey_title_stantart">
+                    ПРИМЕРЫ НАШИХ РАБОТ
+                </div>
+                <div class="rey_text_red rey_examples_title_audi">
+                    {% if pageWork.model is not empty%}
+                    <b>{{ pageWork.model|upper }}</b>
+                    {% endif %}
+                    <!--<a href="--><!--"></a>-->
+                </div>
+                <div class="rey_examples_box_img">
+                    <img src="/img/nashiraboty_main/{{ pageWork.mainImg }}" width="100%">
+                </div>
+            </div>
+            <div class="rey_bg_grey_light rey_examples_box_right">
+                <div class="rey_title_stantart">
+                    {{ pageWork.name }}			</div>
+                <div class="rey_text_standart_small rey_text_dark">
+                    <div>{{ pageWork.model }}</div>
+                    <div>Кузов: {{ pageWork.kuzov }}</div>
+                    <div>Год: {{ pageWork.year }}</div>
+                </div>
+                <div class="rey_text_standart rey_examples_listing">
+                    {{ pageWork.shortText|raw }}</div>
+                <div class="rey_text_black rey_text_standart" style="text-align:right">
+                    <span class="rey_text_red">Это важно:</span> Практически при любом визите на сервис мы осматриваем подвеску автомобиля.
+                </div>
+                <div class="rey_examples_box_right_button" style="line-height:7em;text-align:right">
+                    <a class="rey_button_standart" href="/blog/{{ pageWork.id }}">ОТЧЕТ&nbsp;О&nbsp;ПРОЦЕССЕ&nbsp;РЕМОНТА</a>
+                </div>
+            </div>
+        </div>	</div>
+    <!-- example.phtml END -->
+
+</section>
+{% endif %}

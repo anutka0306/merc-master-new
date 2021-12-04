@@ -1,0 +1,131 @@
+{% if photoModelBig is defined and photoModelBig is not null  %}
+    <style>
+        .header__inner::after{
+            content: '';
+            background: url(/img/models/big/{{ photoModelBig }}) no-repeat;
+            width: 640px;
+            height: 310px;
+            background-size: cover;
+            position: absolute;
+            bottom: 80px;
+            right: 20%;
+            overflow-x: hidden;
+            z-index: 15;
+        }
+    </style>
+{% elseif photoBig is defined and photoBig is not null %}
+    <style>
+        .header__inner::after{
+            content: '';
+            background: url(/img/brands/big/{{ photoBig }}) no-repeat;
+            width: 640px;
+            height: 310px;
+            background-size: cover;
+            position: absolute;
+            bottom: 80px;
+            right: 20%;
+            overflow-x: hidden;
+            z-index: 15;
+        }
+    </style>
+{% elseif nashirabotyPhotoBig is defined and nashirabotyPhotoBig is not null %}
+    <style>
+        .header__inner::after{
+            content: '';
+            background: url(/img/nashiraboty_main/{{ nashirabotyPhotoBig }}) no-repeat;
+            width: 640px;
+            height: 310px;
+            background-size: cover;
+            position: absolute;
+            bottom: 80px;
+            right: 20%;
+            overflow-x: hidden;
+            z-index: 15;
+        }
+    </style>
+{% else %}
+    <style>
+        .header__inner::after{
+            content: '';
+            background: url({{ asset('img/lexus/car.png') }}) no-repeat;
+            width: 640px;
+            height: 310px;
+            background-size: cover;
+            position: absolute;
+            bottom: 80px;
+            right: 20%;
+            overflow-x: hidden;
+            z-index: 15;
+        }
+    </style>
+{% endif %}
+
+<div class="header__inner">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <div class="header__main">
+                    <h1><span class="main-heading">
+                            {% if customH1 is defined %}
+                                {{ customH1 }}
+                            {% elseif serviceName is defined %}
+                                    {{ serviceName }}
+                                    {% else %}
+                                Ремонт
+                            {% endif %}
+                                {% if brandName is defined %}
+                                {{ brandName }}
+                                    {% if modelName is defined %}
+                                         {{ modelName }}
+                                        {% endif %}
+                                    {% else %}
+
+                                {% endif %}
+
+                        </span><br>
+                         в Москве.</h1>
+                    <p class="header__text">Оказываем любые услуги по ремонту<br>
+                        и обслуживанию автомобилей, с гарантией.</p>
+                    <a class="button" href="#FBForm2">Записаться сейчас</a>
+                    <ul class="header-info-menu">
+                        <li class="header-info-menu__item">
+                            <div class="header-info-menu__icon"><img src="/img/header-info-1.svg" width="40" height="40" alt=""></div>
+                            <div class="header-info-menu__text">Осмотр ходовой части авто<br>
+                                {% if brandName is defined %}
+                                {{ brandName }}
+                                {% endif %}
+                                {% if modelName is defined %}
+                                    {{ modelName }}
+                                {% endif %}
+                                <span class="highlighted">бесплатно</span></div>
+                        </li>
+                        <li class="header-info-menu__item">
+                            <div class="header-info-menu__icon"><img src="/img/header-info-2.svg" width="39" height="36" alt=""></div>
+                            <div class="header-info-menu__text">Компьютерная <br>
+                                диагностика
+                                {% if brandName is defined %}
+                                    {{ brandName }}
+                                {% endif %}
+                                {% if modelName is defined %}
+                                    {{ modelName }}
+                                {% endif %}
+                                <span class="highlighted">499 р.</span></div>
+                        </li>
+                        <li class="header-info-menu__item">
+                            <div class="header-info-menu__icon"><img src="/img/header-info-3.svg" width="40" height="36" alt=""></div>
+                            <div class="header-info-menu__text">Базовое ТО
+                                {% if brandName is defined %}
+                                    {{ brandName }}
+                                {% endif %}
+                                {% if modelName is defined %}
+                                    {{ modelName }}
+                                {% endif %}
+                                <span class="highlighted">1 500 р.</span></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

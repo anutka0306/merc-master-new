@@ -1,0 +1,34 @@
+
+{% extends 'v2/base.html.twig' %}
+{% block title %}{% if page.priceBrand.name is defined and page.priceModel.name is defined%} {{ page.name~' '~page.priceBrand.name~ ' '~ page.priceModel.name~'. Автосервис '~page.priceBrand.name~' ПИК в Москве.' }} {% elseif page.priceBrand.name is defined %}{{ page.name~' '~page.priceBrand.name~'. Автосервис '~page.priceBrand.name~' ПИК в Москве' }} {% else %} {{ page.name~' в Москве.' }}{% endif%} {% endblock %}
+
+{% block description %} {% if phone is defined %}{% if page.priceBrand.name is defined and page.priceModel.name is defined%}{{page.name~' '~ page.priceBrand.name~' '~ page.priceModel.name~' в Москве.✔ Работаем без выходных 9:00 - 21:00 ✔ Заезд в день обращения ✔ Расчет стоимость ремонта  '~page.priceBrand.nameRus~' '~page.priceModel.nameRus~'. Автосервис '~page.priceBrand.name|upper~'  «ПИК» - ☎ '~phone.value }} {% elseif page.priceBrand.name is defined%} {{page.name~' '~ page.priceBrand.name~' в Москве.✔ Работаем без выходных 9:00 - 21:00 ✔ Заезд в день обращения ✔ Расчет стоимость ремонта  '~page.priceBrand.nameRus~'. Автосервис '~page.priceBrand.name|upper~ ' «ПИК» - ☎ '~phone.value }} {% else%}{{page.name~' в Москве.✔ Работаем без выходных 9:00 - 21:00 ✔ Заезд в день обращения ✔ Расчет стоимость ремонта. Автосервис  «ПИК» - ☎ '~phone.value }} {% endif%} {% else%} {% if page.priceBrand.name is defined and page.priceModel.name is defined%}{{page.name~' '~ page.priceBrand.name~' '~ page.priceModel.name~' в Москве.✔ Работаем без выходных 9:00 - 21:00 ✔ Заезд в день обращения ✔ Расчет стоимость ремонта '~page.priceBrand.nameRus~'. Автосервис '~page.priceBrand.name|upper~' «ПИК» - ☎ '}}{% elseif page.priceBrand.name is defined %}{{page.name~' '~ page.priceBrand.name~' в Москве.✔ Работаем без выходных 9:00 - 21:00 ✔ Заезд в день обращения ✔ Расчет стоимость ремонта '~page.priceBrand.nameRus~' . Автосервис '~page.priceBrand.name|upper~ ' «ПИК» - ☎ '}}{% else %}{{page.name~' в Москве.✔ Работаем без выходных 9:00 - 21:00 ✔ Заезд в день обращения ✔ Расчет стоимость ремонта. Профильный автосервис  «ПИК» - ☎ '}}{% endif %}{% endif %}{% endblock %}
+
+{% block header_line %}
+    {{ include('v2/blocks/include/header_services.html.twig', {brands : brands ?? null, 'topMenu': topMenu, 'leftMenu': leftMenu, 'popularServices': popularServices}) }}
+{% endblock %}
+{% block header_banner %}
+    {{ include('v2/blocks/section/hero.html.twig',{ h1 : block('h1') ?? page.h1, 'serviceName':page.name, 'photoBig':page.priceBrand.photoBig }) }}
+{% endblock %}
+
+{% block body %}
+    {{ include('elements/_content.html.twig') }}
+    {{ price_list(page) }}
+    {% if page.modelId is null %}
+        {{ brand_models_service(page.priceBrand, page.priceBrand.path) }}
+    {% endif %}
+    {{ service_list(page) }}
+    {{ include('elements/_advantages.html.twig', {'utpImg': page.priceBrand.utpImg}) }}
+    {{ include('elements/_advantages2.html.twig') }}
+    {{ special_offers(page.brandAndModelName) }}
+    {{ include('elements/_about_company.html.twig',{'aboutImg': page.priceBrand.aboutImg}) }}
+    {% if pageWork is not empty %}
+        {% if pageWork is iterable %}
+            {{ include('elements/examples.html.twig', {'pageWork' : pageWork[0]}) }}
+        {% else %}
+            {{ include('elements/examples.html.twig', {'pageWork' : pageWork}) }}
+        {% endif %}
+    {% endif %}
+    {{ include('elements/_quote.html.twig') }}
+    {{ include('elements/_team.html.twig') }}
+{% endblock %}
