@@ -236,14 +236,26 @@ class PageController extends AbstractController
     {
         $brand_name = $model->getBrandName();
         $model_id = $model->getModelId();
-        $work = $naschirabotyRepository->findOneBy(['model'=> $model_id], ['id' => 'DESC']);
-        if(empty($work)){
+
+        $work = $naschirabotyRepository->findBy(['model'=> $model_id], ['id' => 'DESC']);
+
+        //Группируем наши работы по категориям
+        $works_arr = array();
+        foreach ($work as $key => $value){
+            var_dump($value->getPriceCategoty()->getValues()[0]->getId());
+            $works_arr[$value->getPriceCategoty()->getValues()[0]->getName()][] = $value;
+            unset($work[$key]);
+        }
+
+//пока закомментируем
+        /*if(empty($work)){
             $allBrandModels = $priceModelRepository->findBy(['priceBrand'=>$model->getBrandId()]);
             $work = $naschirabotyRepository->findBy(['model'=> $allBrandModels], ['id' => 'DESC'], 1);
         }
         if(empty($work)){
             $work = $naschirabotyRepository->findOneBy([],['id' =>'DESC']);
-        }
+        }*/
+
         $popular_services = $priceServiceRepository->findBy(['is_popular' => 1, 'published'=> 1], [], 5);
         if($model_id){
             $model_name = $priceModelRepository->find($model_id)->getName();
@@ -284,7 +296,7 @@ class PageController extends AbstractController
             'popularServices' => $popular_services,
             'topMenu' => $topMenu,
             'leftMenu' => $leftMenu,
-            'pageWork' => $work,
+            'pageWork' => $works_arr,
             'phone' => $phone,
             'phone2'=> $phone2,
             'address'=> $address,

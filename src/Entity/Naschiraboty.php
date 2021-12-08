@@ -114,10 +114,16 @@ class Naschiraboty implements PageInterface
      */
     private $blog_img;
 
+    /**
+     * @ORM\ManyToMany(targetEntity=PriceCategory::class, inversedBy="naschiraboti")
+     */
+    private $price_categoty;
+
     public function __construct()
     {
         $this->priceServices = new ArrayCollection();
         $this->attach = new ArrayCollection();
+        $this->price_categoty = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -405,6 +411,30 @@ class Naschiraboty implements PageInterface
     public function setBlogImg(?string $blog_img): self
     {
         $this->blog_img = $blog_img;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|PriceCategory[]
+     */
+    public function getPriceCategoty(): Collection
+    {
+        return $this->price_categoty;
+    }
+
+    public function addPriceCategoty(PriceCategory $priceCategoty): self
+    {
+        if (!$this->price_categoty->contains($priceCategoty)) {
+            $this->price_categoty[] = $priceCategoty;
+        }
+
+        return $this;
+    }
+
+    public function removePriceCategoty(PriceCategory $priceCategoty): self
+    {
+        $this->price_categoty->removeElement($priceCategoty);
 
         return $this;
     }

@@ -1,0 +1,10 @@
+{% if pageWork is defined and pageWork is not empty %}
+    {{ dump(pageWork) }}
+    {% for key, work in pageWork %}
+        <h1>{{ key }}</h1>
+        {% for item in work %}
+            <p>{{ work[0].name }}</p>
+            {% endfor %}
+
+    {% endfor %}
+{% endif %}

@@ -71,11 +71,17 @@ class PriceCategory
      */
     private $image;
 
+    /**
+     * @ORM\ManyToMany(targetEntity=Naschiraboty::class, mappedBy="price_categoty")
+     */
+    private $naschiraboti;
+
     public function __construct()
     {
         $this->children = new ArrayCollection();
         $this->contents = new ArrayCollection();
         $this->priceServices = new ArrayCollection();
+        $this->naschiraboti = new ArrayCollection();
     }
     
     public function getId(): ?int
@@ -330,6 +336,33 @@ class PriceCategory
             if ($child->getParent() === $this) {
                 $child->setParent(null);
             }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Naschiraboty[]
+     */
+    public function getNaschiraboti(): Collection
+    {
+        return $this->naschiraboti;
+    }
+
+    public function addNaschiraboti(Naschiraboty $naschiraboti): self
+    {
+        if (!$this->naschiraboti->contains($naschiraboti)) {
+            $this->naschiraboti[] = $naschiraboti;
+            $naschiraboti->addPriceCategoty($this);
+        }
+
+        return $this;
+    }
+
+    public function removeNaschiraboti(Naschiraboty $naschiraboti): self
+    {
+        if ($this->naschiraboti->removeElement($naschiraboti)) {
+            $naschiraboti->removePriceCategoty($this);
         }
 
         return $this;

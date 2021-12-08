@@ -21,7 +21,7 @@
     {{ include('elements/_about_company.html.twig', {brandName: page.priceBrand.name, 'aboutImg': page.priceBrand.aboutImg}) }}
     {% if pageWork is not empty %}
         {% if pageWork is iterable %}
-            {{ include('elements/examples.html.twig', {'pageWork' : pageWork[0]}) }}
+            {{ include('elements/examples_model_page.html.twig', {'pageWork' : pageWork}) }}
         {% else %}
             {{ include('elements/examples.html.twig', {'pageWork' : pageWork}) }}
         {% endif %}
