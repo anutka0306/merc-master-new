@@ -119,10 +119,16 @@ class Naschiraboty implements PageInterface
      */
     private $price_categoty;
 
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $url;
+
     public function __construct()
     {
         $this->priceServices = new ArrayCollection();
         $this->attach = new ArrayCollection();
+        $this->gallery = new ArrayCollection();
         $this->price_categoty = new ArrayCollection();
     }
 
@@ -385,23 +391,34 @@ class Naschiraboty implements PageInterface
 
     public function getGallery(): ?array
     {
-        if($this->gallery) {
-            return explode('|', $this->gallery);
-        }else{
+        if ($this->gallery == "''" || !isset($this->gallery) || empty($this->gallery) || is_null($this->gallery)){
             return array();
         }
+        else{
+            return explode('|', $this->gallery);
+        }
+
     }
 
     public function setGallery(?array $gallery): self
     {
-        if($gallery == ''){
+        /*if($gallery == ''){
+            $this->gallery = '';
+        }else{
+            $this->gallery = implode('|',$gallery);
+        }*/
+       /* $this->gallery = '';
+
+        return $this;*/
+        if(empty($gallery)) {
             $this->gallery = '';
         }else{
             $this->gallery = implode('|',$gallery);
         }
-
         return $this;
     }
+
+
 
     public function getBlogImg(): ?string
     {
@@ -435,6 +452,18 @@ class Naschiraboty implements PageInterface
     public function removePriceCategoty(PriceCategory $priceCategoty): self
     {
         $this->price_categoty->removeElement($priceCategoty);
+
+        return $this;
+    }
+
+    public function getUrl(): ?string
+    {
+        return $this->url;
+    }
+
+    public function setUrl(?string $url): self
+    {
+        $this->url = $url;
 
         return $this;
     }

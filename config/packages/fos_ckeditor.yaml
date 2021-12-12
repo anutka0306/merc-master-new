@@ -8,3 +8,8 @@ fos_ck_editor:
     configs:
         my_config:
             toolbar: full
+            required: true
+            filebrowserBrowseRoute: 'elfinder'
+            filebrowserImageBrowseUrl: 'elfinder'
+            filebrowserImageBrowseLinkUrl: 'elfinder'
+            filebrowserBrowseUrl: 'elfinder'

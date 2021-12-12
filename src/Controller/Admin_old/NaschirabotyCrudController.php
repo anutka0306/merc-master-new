@@ -6,6 +6,7 @@ use App\Entity\AttachNashiraboty;
 use App\Entity\Naschiraboty;
 
 use App\Form\AttachmentNashiRabType;
+use App\Form\GallayUploadType;
 use App\Form\ImagesDownloadType;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Assets;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
@@ -19,7 +20,9 @@ use EasyCorp\Bundle\EasyAdminBundle\Field\ImageField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\NumberField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextEditorField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
+use EasyCorp\Bundle\EasyAdminBundle\Form\Type\FileUploadType;
 use Intervention\Image\File;
+use FOS\CKEditorBundle\Form\Type\CKEditorType;
 
 
 class NaschirabotyCrudController extends AbstractCrudController
@@ -40,9 +43,10 @@ class NaschirabotyCrudController extends AbstractCrudController
     {
         return [
             TextField::new('name', 'Название'),
+            TextField::new('url', 'URL'),
             TextField::new('metaTitle')->hideOnIndex(),
             TextField::new('metaDescription')->hideOnIndex(),
-            TextEditorField::new('text', 'Текст')->hideOnIndex(),
+            TextEditorField::new('text', 'Текст')->setFormType(GallayUploadType::class)->hideOnIndex(),
             NumberField::new('sum', 'Стоимость')->hideOnIndex(),
             NumberField::new('sort', 'Сортировка'),
             TextEditorField::new('shortText', 'Короткое описание')->hideOnIndex(),
@@ -57,13 +61,15 @@ class NaschirabotyCrudController extends AbstractCrudController
             CollectionField::new('attach')
                 ->setEntryType(AttachmentNashiRabType::class)
                 ->onlyWhenUpdating()->setLabel('Здесь можно вставлять картинка-описание')->hideOnIndex(),
-            ImageField::new('gallery')
+            ImageField::new('gallery')->setFormType(FileUploadType::class)
                 ->setUploadDir('public/images/ourworks')
                 ->setBasePath('public/images/ourworks')
                 ->setUploadedFileNamePattern('[year]-[month]-[day]-[contenthash].[extension]')
-                ->setFormTypeOption('multiple', true)->setLabel('Галерея под текстом')->hideOnIndex(),
+                ->setFormTypeOption('multiple', true)->setFormTypeOption('allow_delete', true)->setFormTypeOption('upload_delete', function(File $file) {$file = '';})->setLabel('Галерея под текстом')->hideOnIndex(),
             ImageField::new('blog_img', 'Картика, которая отображется на странице блога')->setBasePath('/img/nashiraboty_small/')->setUploadDir('/public/img/nashiraboty_small/')->setHelp('Предпочтительные размеры: 235 Х 140 px'),
         ];
     }
 
 }
+?>
+
