@@ -83,50 +83,7 @@ class NaschirabotyController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/blog/{url}/", name="naschiraboty_item")
-     * @param Naschiraboty $work
-     * @param Request $request
-     * @return Response
-     */
-    public function item(Naschiraboty $work, Request $request, PriceBrandRepository $priceBrandRepository, MenuTopRepository $menuTopRepository, MenuLeftRepository $menuLeftRepository, ConfigRepository $configRepository): Response
-    {
-        if($work instanceof Naschiraboty) {
-            $images = $work->getAttach();
-            $topMenu = $menuTopRepository->findBy([], ['ordering' => 'ASC']);
-            $leftMenu = $menuLeftRepository->findBy([], ['ordering' => 'ASC']);
-            $brands = $priceBrandRepository->findAll();
-
-            $this->phone = $this->configRepository->findOneBy(['name' => 'phone']);
-            $this->phone2 = $this->configRepository->findOneBy(['name' => 'phone2']);
-            $this->address = $this->configRepository->findOneBy(['name' => 'address']);
-            $this->address2 = $this->configRepository->findOneBy(['name' => 'address2']);
-
-            $form = $this->createForm(
-                SalonFilterType::class,
-                null,
-                ['method' => 'GET', 'priceBrand' => null]
-            );
-            $form->handleRequest($request);
-
-            $availableSalons = $this->salon_manager->getSalonsByFilterForm($form, null);
-
-            return $this->render('v2/pages/naschiraboty/item.html.twig', [
-                'page' => $work,
-                'item' => $work,
-                'form' => $form->createView(),
-                'availableSalons' => $availableSalons,
-                'images' => $images,
-                'topMenu' => $topMenu,
-                'leftMenu' => $leftMenu,
-                'brands' => $brands,
-                'phone' => $this->phone,
-                'phone2' => $this->phone2,
-                'address' => $this->address->getValue(),
-                'address2' => $this->address2->getValue(),
-            ]);
-        }
-    }
+    
 
 
 }

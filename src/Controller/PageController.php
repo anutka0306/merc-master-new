@@ -9,6 +9,7 @@ use App\Entity\Service;
 use App\Entity\Simple;
 use App\Entity\Vacancy;
 use App\Entity\ServiceWithout;
+use App\Form\SalonFilterType;
 use App\Repository\ContentRepository;
 use App\Repository\PriceBrandRepository;
 use App\Repository\PriceServiceRepository;
@@ -28,6 +29,7 @@ use App\Repository\MenuTopRepository;
 use App\Repository\MenuLeftRepository;
 use App\Repository\NaschirabotyRepository;
 use App\Repository\ConfigRepository;
+use App\Entity\Naschiraboty;
 
 
 class PageController extends AbstractController
@@ -116,7 +118,13 @@ class PageController extends AbstractController
         $topMenu = $menuTopRepository->findBy([], ['ordering'=>'ASC']);
         $leftMenu = $menuLeftRepository->findBy([], ['ordering'=>'ASC']);
         if ( ! $page = $this->page_repository->findOnePublishedByToken($token)) {
-            throw $this->createNotFoundException(sprintf('Page %s not found',$token));
+            if (! $page = $this->naschirabotyRepository->findOneBy(['url' => str_replace('/','',$token)])) {
+                throw $this->createNotFoundException(sprintf('Page %s not found', $token));
+            }
+        }
+
+        if($page instanceof Naschiraboty){
+            return $this->nashirabory_item($page, $request, $priceBrandRepository, $menuTopRepository, $menuLeftRepository);
         }
 
         if ($page instanceof Brand) {
@@ -459,5 +467,43 @@ class PageController extends AbstractController
         ]);
     }
 
+    public function nashirabory_item(Naschiraboty $work, Request $request, PriceBrandRepository $priceBrandRepository, MenuTopRepository $menuTopRepository, MenuLeftRepository $menuLeftRepository): Response
+    {
+        if($work instanceof Naschiraboty) {
+            $images = $work->getAttach();
+            $topMenu = $menuTopRepository->findBy([], ['ordering' => 'ASC']);
+            $leftMenu = $menuLeftRepository->findBy([], ['ordering' => 'ASC']);
+            $brands = $priceBrandRepository->findAll();
+
+            $this->phone = $this->configRepository->findOneBy(['name' => 'phone']);
+            $this->phone2 = $this->configRepository->findOneBy(['name' => 'phone2']);
+            $this->address = $this->configRepository->findOneBy(['name' => 'address']);
+            $this->address2 = $this->configRepository->findOneBy(['name' => 'address2']);
+
+            $form = $this->createForm(
+                SalonFilterType::class,
+                null,
+                ['method' => 'GET', 'priceBrand' => null]
+            );
+            $form->handleRequest($request);
+
+            /*$availableSalons = $this->salon_manager->getSalonsByFilterForm($form, null);*/
+
+            return $this->render('v2/pages/naschiraboty/item.html.twig', [
+                'page' => $work,
+                'item' => $work,
+                'form' => $form->createView(),
+                /*'availableSalons' => $availableSalons,*/
+                'images' => $images,
+                'topMenu' => $topMenu,
+                'leftMenu' => $leftMenu,
+                'brands' => $brands,
+                'phone' => $this->phone,
+                'phone2' => $this->phone2,
+                'address' => $this->address->getValue(),
+                'address2' => $this->address2->getValue(),
+            ]);
+        }
+    }
 
 }
