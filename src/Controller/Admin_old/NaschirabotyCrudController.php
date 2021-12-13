@@ -71,5 +71,4 @@ class NaschirabotyCrudController extends AbstractCrudController
     }
 
 }
-?>
 
