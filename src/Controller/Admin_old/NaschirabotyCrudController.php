@@ -53,7 +53,7 @@ class NaschirabotyCrudController extends AbstractCrudController
             AssociationField::new('model'),
             AssociationField::new('service'),
             AssociationField::new('price_categoty'),
-            ImageField::new('main_img', 'Картинка, которая отображается в блоке на разных страницах')->setHelp('.png, прозрачный фон, 640Х340')->setUploadDir('/public/img/nashiraboty_main/')->setBasePath('/img/nashiraboty_main/'),
+            ImageField::new('main_img', 'Картинка, которая отображается в блоке на разных страницах')->setHelp('.png, прозрачный фон, 640Х340')->setUploadDir('/public/img/nashiraboty_main/')->setBasePath('/img/nashiraboty_main/')->hideOnIndex(),
             TextField::new('kuzov')->hideOnIndex(),
             TextField::new('year')->hideOnIndex(),
             Field::new('clientName', 'Имя клиента')->hideOnIndex(),

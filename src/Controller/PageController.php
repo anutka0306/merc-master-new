@@ -249,11 +249,20 @@ class PageController extends AbstractController
 
         //Группируем наши работы по категориям
         $works_arr = array();
+        $works_arr_to = array();
+        $works_blocks_services = array();
         foreach ($work as $key => $value){
-            var_dump($value->getPriceCategoty()->getValues()[0]->getId());
             $works_arr[$value->getPriceCategoty()->getValues()[0]->getName()][] = $value;
+            $works_blocks_services[$value->getPriceCategoty()->getValues()[0]->getName()] = $value->getPriceCategoty()->getValues()[0]->getSlug();
             unset($work[$key]);
         }
+        // отделяем ТО
+        if(array_key_exists('Техническое обслуживание', $works_arr)){
+           $works_arr_to['Техническое обслуживание'] = $works_arr['Техническое обслуживание'];
+           unset($works_arr['Техническое обслуживание']);
+        }
+
+        //Получить ссылки на сервисы
 
 //пока закомментируем
         /*if(empty($work)){
@@ -305,6 +314,8 @@ class PageController extends AbstractController
             'topMenu' => $topMenu,
             'leftMenu' => $leftMenu,
             'pageWork' => $works_arr,
+            'pageWorkTo' => $works_arr_to,
+            'worksServices' => $works_blocks_services,
             'phone' => $phone,
             'phone2'=> $phone2,
             'address'=> $address,

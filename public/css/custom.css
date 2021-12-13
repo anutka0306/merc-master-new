@@ -1668,3 +1668,74 @@ label {
 .slick-prev:before, .slick-next:before{
     color: black !important;
 }
+
+/* Наши работы на страницах услуг - новый блок*/
+.ourWorks__modelPage{
+    padding: 130px 0;
+}
+
+.ourWorks__block{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+
+}
+.ourWorks__block_items_wrapper h3{
+    text-align: center;
+}
+.ourWorks__block_to{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.ourWorks__block_items{
+    display: flex;
+}
+.ourWorks__block_item{
+    width: 250px;
+    padding: 20px;
+    margin: 20px 10px;
+    background-color: rgba(255,255,255,0);
+    border: 1px solid #ebeaea;
+    border-bottom-width: 3px;
+}
+.ourWorks__block_item a{
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+a.link_to_service{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: #2E324C;
+    color: #fff;
+    padding: 5px 0;
+}
+.ourWorks__block_to a.link_to_service{
+    max-width: 50%;
+}
+
+@media (max-width: 1200px) {
+    .ourWorks__block{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 800px) {
+    .ourWorks__block_items{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    a.link_to_service{
+        max-width: 50%;
+        margin: 0 auto;
+    }
+    .ourWorks__block_items_wrapper{
+        margin-bottom: 50px;
+    }
+}
+/* Наши работы на страницах услуг - новый блок end*/

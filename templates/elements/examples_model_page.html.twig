@@ -1,10 +1,47 @@
-{% if pageWork is defined and pageWork is not empty %}
-    {{ dump(pageWork) }}
-    {% for key, work in pageWork %}
-        <h1>{{ key }}</h1>
-        {% for item in work %}
-            <p>{{ item.name }}</p>
-            {% endfor %}
+<section class="ourWorks__modelPage">
+    {# Выводим блок ТО #}
+    {% if pageWorkTo is defined and pageWorkTo is not empty %}
+        {% for key, work in pageWorkTo %}
+        <div class="ourWorks__block ourWorks__block_to">
+            <h3>{{ key }}</h3>
+            <div class="ourWorks__block_items">
+                {% for item in work %}
+                    <div class="ourWorks__block_item">
+                        <img width="242" height="161" src="/img/nashiraboty_small/{{ item.blogImg }}" class="" alt="{{ item.name }}" title="{{ item.name }}" draggable="false">
+                        <a href="/{{ item.url }}">{{ item.name }}</a>
+                    </div>
+                {% endfor %}
+            </div>
+            {% if worksServices is defined and worksServices[key] is defined %}
+                <a href="/{{ worksServices[key] }}/" class="link_to_service">{{ key|upper }} МЕРСЕДЕС</a>
+            {% endif %}
+        </div>
+        {% endfor %}
+    {% endif %}
 
-    {% endfor %}
-{% endif %}
+{# Выводим остальные блоки #}
+    {% if pageWork is defined and pageWork is not empty %}
+
+        {% for row in pageWork|batch(2) %}
+            <div class="ourWorks__block">
+                {% for key, work in row %}
+                    <div class="ourWorks__block_items_wrapper">
+                        <h3>{{ key }}</h3>
+                        <div class="ourWorks__block_items">
+                        {% for item in work %}
+                            <div class="ourWorks__block_item">
+                                <img width="242" height="161" src="/img/nashiraboty_small/{{ item.blogImg }}" class="" alt="{{ item.name }}" title="{{ item.name }}" draggable="false">
+                            <a href="/{{ item.url }}">{{ item.name }}</a>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        {% if worksServices is defined and worksServices[key] is defined %}
+                            <a href="/{{ worksServices[key] }}/" class="link_to_service">{{ key|upper }} МЕРСЕДЕС</a>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+
+        {% endfor %}
+    {% endif %}
+</section>
