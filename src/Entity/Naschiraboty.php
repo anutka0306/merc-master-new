@@ -124,6 +124,11 @@ class Naschiraboty implements PageInterface
      */
     private $url;
 
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $universal;
+
     public function __construct()
     {
         $this->priceServices = new ArrayCollection();
@@ -464,6 +469,18 @@ class Naschiraboty implements PageInterface
     public function setUrl(?string $url): self
     {
         $this->url = $url;
+
+        return $this;
+    }
+
+    public function getUniversal(): ?bool
+    {
+        return $this->universal;
+    }
+
+    public function setUniversal(bool $universal): self
+    {
+        $this->universal = $universal;
 
         return $this;
     }

@@ -245,7 +245,7 @@ class PageController extends AbstractController
         $brand_name = $model->getBrandName();
         $model_id = $model->getModelId();
 
-        $work = $naschirabotyRepository->findBy(['model'=> $model_id], ['id' => 'DESC']);
+        $work = $naschirabotyRepository->findBy(['universal'=> 1], ['id' => 'DESC']);
 
         //Группируем наши работы по категориям
         $works_arr = array();

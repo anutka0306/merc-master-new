@@ -12,6 +12,7 @@ use EasyCorp\Bundle\EasyAdminBundle\Config\Assets;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\AssociationField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\BooleanField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\CollectionField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\Configurator\TextEditorConfigurator;
 use EasyCorp\Bundle\EasyAdminBundle\Field\DateTimeField;
@@ -44,6 +45,7 @@ class NaschirabotyCrudController extends AbstractCrudController
         return [
             TextField::new('name', 'Название'),
             TextField::new('url', 'URL'),
+            BooleanField::new('universal', 'Для блока в моделях'),
             TextField::new('metaTitle')->hideOnIndex(),
             TextField::new('metaDescription')->hideOnIndex(),
             TextEditorField::new('text', 'Текст')->setFormType(GallayUploadType::class)->hideOnIndex(),
