@@ -21,9 +21,10 @@
             .</div>
         <div class="row">
             {% for section in sections %}
+                
                 <div class="col-xs-6 col-md-2 center pad5 imgmodel" itemscope="" itemtype="http://schema.org/Product">
                 <div class="caption thumbnail">
-                    <a itemprop="url" href="{{ section.slug }}">
+                    <a itemprop="url" href="/{{ section.slug }}">
                         <img itemprop="image" style="width: 60px; height: auto;" data-src="/images/category_images/{{ section.image }}" src="/images/category_images/{{ section.image }}" alt="{{ section.name }}" class=" lazyloaded">
                         <div itemprop="name" title="{{ section.name }}" style="margin-top: 5px; font-size: 16px; text-align: center;" class="h3"><span class="link">{{ section.name }}</span></div>
                     </a>
