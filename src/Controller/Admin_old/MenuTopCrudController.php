@@ -23,6 +23,7 @@ class MenuTopCrudController extends AbstractCrudController
             IdField::new('id')->onlyOnIndex(),
             TextField::new('name'),
             AssociationField::new('link'),
+            /*AssociationField::new('parent'),*/
             NumberField::new('ordering')
         ];
     }
