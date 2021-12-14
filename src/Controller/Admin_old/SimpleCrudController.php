@@ -3,6 +3,7 @@
 namespace App\Controller\Admin_old;
 
 use App\Entity\Simple;
+use App\Form\GallayUploadType;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\AssociationField;
@@ -14,6 +15,8 @@ use EasyCorp\Bundle\EasyAdminBundle\Field\ImageField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\NumberField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextEditorField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
+use Intervention\Image\File;
+use FOS\CKEditorBundle\Form\Type\CKEditorType;
 
 class SimpleCrudController extends AbstractCrudController
 {
@@ -26,7 +29,7 @@ class SimpleCrudController extends AbstractCrudController
         return $crud
             ->setEntityLabelInPlural('Инфо страница')
             ->setEntityLabelInSingular('Инфо страницы')
-            ->setPaginatorPageSize(100);
+            ->setPaginatorPageSize(100)->addFormTheme('@FOSCKEditor/Form/ckeditor_widget.html.twig');
     }
 
     public function configureFields(string $pageName): iterable
@@ -41,7 +44,7 @@ class SimpleCrudController extends AbstractCrudController
             AssociationField::new('parent', 'Родитель')->hideOnIndex(),
             TextField::new('meta_title', 'Title')->hideOnIndex(),
             TextEditorField::new('meta_description','Description')->hideOnIndex(),
-            TextEditorField::new('text', 'Текст')->hideOnIndex(),
+            TextEditorField::new('text', 'Текст')->setFormType(GallayUploadType::class)->hideOnIndex(),
            /* ImageField::new('text_img', 'Картинка текста (верхнего)')->setUploadDir('/public/images/page-images')->setBasePath('/images/page-images/')->hideOnIndex(),
             ImageField::new('text_down_bg', 'Фоновое изображение нижнего блока текста')->setUploadDir('/public/images/page-images')->setBasePath('/images/page-images/')->hideOnIndex(),
             CodeEditorField::new('text_down', 'Текст нижний')->hideOnIndex(),
