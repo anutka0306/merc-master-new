@@ -4,6 +4,7 @@ namespace App\Controller\Admin_old;
 
 use App\Entity\Content;
 use App\Entity\Model;
+use App\Form\GallayUploadType;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\AssociationField;
@@ -14,6 +15,7 @@ use EasyCorp\Bundle\EasyAdminBundle\Field\TextEditorField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\NumberField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\DateTimeField;
+use FOS\CKEditorBundle\Form\Type\CKEditorType;
 
 class ModelCrudController extends AbstractCrudController
 {
@@ -27,7 +29,7 @@ class ModelCrudController extends AbstractCrudController
         return $crud
             ->setEntityLabelInSingular('Модель')
             ->setEntityLabelInPlural('Модели')
-            ->setPaginatorPageSize(100);
+            ->setPaginatorPageSize(100)->addFormTheme('@FOSCKEditor/Form/ckeditor_widget.html.twig');
     }
 
 
@@ -51,7 +53,7 @@ class ModelCrudController extends AbstractCrudController
             TextField::new('h1', 'H1')->hideOnIndex(),
             TextField::new('metaTitle', 'Title')->hideOnIndex(),
             CodeEditorField::new('meta_description', 'Description')->hideOnIndex(),
-            CodeEditorField::new('text', 'Текст')->hideOnIndex(),
+            CodeEditorField::new('text', 'Текст')->setFormType(GallayUploadType::class)->hideOnIndex(),
             BooleanField::new('published', 'Активна'),
             NumberField::new('rating_value', 'Рейтинг')->hideOnIndex(),
             NumberField::new('rating_count', 'Кол-во голосов')->hideOnIndex(),
