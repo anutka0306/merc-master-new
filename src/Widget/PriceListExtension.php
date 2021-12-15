@@ -62,7 +62,7 @@ class PriceListExtension extends AbstractExtension
             return $twig->render('v2/widget/price_list_service.html.twig', compact('sections', 'price_list_title','page'));
         }
         if($page instanceof RootService or $page instanceof Simple or $page instanceof SpecialOffer or $page instanceof Naschiraboty) {
-            $withoutLinks = true;
+            $withoutLinks = false;
             if($page instanceof RootService) {
                 return $twig->render('v2/widget/price_list_service.html.twig', compact('sections', 'price_list_title','page', 'withoutLinks'));
 

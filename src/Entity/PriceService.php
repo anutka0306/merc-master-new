@@ -247,7 +247,8 @@ class PriceService
             if(!$brandId){
                 $brandId = $content->getParent()->getParent()->getBrandId();
             }
-            $path = $this->slug.$this->getBrandById($brandId, $priceBrandRepository)->getCode().'/'.$model->getModelCode().'/';
+            //$path = $this->slug.$this->getBrandById($brandId, $priceBrandRepository)->getCode().'/'.$model->getModelCode().'/';
+            $path = '/'.$this->slug.'/';
             if($contentRepository->findOneBy(['path' => $path])) {
                 $this->path = $path;
                 return $this;
@@ -266,7 +267,8 @@ class PriceService
             }
             if($modelCode && $brandCode){
 
-                $path = $this->slug.str_replace('-euro','',$brandCode).'/'.$modelCode.'/';
+                /*$path = $this->slug.str_replace('-euro','',$brandCode).'/'.$modelCode.'/';*/
+                $path = '/'.$this->slug.'/';
                 if($contentRepository->findOneBy(['path' => $path])){
 
                     $this->path = $path;
