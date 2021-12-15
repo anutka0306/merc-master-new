@@ -1693,6 +1693,12 @@ label {
 }
 .ourWorks__block_items{
     display: flex;
+    justify-content: center;
+}
+.ourWorks__block_text{
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 30px;
 }
 .ourWorks__block_item{
     width: 250px;
@@ -1710,11 +1716,12 @@ label {
 }
 a.link_to_service{
     display: block;
-    width: 100%;
+    width: 80%;
     text-align: center;
     background: #2E324C;
     color: #fff;
     padding: 5px 0;
+    margin: 0 auto;
 }
 .ourWorks__block_to a.link_to_service{
     max-width: 50%;
@@ -1736,6 +1743,9 @@ a.link_to_service{
     }
     .ourWorks__block_items_wrapper{
         margin-bottom: 50px;
+    }
+    .ourWorks__modelPage{
+        padding: 0;
     }
 }
 /* Наши работы на страницах услуг - новый блок end*/
