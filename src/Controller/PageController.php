@@ -160,7 +160,11 @@ class PageController extends AbstractController
         }
 
         if($page instanceof Sitemap){
-            $query = $em->createQuery("SELECT a FROM App\Entity\Content as a WHERE a.published = 1 ORDER BY a.id");
+           /* $query = $em->createQuery("SELECT a FROM App\Entity\Content as a WHERE a.published =1 ORDER BY a.id UNION SELECT n FROM App\Entity\Naschiraboty as n ORDER BY n.id");
+            $query1 = $em->createQuery("SELECT n FROM App\Entity\Naschiraboty as n ORDER BY n.id");*/
+            $stmt = $em->getConnection();
+            $query = $stmt->executeQuery("SELECT `id`, `name` as `h1`, `path` FROM `content` WHERE `published` = 1 UNION SELECT `id`, `name` as `h1`, `url` as `path` FROM `naschiraboty`")->fetchAll();
+
             $pagination = $paginator->paginate(
                 $query, /* query NOT result */
                 $request->query->getInt('page', 1), /*page number*/
