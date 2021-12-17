@@ -6,7 +6,27 @@
             <h2 class="section__h2">{{ page.h1 }}</h2>
             {% endif %}
             {% if page.text is not empty %}
-        {{ page.text|raw }}
+
+                {% if (textBlocksOrder is defined and textBlocksOrder is not empty) and (textParts is defined) %}
+                    {# вставляем блоки в текст #}
+                    {% for key, textPart in textParts %}
+                        {{ textPart|raw }}
+                            {% if textBlocksOrder[key] is defined  %}
+                                {% if textBlocksOrder[key] == '[nashi_raboti_block]' %}
+                                    <b>Здесь будет блок НАШИ РАБОТЫ</b>
+                                {% elseif textBlocksOrder[key] == '[price_zapros_form]' %}
+                                    <b>Здесь будет блок ЗАПРОСА ПРАЙСА</b>
+                                {% elseif textBlocksOrder[key] == '[video_block]' %}
+                                    <b>Здесь будет блок ВИДЕО</b>
+                                {% else %}
+                                {% endif %}
+
+                            {% endif %}
+                    {% endfor %}
+                {% else %}
+                        {{ page.text|raw }}
+                {% endif %}
+
             {% endif %}
         </div><br><br>
 

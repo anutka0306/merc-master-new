@@ -467,12 +467,42 @@ class PageController extends AbstractController
     
     private function simple(Simple $simple, $topMenu, $leftMenu)
     {
-        return $this->render('v2/pages/simple.html.twig', [
-            'page' => $simple,
-            'topMenu' => $topMenu,
-            'leftMenu' => $leftMenu,
-            'phone' => $this->phone,
-        ]);
+        if($simple->getText()) {
+            /* Разделяем текст по блокам (если они есть) */
+            $textParts = array();
+            $blocksOrder = array();
+            $str = $simple->getText();
+            if($pos = strpos($str, '[nashi_raboti_block]')){
+                $blocksOrder[$pos] = '[nashi_raboti_block]';
+            }
+            if($pos = strpos($str, '[price_zapros_form]')){
+                $blocksOrder[$pos] = '[price_zapros_form]';
+            }
+
+            if($pos = strpos($str, '[video_block]')){
+                $blocksOrder[$pos] = '[video_block]';
+            }
+            ksort($blocksOrder);
+            $count = 0;
+            foreach ($blocksOrder as $key => $value){
+                $blocksOrder[$count] = $value;
+                unset($blocksOrder[$key]);
+                $count++;
+            }
+            $str = str_replace(array('[nashi_raboti_block]', '[price_zapros_form]', '[video_block]'), '%textBlock%', $str);
+
+            $textParts = explode('%textBlock%', $str);
+
+
+            return $this->render('v2/pages/simple.html.twig', [
+                'page' => $simple,
+                'topMenu' => $topMenu,
+                'leftMenu' => $leftMenu,
+                'phone' => $this->phone,
+                'textBlocksOrder' => $blocksOrder,
+                'textParts' => $textParts,
+            ]);
+        }
     }
     
     private function vacancy(Vacancy $vacancy)
