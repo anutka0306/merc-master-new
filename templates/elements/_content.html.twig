@@ -17,7 +17,7 @@
                                 {% elseif textBlocksOrder[key] == '[price_zapros_form]' %}
                                     <b>Здесь будет блок ЗАПРОСА ПРАЙСА</b>
                                 {% elseif textBlocksOrder[key] == '[video_block]' %}
-                                    <b>Здесь будет блок ВИДЕО</b>
+                                    {{ include('elements/video_line.html.twig') }}
                                 {% else %}
                                 {% endif %}
 
