@@ -1,0 +1,16 @@
+<section class="ask-price">
+    <div class="ask-price__wrapper container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-12">
+               <img src="{{ asset('img/ask-price-img.jpg') }}" alt="Запрос прайса">
+            </div>
+            <div class="col-md-6 col-sm-6 col-12">
+                <h3>Запрос стоимости работ</h3>
+                {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+                {{ form_widget(form) }}
+                <button type="submit" class="button">Отправить</button>
+                {{ form_end(form) }}
+            </div>
+        </div>
+    </div>
+</section>

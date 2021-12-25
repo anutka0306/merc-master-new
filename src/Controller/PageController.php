@@ -9,6 +9,7 @@ use App\Entity\Service;
 use App\Entity\Simple;
 use App\Entity\Vacancy;
 use App\Entity\ServiceWithout;
+use App\Form\AskPriceType;
 use App\Form\SalonFilterType;
 use App\Repository\ContentRepository;
 use App\Repository\PriceBrandRepository;
@@ -493,6 +494,8 @@ class PageController extends AbstractController
 
             $textParts = explode('%textBlock%', $str);
 
+            $form = $this->createForm(AskPriceType::class);
+
 
             return $this->render('v2/pages/simple.html.twig', [
                 'page' => $simple,
@@ -501,6 +504,7 @@ class PageController extends AbstractController
                 'phone' => $this->phone,
                 'textBlocksOrder' => $blocksOrder,
                 'textParts' => $textParts,
+                'form' => $form->createView(),
             ]);
         }
     }

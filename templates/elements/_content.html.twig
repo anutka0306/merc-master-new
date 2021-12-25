@@ -15,7 +15,7 @@
                                 {% if textBlocksOrder[key] == '[nashi_raboti_block]' %}
                                     <b>Здесь будет блок НАШИ РАБОТЫ</b>
                                 {% elseif textBlocksOrder[key] == '[price_zapros_form]' %}
-                                    <b>Здесь будет блок ЗАПРОСА ПРАЙСА</b>
+                                    {{ include('elements/ask_price_form.html.twig') }}
                                 {% elseif textBlocksOrder[key] == '[video_block]' %}
                                     {{ include('elements/video_line.html.twig') }}
                                 {% else %}

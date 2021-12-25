@@ -1755,3 +1755,38 @@ a.link_to_service{
     max-width: 100%;
 }
 /* Блок видео ленты в страницах конец*/
+
+/* Форма запроса прайса */
+#ask_price{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 50px;
+}
+.askForm_textarea{
+    width: 100%;
+}
+.askForm_textarea textarea{
+    width: 100%;
+    margin-bottom: 25px;
+}
+.askForm_input{
+    width: 50%;
+    color:#666;
+    font-size: 13px;
+}
+.askForm_input:nth-child(even){
+    padding-right: 10px;
+}
+.askForm_input:nth-child(odd){
+    padding-left: 10px;
+}
+.askForm_input input, .askForm_input select{
+    width: 100%;
+    margin-bottom: 25px;
+    height: 34px;
+}
+#ask_price input::-webkit-input-placeholder, #ask_price textarea::-webkit-input-placeholder, #ask_price select option, #ask_price select::-webkit-input-placeholder {color:#666; font-size: 13px; padding-right: 10px;}
+#ask_price input::-moz-placeholder, #ask_price textarea::-moz-placeholder, #ask_price select::-moz-placeholder          {color:#666; font-size: 13px; padding-right: 10px;}/* Firefox 19+ */
+#ask_price input:-moz-placeholder, #ask_price textarea:-moz-placeholder, #ask_price select:-moz-placeholder           {color:#666; font-size: 13px; padding-right: 10px;}/* Firefox 18- */
+#ask_price input:-ms-input-placeholder, #ask_price textarea:-ms-input-placeholder, #ask_price select:-ms-input-placeholder      {color:#666; font-size: 13px; padding-right: 10px;}
+/* Форма запроса прайса конец */
