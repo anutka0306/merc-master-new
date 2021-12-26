@@ -1,0 +1,13 @@
+{% if nashiRaboty is not empty %}
+<section>
+    <h2>Отчеты о наших работах Мерседес</h2>
+    <div class="ourWorks__block_items">
+        {% for rabota in nashiRaboty %}
+            <div class="ourWorks__block_item">
+            <img width="242" height="161" src="/img/nashiraboty_small/{% if rabota.blogImg is not null %}{{ rabota.blogImg }}{% else %}no-foto.png{% endif %}" class="" alt="{{ rabota.name }}" title="{{ rabota.name }}" draggable="false">
+            <a href="/{{ rabota.url }}">{{ rabota.name }}</a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}

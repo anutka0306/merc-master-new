@@ -473,8 +473,17 @@ class PageController extends AbstractController
             $textParts = array();
             $blocksOrder = array();
             $str = $simple->getText();
+
+            $nashiRabotyIndexes = array();
+            $nashiRaboty = array();
+
             if($pos = strpos($str, '[nashi_raboti_block]')){
                 $blocksOrder[$pos] = '[nashi_raboti_block]';
+                $nashiRabotyIndexes = $this->getNashiraboty4Indexes($simple->getPath());
+                $nashiRabotyAll = $this->naschirabotyRepository->findAll();
+                foreach ($nashiRabotyIndexes as $index){
+                    $nashiRaboty[] = $nashiRabotyAll[$index];
+                }
             }
             if($pos = strpos($str, '[price_zapros_form]')){
                 $blocksOrder[$pos] = '[price_zapros_form]';
@@ -505,6 +514,7 @@ class PageController extends AbstractController
                 'textBlocksOrder' => $blocksOrder,
                 'textParts' => $textParts,
                 'form' => $form->createView(),
+                'nashiRaboty' => $nashiRaboty,
             ]);
         }
     }
@@ -553,6 +563,24 @@ class PageController extends AbstractController
                 'address2' => $this->address2->getValue(),
             ]);
         }
+    }
+
+    private function getNashiraboty4Indexes($url){
+        $uri_hash = hash("sha512", $url);
+        $uri_hash = base64_encode($uri_hash);
+        $symb_arr = str_split($uri_hash);
+        $symb_arr = array_unique($symb_arr);
+        $symb_arr = array_slice($symb_arr, 0, 4);
+        $numb_arr = [];
+
+        foreach($symb_arr as $symbol) {
+            if(is_numeric($symbol)) {
+                $numb_arr[] = $symbol;
+            }else{
+                $numb_arr[] = ord($symbol) - 55;
+            }
+        }
+        return $numb_arr;
     }
 
 }

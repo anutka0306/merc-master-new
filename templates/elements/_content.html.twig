@@ -13,7 +13,7 @@
                         {{ textPart|raw }}
                             {% if textBlocksOrder[key] is defined  %}
                                 {% if textBlocksOrder[key] == '[nashi_raboti_block]' %}
-                                    <b>Здесь будет блок НАШИ РАБОТЫ</b>
+                                    {{ include('elements/nashi_raboty_4_items.html.twig') }}
                                 {% elseif textBlocksOrder[key] == '[price_zapros_form]' %}
                                     {{ include('elements/ask_price_form.html.twig') }}
                                 {% elseif textBlocksOrder[key] == '[video_block]' %}
