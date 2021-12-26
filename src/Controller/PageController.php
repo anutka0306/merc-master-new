@@ -452,6 +452,43 @@ class PageController extends AbstractController
 
         $brands = $priceBrandRepository->findAll();
 
+        if($rootService->getText()) {
+            /* Разделяем текст по блокам (если они есть) */
+            $textParts = array();
+            $blocksOrder = array();
+            $str = $rootService->getText();
+
+            $nashiRabotyIndexes = array();
+            $nashiRaboty = array();
+
+            if($pos = strpos($str, '[nashi_raboti_block]')){
+                $blocksOrder[$pos] = '[nashi_raboti_block]';
+                $nashiRabotyIndexes = $this->getNashiraboty4Indexes($rootService->getPath());
+                $nashiRabotyAll = $this->naschirabotyRepository->findAll();
+                foreach ($nashiRabotyIndexes as $index){
+                    $nashiRaboty[] = $nashiRabotyAll[$index];
+                }
+            }
+            if($pos = strpos($str, '[price_zapros_form]')){
+                $blocksOrder[$pos] = '[price_zapros_form]';
+            }
+
+            if($pos = strpos($str, '[video_block]')){
+                $blocksOrder[$pos] = '[video_block]';
+            }
+            ksort($blocksOrder);
+            $count = 0;
+            foreach ($blocksOrder as $key => $value){
+                $blocksOrder[$count] = $value;
+                unset($blocksOrder[$key]);
+                $count++;
+            }
+            $str = str_replace(array('[nashi_raboti_block]', '[price_zapros_form]', '[video_block]'), '%textBlock%', $str);
+
+            $textParts = explode('%textBlock%', $str);
+
+            $form = $this->createForm(AskPriceType::class);
+
 
         return $this->render('v2/pages/root-service.html.twig', [
             'page' => $rootService,
@@ -463,8 +500,13 @@ class PageController extends AbstractController
             'phone2'=> $this->phone2,
             'address' => $this->address->getValue(),
             'address2'=> $this->address2->getValue(),
+            'textBlocksOrder' => $blocksOrder,
+            'textParts' => $textParts,
+            'form' => $form->createView(),
+            'nashiRaboty' => $nashiRaboty,
         ]);
     }
+        }
     
     private function simple(Simple $simple, $topMenu, $leftMenu)
     {
