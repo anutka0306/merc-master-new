@@ -505,6 +505,9 @@ class PageController extends AbstractController
 
             $form = $this->createForm(AskPriceType::class);
 
+            $models = $this->price_model_repository->findAll();
+            $brand = $this->priceBrandRepository->findOneBy(['name'=>'Mercedes']);
+
 
             return $this->render('v2/pages/simple.html.twig', [
                 'page' => $simple,
@@ -515,6 +518,8 @@ class PageController extends AbstractController
                 'textParts' => $textParts,
                 'form' => $form->createView(),
                 'nashiRaboty' => $nashiRaboty,
+                'models' => $models,
+                'brand'=> $brand,
             ]);
         }
     }
