@@ -61,7 +61,7 @@ class YmlModel
             $offer->id = $page->getId();
             $offer->path = $page->getPath();
             $offer->meta_title = htmlspecialchars($page->getName());
-            $offer->meta_description = htmlspecialchars($page->getName()) . ' в Москве.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874';
+            $offer->meta_description = htmlspecialchars($page->getName()) . ' в Санкт-Петербурге.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ +74993911874';
             $offer->price = $this->price_list_helper->getPrice($page, $this->priceModelRepository);
             $offers[] = $offer;
         }

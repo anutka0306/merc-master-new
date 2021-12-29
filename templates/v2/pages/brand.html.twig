@@ -1,7 +1,7 @@
 
 {% extends 'v2/base.html.twig' %}
-{% block title %} {{ 'Ремонт '~page.priceBrand.name~'. Автосервис '~page.priceBrand.name~' ПИК в Москве.' }} {% endblock %}
-{% block description %} {% if phone is defined %}{{'Качественный ремонт '~ page.priceBrand.name~' в Москве. Работаем без выходных 9:00 - 21:00 ✔ Заезд в день обращения ✔ Расчет стоимость ремонта '~page.priceBrand.nameRus~'. Автосервис '~page.priceBrand.name|upper~ ' «ПИК» - ☎ '~phone.value }} {% else%} {{'Качественный ремонт '~ page.priceBrand.name~' в Москве.Работаем без выходных 9:00 - 21:00 ✔ Заезд в день обращения ✔ Расчет стоимость ремонта '~page.priceBrand.nameRus~'. Автосервис '~page.priceBrand.name|upper~ ' «ПИК» - ☎ '}}{% endif %}{% endblock %}
+{% block title %} {{ 'Ремонт '~page.priceBrand.name~'. Автосервис '~page.priceBrand.name~' ПИК в Санкт-Петербурге.' }} {% endblock %}
+{% block description %} {% if phone is defined %}{{'Качественный ремонт '~ page.priceBrand.name~' в Санкт-Петербурге. Работаем без выходных 9:00 - 21:00 ✔ Заезд в день обращения ✔ Расчет стоимость ремонта '~page.priceBrand.nameRus~'. Автосервис '~page.priceBrand.name|upper~ ' «ПИК» - ☎ '~phone.value }} {% else%} {{'Качественный ремонт '~ page.priceBrand.name~' в Санкт-Петербурге.Работаем без выходных 9:00 - 21:00 ✔ Заезд в день обращения ✔ Расчет стоимость ремонта '~page.priceBrand.nameRus~'. Автосервис '~page.priceBrand.name|upper~ ' «ПИК» - ☎ '}}{% endif %}{% endblock %}
 
 {% block header_line %}
     {{ include('v2/blocks/include/header_models.html.twig', {models : models ?? null, brandPath, brandName : page.priceBrand.name, logo : page.priceBrand.imgLogo, 'topMenu': topMenu, 'leftMenu': leftMenu}) }}

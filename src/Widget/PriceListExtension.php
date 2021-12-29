@@ -57,7 +57,7 @@ class PriceListExtension extends AbstractExtension
         }
 
         //$price_list_title = $this->model->getPricelistTitle();
-        $price_list_title = str_replace('в Москве','- цены:',$page->getName());
+        $price_list_title = str_replace('в Санкт-Петербурге','- цены:',$page->getName());
         if($page instanceof Service){
             return $twig->render('v2/widget/price_list_service.html.twig', compact('sections', 'price_list_title','page'));
         }
@@ -84,7 +84,7 @@ class PriceListExtension extends AbstractExtension
             return '';
         }
 
-        $price_list_title = str_replace('в Москве','- цены:',$page->getName());
+        $price_list_title = str_replace('в Санкт-Петербурге','- цены:',$page->getName());
     if($page instanceof RootService or $page instanceof Service){
         return $twig->render('v2/widget/service_list_root_service.html.twig', compact('sections', 'price_list_title','page'));
     }

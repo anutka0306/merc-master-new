@@ -357,7 +357,7 @@ class PageController extends AbstractController
         }
 
         $services = $this->page_repository->findOneBy(['path' => '/'.$service->getPriceCategory()->getSlug().'/']);
-        $service->setName(str_replace([$brand_name.' '.$model_name, 'в Москве'], ['', ''], $service->getName() ));
+        $service->setName(str_replace([$brand_name.' '.$model_name, 'в Санкт-Петербурге'], ['', ''], $service->getName() ));
 
 
         $phone['value'] = str_replace(array('(',')','-', ' '), '',$service->getPriceBrand()->getPhone());

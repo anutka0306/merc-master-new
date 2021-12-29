@@ -80,7 +80,7 @@ class BrandCrudController extends AbstractCrudController
 
             AssociationField::new('pages', 'Услуги')->setFormTypeOption('choices', $pages)->onlyWhenUpdating(),
             AssociationField::new('pages', 'Услуги')->onlyOnIndex(),
-            AssociationField::new('parent')->setFormTypeOption('choices', [$parents] )->setHelp('Ремонт коробки передач в Москве'),
+            AssociationField::new('parent')->setFormTypeOption('choices', [$parents] )->setHelp('Ремонт коробки передач в Санкт-Петербурге'),
 
         ];
     }
