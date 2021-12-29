@@ -1723,6 +1723,17 @@ a.link_to_service{
     padding: 5px 0;
     margin: 0 auto;
 }
+a.link_to_blog{
+    max-width: 300px;
+    margin: 0 10px;
+    font-size: 16px;
+}
+.link_to_blog__wrapper{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 320px;
+}
 .ourWorks__block_to a.link_to_service{
     max-width: 50%;
 }
