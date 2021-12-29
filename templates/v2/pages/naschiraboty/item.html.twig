@@ -1,7 +1,7 @@
 {% extends 'v2/base.html.twig' %}
 {#{% block title %} {{ page.h1~' - наши работы – ' }} {% endblock %}
 {% block description %}{{ '⭐⭐⭐⭐⭐ '~ page.h1~' – примеры наших работ. Портфолио. ' }}{% endblock %}#}
-{% block canonical %}{{ app.request.schemeAndHttpHost~'/blog/'~page.id~'/' }}{% endblock %}
+{% block canonical %}{{ app.request.schemeAndHttpHost~'/'~page.url~'/' }}{% endblock %}
 {% block header_line %}
 {{ include('v2/blocks/include/header.html.twig', {'brands' : brands, 'topMenu' : topMenu, 'leftMenu': leftMenu}) }}
 {% endblock %}
