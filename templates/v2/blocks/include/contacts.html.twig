@@ -60,18 +60,10 @@
 
             </div>
         </div>
-        {% if (phone is defined and phone is not null) and (address is defined and address is not null) and (phone2 is defined and phone2 is not null) and (address2 is defined and address2 is not null) %}
+
         <div id="picsp_map" class="contacts__map">
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A14e3b1463a1244e275dfd3a5f5e1adf2a93c212e4f5fe0dce207104a8ef270b2&amp;width=100%25&amp;height=577&amp;lang=ru_RU&amp;scroll=true"></script>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A16bb8134eb25eb065fd4854d353714dda57f5efbbc8e75ee10a34aef916f1624&amp;width=100%25&amp;height=577&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
-        {% elseif map is defined and map is not null %}
-            <div id="picsp_map" class="contacts__map">
-                {{ map|raw }}
-            </div>
-            {% else %}
-        <div id="picsp_map" class="contacts__map">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa6873928481b97290cbf36fea62da22dca2ca899103abd8822b8f96ebf4e1056&amp;width=100%25&amp;height=577&amp;lang=ru_RU&amp;scroll=true"></script>
-            </div>
-        {% endif %}
+
     </div>
 </section>
