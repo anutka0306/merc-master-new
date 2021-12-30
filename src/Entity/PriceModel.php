@@ -122,6 +122,11 @@ class PriceModel
      */
     private $naschiraboty;
 
+    /**
+     * @ORM\Column(type="string", length=50, nullable=true)
+     */
+    private $name_short;
+
     public function __construct()
     {
         $this->beforeAfterImages = new ArrayCollection();
@@ -398,6 +403,18 @@ class PriceModel
                 $naschiraboty->setModel(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getNameShort(): ?string
+    {
+        return $this->name_short;
+    }
+
+    public function setNameShort(?string $name_short): self
+    {
+        $this->name_short = $name_short;
 
         return $this;
     }

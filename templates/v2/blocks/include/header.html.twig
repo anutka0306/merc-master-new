@@ -15,7 +15,11 @@
                 <ul class="header__top-line_right">
                     {% if models is defined and models is not null %}
                         {% for model in models %}
+                            {% if model.nameShort is not null %}
+                                <li><a href="/{{ model.code }}">{{ model.nameShort }}</a></li>
+                            {% else %}
                             <li><a href="/{{ model.code }}">{{ model.name }}</a></li>
+                                {% endif %}
                         {% endfor %}
                     {%  endif %}
                 </ul>

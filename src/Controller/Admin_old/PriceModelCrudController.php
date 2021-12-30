@@ -34,6 +34,7 @@ class PriceModelCrudController extends AbstractCrudController
         return [
             Field::new('id', 'ID')->onlyOnIndex(),
             TextField::new('name', 'Название'),
+            TextField::new('name_short', 'Короткое название для верхнего меню')->hideOnIndex(),
             TextField::new('nameRus', 'Название рус.'),
             TextField::new('code', 'Алиас'),
             AssociationField::new('priceBrand', 'Бренд')->setRequired(true),
