@@ -212,7 +212,7 @@ class PageController extends AbstractController
         $phone2['value'] = str_replace(array('(',')','-', ' '), '',$brand->getPriceBrand()->getPhone2());
         $phone2['title'] = $brand->getPriceBrand()->getPhone2();
         if(empty($phone2['value'])){
-            $phone2 = null;
+            $phone2 = $this->phone2;
         }
 
         $address = $brand->getPriceBrand()->getAddress();
@@ -221,7 +221,7 @@ class PageController extends AbstractController
         }
         $address2 = $brand->getPriceBrand()->getAddress2();
         if(empty($address2)){
-            $address2 = null;
+            $address2 = $this->configRepository->findOneBy(['name'=>'address2'])->getValue();
         }
 
         $map = $brand->getPriceBrand()->getMap();
@@ -294,7 +294,7 @@ class PageController extends AbstractController
         $phone2['value'] = str_replace(array('(',')','-', ' '), '',$model->getPriceBrand()->getPhone2());
         $phone2['title'] = $model->getPriceBrand()->getPhone2();
         if(empty($phone2['value'])){
-            $phone2 = null;
+            $phone2 = $this->phone2;
         }
 
         $address = $model->getPriceBrand()->getAddress();
@@ -303,7 +303,7 @@ class PageController extends AbstractController
         }
         $address2 = $model->getPriceBrand()->getAddress2();
         if(empty($address2)){
-            $address2 = null;
+            $address2 = $this->configRepository->findOneBy(['name'=>'address2'])->getValue();
         }
 
         $map = $model->getPriceBrand()->getMap();
@@ -371,7 +371,7 @@ class PageController extends AbstractController
         $phone2['value'] = str_replace(array('(',')','-', ' '), '',$service->getPriceBrand()->getPhone2());
         $phone2['title'] = $service->getPriceBrand()->getPhone2();
         if(empty($phone2['value'])){
-            $phone2 = null;
+            $phone2 = $this->phone2;
         }
 
         $address = $service->getPriceBrand()->getAddress();
@@ -380,7 +380,7 @@ class PageController extends AbstractController
         }
         $address2 = $service->getPriceBrand()->getAddress2();
         if(empty($address2)){
-            $address2 = null;
+            $address2 = $this->address->getValue();
         }
 
         $map = $service->getPriceBrand()->getMap();
