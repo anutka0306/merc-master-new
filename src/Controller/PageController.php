@@ -310,6 +310,7 @@ class PageController extends AbstractController
         if(empty($map)){
             $map = null;
         }
+        $models = $this->price_model_repository->findAll();
 
         return $this->render('v2/pages/model.html.twig', [
             'page' => $model,
@@ -326,6 +327,7 @@ class PageController extends AbstractController
             'address'=> $address,
             'address2'=> $address2,
             'map' => $map,
+            'models' => $models,
         ]);
     }
     
@@ -488,6 +490,7 @@ class PageController extends AbstractController
             $textParts = explode('%textBlock%', $str);
 
             $form = $this->createForm(AskPriceType::class);
+            $models = $this->price_model_repository->findAll();
 
 
         return $this->render('v2/pages/root-service.html.twig', [
@@ -504,6 +507,7 @@ class PageController extends AbstractController
             'textParts' => $textParts,
             'form' => $form->createView(),
             'nashiRaboty' => $nashiRaboty,
+            'models' => $models,
         ]);
     }
         }

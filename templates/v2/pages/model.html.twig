@@ -4,7 +4,8 @@
 {% block description %} {% if phone is defined %}{{'Качественный ремонт  '~ page.priceBrand.name~' '~ page.priceModel.name~' в Санкт-Петербурге. Работаем без выходных 9:00 - 21:00 ✔ Заезд в день обращения ✔ Расчет стоимость ремонта '~page.priceBrand.nameRus~' '~ page.priceModel.name~'. Автосервис '~page.priceBrand.name|upper~' '~ page.priceModel.name|upper~ ' «ПИК» - ☎ '~phone.value }} {% else%} {{'Качественный ремонт '~ page.priceBrand.name~' '~ page.priceModel.name~' в Санкт-Петербурге. Работаем без выходных 9:00 - 21:00 ✔ Заезд в день обращения ✔ Расчет стоимость ремонта '~page.priceBrand.nameRus~' '~ page.priceModel.name~'. Автосервис '~page.priceBrand.name|upper~' '~ page.priceModel.name|upper~ ' «ПИК» - ☎ '}}{% endif %}{% endblock %}
 
 {% block header_line %}
-    {{ include('v2/blocks/include/header_services.html.twig', {'popularServices': popularServices, logo : page.parent.priceBrand.imgLogo, 'topMenu': topMenu, 'leftMenu': leftMenu}) }}
+    {#{{ include('v2/blocks/include/header_services.html.twig', {'popularServices': popularServices, logo : page.parent.priceBrand.imgLogo, 'topMenu': topMenu, 'leftMenu': leftMenu}) }}#}
+    {{ include('v2/blocks/include/header.html.twig', {models : models ?? null, 'topMenu': topMenu, 'leftMenu': leftMenu}) }}
 {% endblock %}
 {% block header_banner %}
     {{ include('v2/blocks/section/hero.html.twig',{ h1 : block('h1') ?? page.h1, photoBig : page.priceBrand.photoBig, photoModelBig: page.priceModel.photoBig, brandName : page.priceBrand.name, modelName: page.priceModel.name }) }}
