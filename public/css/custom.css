@@ -1814,3 +1814,20 @@ a.link_to_blog{
 #ask_price input:-moz-placeholder, #ask_price textarea:-moz-placeholder, #ask_price select:-moz-placeholder           {color:#666; font-size: 13px; padding-right: 10px;}/* Firefox 18- */
 #ask_price input:-ms-input-placeholder, #ask_price textarea:-ms-input-placeholder, #ask_price select:-ms-input-placeholder      {color:#666; font-size: 13px; padding-right: 10px;}
 /* Форма запроса прайса конец */
+
+/* Галерея внутри текста страниц Наши работы */
+.nashiraboty__inside-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.nashiraboty__inside-gallery img{
+    display: block;
+    padding: 3px;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+/* Галерея внутри текста страниц Наши работы конец */

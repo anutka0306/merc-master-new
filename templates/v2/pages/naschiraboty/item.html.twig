@@ -43,7 +43,11 @@
             </div>
         </div>
         <div class="nashiraboty__text">
-            {{ page.text|raw }}
+            {% if text is empty %}
+                {{ page.text|raw }}
+            {% else %}
+                {{ text|raw }}
+            {% endif %}
         </div>
 
         {% if page.gallery is not null and page.gallery is not empty %}

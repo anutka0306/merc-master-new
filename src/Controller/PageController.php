@@ -14,6 +14,7 @@ use App\Form\SalonFilterType;
 use App\Repository\ContentRepository;
 use App\Repository\PriceBrandRepository;
 use App\Repository\PriceServiceRepository;
+use Doctrine\ORM\Query\ResultSetMappingBuilder;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -597,6 +598,32 @@ class PageController extends AbstractController
             );
             $form->handleRequest($request);
 
+
+//Замена шорткодов галереи в тексте
+            $text = '';
+            if(!is_null($work->getText())){
+                $text = str_replace('"','\'',$work->getText());
+                /*$regex = "/(\[su_custom_gallery source).*\[\/su_custom_gallery\]/";*/
+                $regex = "/(\[su_custom_gallery source).*(\[\/su_custom_gallery\])?/";
+                $result = preg_match_all($regex, $text, $out);
+                if(!empty($result)){
+                    $media_gallery_index = array();
+                    $media_gallery = '';
+                    for($i=0; $i<$result; $i++) {
+                        $media_regex = "/media: ((\d)*(,)?)*/";
+                        $media_result = preg_match_all($media_regex, $out[0][$i], $media_out);
+
+
+                            $media_out[0][0] = str_replace('media: ',',', $media_out[0][0]);
+                            $media_out[0][0] = trim($media_out[0][0], ',');
+                            $media_gallery_index = explode(',', $media_out[0][0]);
+                            $media_gallery = $this->createWorkGallery($media_gallery_index);
+
+                        $text = str_replace($out[0][$i], $media_gallery, $text);
+                    }
+                }
+            }
+
             /*$availableSalons = $this->salon_manager->getSalonsByFilterForm($form, null);*/
 
             return $this->render('v2/pages/naschiraboty/item.html.twig', [
@@ -612,6 +639,7 @@ class PageController extends AbstractController
                 'phone2' => $this->phone2,
                 'address' => $this->address->getValue(),
                 'address2' => $this->address2->getValue(),
+                'text' => $text,
             ]);
         }
     }
@@ -632,6 +660,21 @@ class PageController extends AbstractController
             }
         }
         return $numb_arr;
+    }
+
+    private function createWorkGallery($gallery_index){
+        $rsm = new ResultSetMappingBuilder($this->em);
+        $gallery_code = '<div class="nashiraboty__inside-gallery">';
+        foreach ($gallery_index as $key => $value){
+
+            $stmt = $this->em->getConnection();
+            $query = $stmt->executeQuery("SELECT `meta_value` FROM yup_postmeta WHERE `post_id` ='".$value."'")->fetchAll();
+            if($query[0]["meta_value"]) {
+                $gallery_code .= "<img width='200' src='/uploads/" . $query[0]["meta_value"] . "'>";
+            }
+        }
+        $gallery_code .= '</div>';
+        return $gallery_code;
     }
 
 }
