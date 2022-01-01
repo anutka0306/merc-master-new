@@ -613,11 +613,12 @@ class PageController extends AbstractController
                         $media_regex = "/media: ((\d)*(,)?)*/";
                         $media_result = preg_match_all($media_regex, $out[0][$i], $media_out);
 
-
-                            $media_out[0][0] = str_replace('media: ',',', $media_out[0][0]);
+                        if(isset($media_out[0][0])) {
+                            $media_out[0][0] = str_replace('media: ', ',', $media_out[0][0]);
                             $media_out[0][0] = trim($media_out[0][0], ',');
                             $media_gallery_index = explode(',', $media_out[0][0]);
                             $media_gallery = $this->createWorkGallery($media_gallery_index);
+                        }
 
                         $text = str_replace($out[0][$i], $media_gallery, $text);
                     }
