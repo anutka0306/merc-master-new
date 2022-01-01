@@ -369,13 +369,13 @@ h1 {
     color: #2a2e47;
 
 }
-.section__heading-text ul{
+.section__heading-text ul, .section__heading-text ol{
     width: 50%;
     text-align: left;
     margin: 0 auto;
 }
 @media (max-width: 800px) {
-    .section__heading-text ul {
+    .section__heading-text ul, .section__heading-text ol {
         width: 90%;
     }
 }
