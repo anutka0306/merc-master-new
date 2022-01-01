@@ -22,6 +22,9 @@
     {{ special_offers(page.brandAndModelName) }}
     {{ include('elements/_about_company.html.twig') }}
     {{ include('elements/examples.html.twig', {'pageWork' : pageWork}) }}
+    {% if video is defined and video is not empty %}
+        {{ include('elements/video.html.twig') }}
+    {% endif %}
     {{ include('elements/_quote.html.twig') }}
     {{ include('elements/_team.html.twig') }}
 {% endblock %}

@@ -609,6 +609,7 @@ class PageController extends AbstractController
 
             $models = $this->price_model_repository->findAll();
             $brand = $this->priceBrandRepository->findOneBy(['name'=>'Mercedes']);
+            $video = $this->videoRepository->findBy([],[],3);
 
 
             return $this->render('v2/pages/simple.html.twig', [
@@ -622,6 +623,7 @@ class PageController extends AbstractController
                 'nashiRaboty' => $nashiRaboty,
                 'models' => $models,
                 'brand'=> $brand,
+                'video' => $video,
             ]);
         }
     }

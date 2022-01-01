@@ -14,13 +14,15 @@ use App\Repository\MenuTopRepository;
 use App\Repository\MenuLeftRepository;
 use App\Repository\NaschirabotyRepository;
 use App\Repository\ConfigRepository;
+use App\Entity\Video;
+use App\Repository\VideoRepository;
 
 class HomeController extends AbstractController
 {
     /**
      * @Route("/", name="home")
      */
-    public function index(ContentRepository $repository, PriceBrandRepository $priceBrandRepository, MenuTopRepository $menuTopRepository, MenuLeftRepository $menuLeftRepository, NaschirabotyRepository $naschirabotyRepository, ConfigRepository $configRepository, PriceModelRepository $priceModelRepository)
+    public function index(ContentRepository $repository, PriceBrandRepository $priceBrandRepository, MenuTopRepository $menuTopRepository, MenuLeftRepository $menuLeftRepository, NaschirabotyRepository $naschirabotyRepository, ConfigRepository $configRepository, PriceModelRepository $priceModelRepository, VideoRepository $videoRepository)
     {
         $page = $repository->findOneBy(['path'=>'/']);
         $brand = $priceBrandRepository->findOneBy(['name'=>'Mercedes']);
@@ -33,6 +35,7 @@ class HomeController extends AbstractController
         $this->phone2 = $configRepository->findOneBy(['name' => 'phone2']);
         $this->address = $configRepository->findOneBy(['name' => 'address'])->getValue();
         $this->address2 = $configRepository->findOneBy(['name'=> 'address2'])->getValue();
+        $video = $videoRepository->findBy([],[],3);
         
         return $this->render('v2/pages/home/index.html.twig', [
             'page' => $page,
@@ -46,7 +49,8 @@ class HomeController extends AbstractController
             'phone2' => $this->phone2,
             'address' => $this->address,
             'address2' => $this->address2,
-            'customH1' => 'Ремонт авто'
+            'customH1' => 'Ремонт авто',
+            'video' => $video,
         ]);
     }
 
