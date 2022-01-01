@@ -1,4 +1,2 @@
 User-agent: *
-Disallow: /admin
-Host: pikms.ru
-Sitemap: https://pikms.ru/sitemap.xml
+Disallow: /
