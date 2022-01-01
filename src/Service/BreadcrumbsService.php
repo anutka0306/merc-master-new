@@ -44,7 +44,7 @@ class BreadcrumbsService
         $chain = [];
         $item  = new BreadcrumbsItemDTO($page->getName(), $page->getPath());
         if ($page instanceof Content && $page->getId() === 1) {
-            $item->name = 'Главная';
+            $item->name = 'Mercedes';
         }
         $chain[] = $item;
         $parent  = $page->getParent();
