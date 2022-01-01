@@ -1,0 +1,16 @@
+<section class="video-line">
+    <h2>Видео Mercedes</h2>
+    <p>Видео отчеты наших работ по ремонту автомобилей Мерседес</p>
+    <div class="video-line__wrapper container">
+        <div class="row">
+{% for item in video %}
+            <div class="col-md-3 col-sm-6 col-12 video-line__elem">
+                <iframe width="560" height="315" src="{{ item.link }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+      {% endfor %}
+
+        </div>
+
+    </div>
+</section>

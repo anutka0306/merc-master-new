@@ -27,6 +27,11 @@
             {{ include('elements/examples.html.twig', {'pageWork' : pageWork}) }}
         {% endif %}
     {% endif %}
+
+    {% if video is defined and video is not empty %}
+        {{ include('elements/video.html.twig') }}
+    {% endif %}
+
     {{ include('elements/_quote.html.twig') }}
     {{ include('elements/_team.html.twig', {brandName: page.priceBrand.name}) }}
 {% endblock %}

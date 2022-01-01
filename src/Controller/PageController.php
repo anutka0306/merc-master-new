@@ -8,6 +8,7 @@ use App\Entity\RootService;
 use App\Entity\Service;
 use App\Entity\Simple;
 use App\Entity\Vacancy;
+use App\Entity\Video;
 use App\Entity\ServiceWithout;
 use App\Form\AskPriceType;
 use App\Form\SalonFilterType;
@@ -31,6 +32,7 @@ use App\Repository\MenuTopRepository;
 use App\Repository\MenuLeftRepository;
 use App\Repository\NaschirabotyRepository;
 use App\Repository\ConfigRepository;
+use App\Repository\VideoRepository;
 use App\Entity\Naschiraboty;
 
 
@@ -81,7 +83,12 @@ class PageController extends AbstractController
 
     protected $phone;
 
-    public function __construct(ContentRepository $repository, EntityManagerInterface $em, PaginatorInterface $paginator, PriceModelRepository $price_model_repository, PriceBrandRepository $priceBrandRepository, MenuTopRepository $menuTopRepository, MenuLeftRepository $menuLeftRepository, NaschirabotyRepository $naschirabotyRepository, ConfigRepository $configRepository)
+    /**
+     * @var VideoRepository
+     */
+    protected $videoRepository;
+
+    public function __construct(ContentRepository $repository, EntityManagerInterface $em, PaginatorInterface $paginator, PriceModelRepository $price_model_repository, PriceBrandRepository $priceBrandRepository, MenuTopRepository $menuTopRepository, MenuLeftRepository $menuLeftRepository, NaschirabotyRepository $naschirabotyRepository, ConfigRepository $configRepository, VideoRepository $videoRepository)
     {
         $this->page_repository = $repository;
         $this->em = $em;
@@ -96,6 +103,7 @@ class PageController extends AbstractController
         $this->phone2 = $configRepository->findOneBy(['name' =>'phone2']);
         $this->address = $configRepository->findOneBy(['name' =>'address']);
         $this->address2 = $configRepository->findOneBy(['name' =>'address2']);
+        $this->videoRepository = $videoRepository;
     }
 
 
@@ -357,6 +365,7 @@ class PageController extends AbstractController
             $map = null;
         }
         $models = $this->price_model_repository->findAll();
+        $video = $this->videoRepository->findBy([],[],3);
 
         return $this->render('v2/pages/model.html.twig', [
             'page' => $model,
@@ -374,6 +383,7 @@ class PageController extends AbstractController
             'address2'=> $address2,
             'map' => $map,
             'models' => $models,
+            'video' => $video,
         ]);
     }
     
