@@ -369,6 +369,16 @@ h1 {
     color: #2a2e47;
 
 }
+.section__heading-text ul{
+    width: 50%;
+    text-align: left;
+    margin: 0 auto;
+}
+@media (max-width: 800px) {
+    .section__heading-text ul {
+        width: 90%;
+    }
+}
 /* Brands List*/
 .brands__list{
     padding: 30px;
