@@ -1840,3 +1840,9 @@ a.link_to_blog{
     margin-right: 5px;
 }
 /* Галерея внутри текста страниц Наши работы конец */
+
+/* Галерея на главной */
+.slick__main{
+    margin-left: 30px;
+    width: 158px;
+}
