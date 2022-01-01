@@ -1853,7 +1853,7 @@ a.link_to_blog{
 
 /* Галерея на главной */
 .slick__main{
-    width: 90%;
+    width: 90% !important;
 }
 .slick__main li{
     margin-left: 30px;
