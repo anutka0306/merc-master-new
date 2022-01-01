@@ -1852,6 +1852,9 @@ a.link_to_blog{
 /* Галерея внутри текста страниц Наши работы конец */
 
 /* Галерея на главной */
+.slick__main{
+    width: 90%;
+}
 .slick__main li{
     margin-left: 30px;
     width: 158px;
