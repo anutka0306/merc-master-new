@@ -150,6 +150,9 @@ header{
     font-weight: 500;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+.nav__description_red{
+    color: #ee3428;
+}
 .nav__address, .nav__contacts {
     display: flex;
     align-items: center;

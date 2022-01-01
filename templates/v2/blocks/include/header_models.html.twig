@@ -56,10 +56,7 @@
             {% endif %}
         </div>
         <span class="nav__description">Специализированный <br>
-            автосервис
-            {% if brandName is defined %}
-                {{ brandName|upper }}
-            {%  endif %}
+            автосервис <span class="nav__description_red">MERCEDES</span>
         </span>
 
         {% if (phone is defined and phone is not null) and (address is defined and address is not null)%}
