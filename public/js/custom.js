@@ -103,13 +103,14 @@ $(document).ready(function () {
             // instead of a settings object
         ]
     });
-    /* $('.nashiraboty__gallery').slick({
-         slidesToShow: 3,
-         slidesToScroll: 1,
-         asNavFor: '.slider-for',
-         dots: true,
-         centerMode: true,
-         focusOnSelect: true
-     });*/
+
+
+    $('.slick__main').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: false,
+    });
 
 });
