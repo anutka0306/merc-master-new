@@ -99,6 +99,51 @@ class PageController extends AbstractController
     }
 
 
+    /* Редиректы */
+    /**
+     * @Route ("/dvigatel-mercedes-m271-remont-obsluzhivanie-ttx/mercedes-c-klass/")
+     */
+    public function r1(){
+        return $this->redirect('/mercedes-c-klass/', 301);
+    }
+
+    /**
+     * @Route ("/dvigatel-mercedes-m271-remont-obsluzhivanie-ttx/mersedes-b-klass/")
+     */
+    public function r2(){
+        return $this->redirect('/mersedes-b-klass/', 301);
+    }
+
+    /**
+     * @Route ("/dvigatel-mercedes-m271-remont-obsluzhivanie-ttx/mersedes-e-klass/")
+     */
+    public function r3(){
+        return $this->redirect('/mersedes-e-klass/', 301);
+    }
+
+    /**
+     * @Route ("/dvigatel-mercedes-m271-remont-obsluzhivanie-ttx/remont-mercedes-a-class/")
+     */
+    public function r4(){
+        return $this->redirect('/remont-mercedes-a-class/', 301);
+    }
+
+    /**
+     * @Route ("/zamena-glavnogo-tormoznogo-cilindra-mersedes/")
+     */
+    public function r5(){
+        return $this->redirect('/uslugi/remont-podveski-mersedes/zamena-glavnogo-tormoznogo-cilindra-mersedes/', 301);
+    }
+
+    /**
+     * @Route ("/zamena-masla-akpp-mercedes-mercedes/")
+     */
+    public function r6(){
+        return $this->redirect('/uslugi/zamena-masla-mersedes/zamena-masla-akpp-mercedes-mercedes/', 301);
+    }
+
+    /* Редиректы конец */
+
     /**
      * @Route("/vakancies/{vakancy}", name="vakancy", requirements={"token"= "\/.+\/$"})
      */
@@ -679,46 +724,5 @@ class PageController extends AbstractController
     }
 
 
-    /* Редиректы */
-    /**
-     * @Route ("/dvigatel-mercedes-m271-remont-obsluzhivanie-ttx/mercedes-c-klass/")
-     */
-    public function r1(){
-        return $this->redirect('/mercedes-c-klass/', 301);
-    }
 
-    /**
-     * @Route ("/dvigatel-mercedes-m271-remont-obsluzhivanie-ttx/mersedes-b-klass/")
-     */
-    public function r2(){
-        return $this->redirect('/mersedes-b-klass/', 301);
-    }
-
-    /**
-     * @Route ("/dvigatel-mercedes-m271-remont-obsluzhivanie-ttx/mersedes-e-klass/")
-     */
-    public function r3(){
-        return $this->redirect('/mersedes-e-klass/', 301);
-    }
-
-    /**
-     * @Route ("/dvigatel-mercedes-m271-remont-obsluzhivanie-ttx/remont-mercedes-a-class/")
-     */
-    public function r4(){
-        return $this->redirect('/remont-mercedes-a-class/', 301);
-    }
-
-    /**
-     * @Route ("/zamena-glavnogo-tormoznogo-cilindra-mersedes/")
-     */
-    public function r5(){
-        return $this->redirect('/uslugi/remont-podveski-mersedes/zamena-glavnogo-tormoznogo-cilindra-mersedes/', 301);
-    }
-
-    /**
-     * @Route ("/zamena-masla-akpp-mercedes-mercedes/")
-     */
-    public function r6(){
-        return $this->redirect('/uslugi/zamena-masla-mersedes/zamena-masla-akpp-mercedes-mercedes/', 301);
-    }
 }
