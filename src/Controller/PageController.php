@@ -365,7 +365,7 @@ class PageController extends AbstractController
             $map = null;
         }
         $models = $this->price_model_repository->findAll();
-        $video = $this->videoRepository->findBy([],[],3);
+        $video = $this->videoRepository->findBy([],[],4);
 
         return $this->render('v2/pages/model.html.twig', [
             'page' => $model,
@@ -609,7 +609,7 @@ class PageController extends AbstractController
 
             $models = $this->price_model_repository->findAll();
             $brand = $this->priceBrandRepository->findOneBy(['name'=>'Mercedes']);
-            $video = $this->videoRepository->findBy([],[],3);
+            $video = $this->videoRepository->findBy([],[],4);
 
 
             return $this->render('v2/pages/simple.html.twig', [

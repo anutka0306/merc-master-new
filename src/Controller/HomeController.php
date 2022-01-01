@@ -35,7 +35,7 @@ class HomeController extends AbstractController
         $this->phone2 = $configRepository->findOneBy(['name' => 'phone2']);
         $this->address = $configRepository->findOneBy(['name' => 'address'])->getValue();
         $this->address2 = $configRepository->findOneBy(['name'=> 'address2'])->getValue();
-        $video = $videoRepository->findBy([],[],3);
+        $video = $videoRepository->findBy([],[],4);
         
         return $this->render('v2/pages/home/index.html.twig', [
             'page' => $page,
