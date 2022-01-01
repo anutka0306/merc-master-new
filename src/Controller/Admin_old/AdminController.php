@@ -20,6 +20,7 @@ use App\Entity\RootService;
 use App\Entity\Service;
 use App\Entity\Simple;
 use App\Entity\SpecialOffer;
+use App\Entity\Video;
 use Doctrine\ORM\Mapping\Entity;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
@@ -76,6 +77,7 @@ class AdminController extends AbstractDashboardController
             MenuItem::linkToCrud('Наши работы', 'fa fa-fw fa-hand-holding-usd', Naschiraboty::class),
             MenuItem::linkToCrud('Галерея на главной',null,AttachMainGallery::class),
             MenuItem::linkToCrud('Конфиги', null, Config::class),
+            MenuItem::linkToCrud('Видео', null, Video::class),
         ];
     }
 }
