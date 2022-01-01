@@ -69,7 +69,7 @@ $(document).ready(function () {
 
     $('.nashiraboty__gallery').slick({
         infinite: true,
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
         arrows: true,
@@ -85,14 +85,14 @@ $(document).ready(function () {
             },
 
             {
-                breakpoint: 600,
+                breakpoint: 880,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 600,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
