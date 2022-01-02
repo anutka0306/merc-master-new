@@ -12,27 +12,24 @@
                                     <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                                 </div>
                                 <div class="contacts__info">
-                                    <h6 class="contact__heading">Адрес</h6>
+
                                     {% if (phone is defined and phone is not null) and (address is defined and address is not null) %}
                                     <p style="line-height: .5">{{ address }}</p>
+                                        <p style="line-height: .5"> <span class="phone-number"><a href="tel:{{ phone.value }}">{{ phone.title }}</a></span></p>
                                     {% endif %}
-                                    {% if (phone2 is defined and phone2 is not null) and (address2 is defined and address2 is not null) %}
-                                        <p style="line-height: .5">{{ address2 }}</p>
-                                    {% endif %}
+
                                 </div>
                             </li>
                             <li class="contacts__item">
                                 <div class="contacts__icon">
-                                    <i class="fas fa-phone" aria-hidden="true"></i>
+                                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                                 </div>
                                 <div class="contacts__info">
-                                    <h6 class="contact__heading">Телефон</h6>
-                                    {% if (phone is defined and phone is not null) and (address is defined and address is not null) %}
-                                        <p style="line-height: .5"> <span class="phone-number"><a href="tel:{{ phone.value }}">{{ phone.title }}</a></span></p>
-                                    {% endif%}
                                     {% if (phone2 is defined and phone2 is not null) and (address2 is defined and address2 is not null) %}
+                                        <p style="line-height: .5">{{ address2 }}</p>
                                         <p style="line-height: .5"> <span class="phone-number"><a href="tel:{{ phone2.value }}">{{ phone2.title }}</a></span></p>
                                     {% endif %}
+
                                 </div>
                             </li>
                             <li class="contacts__item">
