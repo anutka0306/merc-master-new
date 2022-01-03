@@ -264,6 +264,11 @@ h1 {
     font-size: 34px;
     font-weight: 900;
 }
+@media (max-width: 600px) {
+    .main-heading{
+        word-break: break-word;
+    }
+}
 .header__text {
     margin: 30px 0;
     font-size: 22px;
