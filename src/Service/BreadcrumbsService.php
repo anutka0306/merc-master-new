@@ -52,7 +52,7 @@ class BreadcrumbsService
         if($page instanceof Model){
             $parent = $this->content_repository->findOneBy(['path' => '/']);
         }
-        
+
         else {
             $parent = $page->getParent();
         }

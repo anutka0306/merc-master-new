@@ -13,3 +13,4 @@ fos_ck_editor:
             filebrowserImageBrowseUrl: 'elfinder'
             filebrowserImageBrowseLinkUrl: 'elfinder'
             filebrowserBrowseUrl: 'elfinder'
+            allowedContent: true
