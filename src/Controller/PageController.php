@@ -680,6 +680,32 @@ class PageController extends AbstractController
                         $text = str_replace($out[0][$i], $media_gallery, $text);
                     }
                 }
+
+                //Проверка на второй тип шорткодов
+                $regex1 = "/(\[fusion_images).*(\[\/fusion_images])/";
+                $result1 = preg_match_all($regex1, $text, $out1);
+
+                if(!empty($result1)){
+                    $media_gallery1 = array();
+
+                    for($i=0; $i<$result1; $i++) {
+                        $media_regex1 = "/image=('[^']*')|(\"[^\"]*\")/";
+                        $media_result1 = preg_match_all($media_regex1, $out1[0][$i], $media_out);
+                        /*var_dump($media_out);
+                        exit();*/
+
+                        if(isset($media_out[0])) {
+                            foreach ($media_out[0] as $key => $value){
+                                $media_out[0][$key] = str_replace("image='http://merc-master.ru/wp-content", "'", $media_out[0][$key]);
+                            }
+
+
+                            $media_gallery1 = $this->createWorkGallery2($media_out[0]);
+                        }
+
+                        $text = str_replace($out1[0][$i], $media_gallery1, $text);
+                    }
+                }
             }
 
             /*$availableSalons = $this->salon_manager->getSalonsByFilterForm($form, null);*/
@@ -730,6 +756,15 @@ class PageController extends AbstractController
             if($query[0]["meta_value"]) {
                 $gallery_code .= "<img width='200' src='/uploads/" . $query[0]["meta_value"] . "'>";
             }
+        }
+        $gallery_code .= '</div>';
+        return $gallery_code;
+    }
+
+    private function createWorkGallery2($images){
+        $gallery_code = '<div class="nashiraboty__inside-gallery">';
+        foreach ($images as $image){
+            $gallery_code .= '<img width="200" src='.$image.'>';
         }
         $gallery_code .= '</div>';
         return $gallery_code;
