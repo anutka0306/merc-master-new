@@ -5,6 +5,7 @@ namespace App\Service;
 use App\Dto\BreadcrumbsItemDTO;
 use App\Entity\Content;
 use App\Entity\Contracts\PageInterface;
+use App\Entity\Model;
 use App\Repository\ContentRepository;
 
 class BreadcrumbsService
@@ -47,13 +48,21 @@ class BreadcrumbsService
             $item->name = 'Ремонт Mercedes';
         }
         $chain[] = $item;
-        $parent  = $page->getParent();
-        if (null === $parent) {
-            return $chain;
+
+        if($page instanceof Model){
+            $parent = $this->content_repository->findOneBy(['path' => '/']);
         }
-        if (is_string($parent)) {
-            $parent = $this->content_repository->findOneBy(['path'=>$parent]);
+        
+        else {
+            $parent = $page->getParent();
         }
+            if (null === $parent) {
+                return $chain;
+            }
+            if (is_string($parent)) {
+                $parent = $this->content_repository->findOneBy(['path' => $parent]);
+            }
+
         
         return array_merge($this->getChainRecursive($parent), $chain);
     }
