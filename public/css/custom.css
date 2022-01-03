@@ -367,12 +367,19 @@ h1 {
     line-height: 30px;
     font-weight: 300;
     color: #2a2e47;
+    padding: 0 30px;
 
 }
 .section__heading-text ul, .section__heading-text ol{
-    width: 50%;
+    padding-left: 50px;
     text-align: left;
     margin: 0 auto;
+}
+.section__heading-text p{
+    text-align: left;
+}
+.section__heading-text h1, .section__heading-text h2, .section__heading-text h3, .section__heading-text h4, .section__heading-text h5, .section__heading-text h6{
+    text-align: center;
 }
 @media (max-width: 800px) {
     .section__heading-text ul, .section__heading-text ol {
@@ -1858,4 +1865,5 @@ a.link_to_blog{
 .slick__main li{
     margin-left: 30px;
     width: 158px;
+    padding-left: 0;
 }
