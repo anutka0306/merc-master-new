@@ -7,14 +7,17 @@
                 <div class="rey_text_white rey_title_stantart">
                     ПРИМЕРЫ НАШИХ РАБОТ
                 </div>
+                {% if pageWork.model is not empty%}
                 <div class="rey_text_red rey_examples_title_audi">
-                    {% if pageWork.model is not empty%}
                     <b>{{ pageWork.model|upper }}</b>
-                    {% endif %}
-                    <!--<a href="--><!--"></a>-->
                 </div>
+                {% endif %}
                 <div class="rey_examples_box_img">
-                    <img src="/img/nashiraboty_main/{{ pageWork.mainImg }}" width="100%">
+                    {% if pageWork.mainImg is defined and pageWork.mainImg is not null %}
+                        <img src="/img/nashiraboty_main/{{ pageWork.mainImg }}" width="100%">
+                    {% else %}
+                        <img src="/img/merc/merc-main.png" width="100%">
+                    {% endif %}
                 </div>
             </div>
             <div class="rey_bg_grey_light rey_examples_box_right">
@@ -22,8 +25,12 @@
                     {{ pageWork.name }}			</div>
                 <div class="rey_text_standart_small rey_text_dark">
                     <div>{{ pageWork.model }}</div>
-                    <div>Кузов: {{ pageWork.kuzov }}</div>
-                    <div>Год: {{ pageWork.year }}</div>
+                    {% if pageWork.kuzov is not null %}
+                        <div>Кузов: {{ pageWork.kuzov }}</div>
+                    {% endif %}
+                    {% if pageWork.year is not null %}
+                        <div>Год: {{ pageWork.year }}</div>
+                    {% endif %}
                 </div>
                 <div class="rey_text_standart rey_examples_listing">
                     {{ pageWork.shortText|raw }}</div>
@@ -31,7 +38,7 @@
                     <span class="rey_text_red">Это важно:</span> Практически при любом визите на сервис мы осматриваем подвеску автомобиля.
                 </div>
                 <div class="rey_examples_box_right_button" style="line-height:7em;text-align:right">
-                    <a class="rey_button_standart" href="/blog/{{ pageWork.id }}">ОТЧЕТ&nbsp;О&nbsp;ПРОЦЕССЕ&nbsp;РЕМОНТА</a>
+                    <a class="rey_button_standart" href="/{{ pageWork.url }}">ОТЧЕТ&nbsp;О&nbsp;ПРОЦЕССЕ&nbsp;РЕМОНТА</a>
                 </div>
             </div>
         </div>	</div>
