@@ -87,8 +87,12 @@
                         <div class="form__item">
                             <label for="phoneN3">Введите телефон</label>
                             <input class="form__input phoneN3-popup" type="tel" id="phoneN3" name="phone" required="" inputmode="text">
+                            {% if app.request.attributes.get('_route') is null %}
+                            <input type="hidden" id="urlN3" name="url" value="">
+                            {% else %}
                             <input type="hidden" id="urlN3" name="url" value="{{ path(app.request.attributes.get('_route'),
                                 app.request.attributes.get('_route_params')) }}">
+                            {% endif %}
                         </div>
 
                     </div>
@@ -111,9 +115,14 @@
                     <div class="form__inner">
                         <div class="form__item">
                             <label for="phoneN3">Введите телефон</label>
+
                             <input class="form__input phoneN4-popup" type="tel" id="phoneN4" name="phone" required="" inputmode="text">
+                            {% if app.request.attributes.get('_route') is null %}
+                            <input type="hidden" id="urlN4" name="url" value="">
+                            {% else %}
                             <input type="hidden" id="urlN4" name="url" value="{{ path(app.request.attributes.get('_route'),
                                 app.request.attributes.get('_route_params')) }}">
+                            {% endif %}
                         </div>
 
                     </div>
