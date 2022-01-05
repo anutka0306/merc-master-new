@@ -150,6 +150,51 @@ class PageController extends AbstractController
         return $this->redirect('/uslugi/zamena-masla-mersedes/zamena-masla-akpp-mercedes-mercedes/', 301);
     }
 
+    /**
+     * @Route ("/remont-podveski-mersedes/")
+     */
+    public function r7(){
+        return $this->redirect('/uslugi/remont-podveski-mersedes/', 301);
+    }
+    /**
+     * @Route ("/remont-akpp-mersedes/")
+     */
+    public function r8(){
+        return $this->redirect('/uslugi/remont-akpp-mersedes/', 301);
+    }
+    /**
+     * @Route ("/zamena-masla-mersedes/")
+     */
+    public function r9(){
+        return $this->redirect('/uslugi/zamena-masla-mersedes/', 301);
+    }
+    /**
+     * @Route ("/diagnostika-mersedes-c-klassa-w204-w203-w202/")
+     */
+    public function r10(){
+        return $this->redirect('/uslugi/diagnostika-mersedes/diagnostika-mersedes-c-klassa-w204-w203-w202/', 301);
+    }
+    /**
+     * @Route ("/diagnostika-mersedes-gl-klassa-x164-x166/")
+     */
+    public function r11(){
+        return $this->redirect('/uslugi/diagnostika-mersedes/diagnostika-mersedes-gl-klassa-x164-x166/', 301);
+    }
+
+    /**
+     * @Route ("/diagnostika-mersedes-sl-klassa/")
+     */
+    public function r12(){
+        return $this->redirect('/uslugi/diagnostika-mersedes/diagnostika-mersedes-sl-klassa/', 301);
+    }
+
+    /**
+     * @Route ("/diagnostika-mersedes-slk-klassa/")
+     */
+    public function r13(){
+        return $this->redirect('/uslugi/diagnostika-mersedes/diagnostika-mersedes-slk-klassa/', 301);
+    }
+
     /* Редиректы конец */
 
     /**
