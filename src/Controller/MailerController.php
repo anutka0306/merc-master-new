@@ -123,13 +123,13 @@ class MailerController extends AbstractController
      * @Route("/callback_form", name="callback_form")
      */
     public function callback_form(Request $request, MailerInterface $mailer){
-        $token = "2102312578:AAF6iR_1pAUR4GY1Vg8TwgF3CsIBCKWQyBg";
-        $chat_id = "-1001677654724";# Заявки VAG-PIK
+        $token = "1737028189:AAEFd51Z6vSHslgX-CNMtItwWD6Iy5EIP74";
+        $chat_id = "-1001465266572";# Заявки VAG-PIK
 
         $arr = array(
-            "Заявка с" => " с формы сайта pikms.ru ",
+            "Заявка с" => " с формы сайта  ",
             "Телефон" => $request->get('phone'),
-            "Со страницы " => 'https://pikms.ru'.$request->get('url'),
+            "Со страницы " => 'https://merc-master.ru/'.$request->get('url'),
         );
         /*Цикл по массиву (собираем сообщение) */
         $txt = '';
@@ -146,8 +146,8 @@ class MailerController extends AbstractController
             $email = (new Email())
                 ->from('info@my-side.online')
                 ->to((string)$to)
-                ->subject('Новая заявка с сайта Piksp.ru')
-                ->html('<p>Новая заявка с сайта Piksp.ru</p>
+                ->subject('Новая заявка с сайта https://merc-master.ru/')
+                ->html('<p>Новая заявка с сайта https://merc-master.ru/</p>
             <p>Телефон отправителя: ' . $request->get('phone') . '</p>'
                 );
             $mailer->send($email);
