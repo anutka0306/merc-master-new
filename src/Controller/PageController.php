@@ -559,6 +559,33 @@ class PageController extends AbstractController
             /* Разделяем текст по блокам (если они есть) */
             $textParts = array();
             $blocksOrder = array();
+            //Вырезать остальные шорткоды такого типа
+            $patterns = array();
+            $patterns[0] = '/(\[fusion_builder_container[^\[]*\])/';
+            $patterns[1] = '/(\[fusion_builder_row[^\[]*\])/';
+            $patterns[2] = '/(\[fusion_builder_column[^\[]*\])/';
+            $patterns[3] = '/(\[fusion_title[^\[]*\])/';
+            $patterns[4] = '/(\[\/fusion_title[^\[]*\])/';
+            $patterns[5] = '/(\[fusion_text[^\[]*\])/';
+            $patterns[6] = '/(\[\/fusion_text[^\[]*\])/';
+            $patterns[7] = '/(\[\/fusion_builder_column[^\[]*\])/';
+            $patterns[8] = '/(\[\/fusion_builder_row[^\[]*\])/';
+            $patterns[9] = '/(\[\/fusion_builder_container[^\[]*\])/';
+            $patterns[10] = '/(\[fusion_gallery[^\[]*\])/';
+            $patterns[11] = '/(\[fusion_checklist[^\[]*\])/';
+            $patterns[12] = '/(\[fusion_li_item[^\[]*\])/';
+            $patterns[13] = '/\[\/fusion_li_item]/';
+            $patterns[14] = '/\[\/fusion_checklist]/';
+            $patterns[15] = '/(\[fusion_alert[^\[]*\])/';
+            $patterns[16] = '/\[\/fusion_alert]/';
+            $patterns[17] = '/(\[fusion_youtube[^\[]*\])/';
+            $patterns[18] = '/(\[Best_Wordpress_Gallery[^\[]*\])/';
+            $patterns[19] = '/(\[fusion_tagline_box[^\[]*\])/';
+            $patterns[20] = '/\[\/fusion_tagline_box]/';
+
+            $replacement = '';
+
+            $rootService->setText(preg_replace($patterns, $replacement, $rootService->getText()));
             $str = $rootService->getText();
 
             $nashiRabotyIndexes = array();
@@ -589,33 +616,6 @@ class PageController extends AbstractController
             $str = str_replace(array('[nashi_raboti_block]', '[price_zapros_form]', '[video_block]'), '%textBlock%', $str);
 
             $textParts = explode('%textBlock%', $str);
-            //Вырезать остальные шорткоды такого типа
-            $patterns = array();
-            $patterns[0] = '/(\[fusion_builder_container[^\[]*\])/';
-            $patterns[1] = '/(\[fusion_builder_row[^\[]*\])/';
-            $patterns[2] = '/(\[fusion_builder_column[^\[]*\])/';
-            $patterns[3] = '/(\[fusion_title[^\[]*\])/';
-            $patterns[4] = '/(\[\/fusion_title[^\[]*\])/';
-            $patterns[5] = '/(\[fusion_text[^\[]*\])/';
-            $patterns[6] = '/(\[\/fusion_text[^\[]*\])/';
-            $patterns[7] = '/(\[\/fusion_builder_column[^\[]*\])/';
-            $patterns[8] = '/(\[\/fusion_builder_row[^\[]*\])/';
-            $patterns[9] = '/(\[\/fusion_builder_container[^\[]*\])/';
-            $patterns[10] = '/(\[fusion_gallery[^\[]*\])/';
-            $patterns[11] = '/(\[fusion_checklist[^\[]*\])/';
-            $patterns[12] = '/(\[fusion_li_item[^\[]*\])/';
-            $patterns[13] = '/\[\/fusion_li_item]/';
-            $patterns[14] = '/\[\/fusion_checklist]/';
-            $patterns[15] = '/(\[fusion_alert[^\[]*\])/';
-            $patterns[16] = '/\[\/fusion_alert]/';
-            $patterns[17] = '/(\[fusion_youtube[^\[]*\])/';
-            $patterns[18] = '/(\[Best_Wordpress_Gallery[^\[]*\])/';
-            $patterns[19] = '/(\[fusion_tagline_box[^\[]*\])/';
-            $patterns[20] = '/\[\/fusion_tagline_box]/';
-
-            $replacement = '';
-
-            $rootService->setText(preg_replace($patterns, $replacement, $rootService->getText()));
 
 
             $form = $this->createForm(AskPriceType::class);
@@ -647,6 +647,35 @@ class PageController extends AbstractController
             /* Разделяем текст по блокам (если они есть) */
             $textParts = array();
             $blocksOrder = array();
+
+            //Вырезать остальные шорткоды такого типа
+            $patterns = array();
+            $patterns[0] = '/(\[fusion_builder_container[^\[]*\])/';
+            $patterns[1] = '/(\[fusion_builder_row[^\[]*\])/';
+            $patterns[2] = '/(\[fusion_builder_column[^\[]*\])/';
+            $patterns[3] = '/(\[fusion_title[^\[]*\])/';
+            $patterns[4] = '/(\[\/fusion_title[^\[]*\])/';
+            $patterns[5] = '/(\[fusion_text[^\[]*\])/';
+            $patterns[6] = '/(\[\/fusion_text[^\[]*\])/';
+            $patterns[7] = '/(\[\/fusion_builder_column[^\[]*\])/';
+            $patterns[8] = '/(\[\/fusion_builder_row[^\[]*\])/';
+            $patterns[9] = '/(\[\/fusion_builder_container[^\[]*\])/';
+            $patterns[10] = '/(\[fusion_gallery[^\[]*\])/';
+            $patterns[11] = '/(\[fusion_checklist[^\[]*\])/';
+            $patterns[12] = '/(\[fusion_li_item[^\[]*\])/';
+            $patterns[13] = '/\[\/fusion_li_item]/';
+            $patterns[14] = '/\[\/fusion_checklist]/';
+            $patterns[15] = '/(\[fusion_alert[^\[]*\])/';
+            $patterns[16] = '/\[\/fusion_alert]/';
+            $patterns[17] = '/(\[fusion_youtube[^\[]*\])/';
+            $patterns[18] = '/(\[Best_Wordpress_Gallery[^\[]*\])/';
+            $patterns[19] = '/(\[fusion_tagline_box[^\[]*\])/';
+            $patterns[20] = '/\[\/fusion_tagline_box]/';
+
+            $replacement = '';
+
+            $simple->setText(preg_replace($patterns, $replacement, $simple->getText()));
+
             $str = $simple->getText();
 
             $nashiRabotyIndexes = array();
@@ -683,6 +712,8 @@ class PageController extends AbstractController
             $models = $this->price_model_repository->findAll();
             $brand = $this->priceBrandRepository->findOneBy(['name'=>'Mercedes']);
             $video = $this->videoRepository->findBy([],[],4);
+
+
 
 
             return $this->render('v2/pages/simple.html.twig', [
