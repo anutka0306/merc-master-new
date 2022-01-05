@@ -721,6 +721,10 @@ class PageController extends AbstractController
             $models = $this->price_model_repository->findAll();
             $brand = $this->priceBrandRepository->findOneBy(['name'=>'Mercedes']);
             $video = $this->videoRepository->findBy([],[],4);
+            $this->phone = $this->configRepository->findOneBy(['name' => 'phone']);
+            $this->phone2 = $this->configRepository->findOneBy(['name' => 'phone2']);
+            $this->address = $this->configRepository->findOneBy(['name' => 'address']);
+            $this->address2 = $this->configRepository->findOneBy(['name' => 'address2']);
 
 
 
@@ -730,6 +734,9 @@ class PageController extends AbstractController
                 'topMenu' => $topMenu,
                 'leftMenu' => $leftMenu,
                 'phone' => $this->phone,
+                'phone2' => $this->phone2,
+                'address' => $this->address->getValue(),
+                'address2' => $this->address2->getValue(),
                 'textBlocksOrder' => $blocksOrder,
                 'textParts' => $textParts,
                 'form' => $form->createView(),
