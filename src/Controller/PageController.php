@@ -194,6 +194,12 @@ class PageController extends AbstractController
     public function r13(){
         return $this->redirect('/uslugi/diagnostika-mersedes/diagnostika-mersedes-slk-klassa/', 301);
     }
+    /**
+     * @Route ("/texnicheskoe-obsluzhivanie-mersedes/")
+     */
+    public function r14(){
+        return $this->redirect('/uslugi/texnicheskoe-obsluzhivanie-mersedes/', 301);
+    }
 
     /* Редиректы конец */
 
