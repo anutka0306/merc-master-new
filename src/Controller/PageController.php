@@ -588,6 +588,7 @@ class PageController extends AbstractController
             $patterns[18] = '/(\[Best_Wordpress_Gallery[^\[]*\])/';
             $patterns[19] = '/(\[fusion_tagline_box[^\[]*\])/';
             $patterns[20] = '/\[\/fusion_tagline_box]/';
+            $patterns[21] = '/(\[su_youtube_advanced[^\[]*\])/';
 
             $replacement = '';
 
@@ -677,6 +678,8 @@ class PageController extends AbstractController
             $patterns[18] = '/(\[Best_Wordpress_Gallery[^\[]*\])/';
             $patterns[19] = '/(\[fusion_tagline_box[^\[]*\])/';
             $patterns[20] = '/\[\/fusion_tagline_box]/';
+            $patterns[21] = '/(\[su_youtube_advanced[^\[]*\])/';
+
 
             $replacement = '';
 
@@ -843,6 +846,7 @@ class PageController extends AbstractController
             $patterns[18] = '/(\[Best_Wordpress_Gallery[^\[]*\])/';
             $patterns[19] = '/(\[fusion_tagline_box[^\[]*\])/';
             $patterns[20] = '/\[\/fusion_tagline_box]/';
+            $patterns[21] = '/(\[su_youtube_advanced[^\[]*\])/';
 
             $replacement = '';
             $text = preg_replace($patterns, $replacement, $text);
