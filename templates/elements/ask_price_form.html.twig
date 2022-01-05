@@ -8,9 +8,58 @@
                 <h3>Запрос стоимости работ</h3>
                 {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
                 {{ form_widget(form) }}
-                <button type="submit" class="button">Отправить</button>
+                <button type="submit" class="ask_price_form_button button">Отправить</button>
                 {{ form_end(form) }}
             </div>
         </div>
     </div>
 </section>
+
+<script>
+    $(document).ready(function(){
+
+        $(".ask_price_form_button").click(function (e){
+            e.preventDefault();
+            //alert('hello');
+            if(!$('#ask_price_text').val()){
+                alert('Заполните поле сообщения');
+                return;
+            }
+            if($('#ask_price_name').val() == ''){
+                alert('Заполните поле Имя');
+            }
+            if($('#ask_price_tel').val().length < 11){
+                alert('Неверный формат номера телефона');
+                return;
+            }
+            let phone = $('#ask_price_tel').val();
+            let name = $('#ask_price_name').val();
+            let text = $('#ask_price_text').val();
+            let model = $('#ask_price_priceModel option:selected').html();
+            let email = $('#ask_price_email').val();
+            $.ajax({
+                url:     "/ask_price_form",
+                type:     "POST", //метод отправки
+                dataType: "html", //формат данных
+
+                data: {
+                    'phone' : phone,
+                    'name': name,
+                    'email': email,
+                    'model': model,
+                    'text': text
+                },
+                success: function(response) { //Данные отправлены успешно
+                    //$('.callback-popup-body').html('<p style="text-align: center; font-weight: 700; padding: 20px;">Спасибо! Ваша заявка отправлена.</p>');
+                    console.log(response);
+                },
+                error: function(response) { // Данные не отправлены
+                    console.log('error');
+                }
+            });
+
+            ResultShow();
+
+        });
+    });
+</script>
