@@ -62,7 +62,7 @@ class NaschirabotyController extends AbstractController
         foreach ($works as $key => $value){
             if(is_null($value->getBlogImg())){
                 $text = $value->getText();
-                $pattern = '/<img.*\/>/';
+                $pattern = '/<img.*\/?>/';
                 preg_match($pattern, $text, $matches);
                 if(!empty($matches[0])) {
                     $first_img = $matches[0];
