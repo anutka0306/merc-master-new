@@ -47,6 +47,7 @@
                             <img src="/img/nashiraboty_small/{{ work.blogImg }}" alt="{{ work.name }}">
                             {% elseif work.previewImg is defined and  work.previewImg is not empty %}
                                 <img src={{ work.previewImg }} alt="{{ work.name }}">
+                                {{ dump(work.previewImg) }}
                             {% else %}
 
                                 <img src="/img/nashiraboty_small/no-foto.png" alt="{{ work.name }}">
