@@ -1881,3 +1881,13 @@ a.link_to_blog{
     height: 120px;
     width: 100%;
 }
+
+/* Страница Контакты */
+.contacts-subhead{
+    font-size: 17px;
+    text-align: left;
+}
+.contacts_descr{
+    font-size: 15px;
+    margin: 0;
+}
