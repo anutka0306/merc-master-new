@@ -9,16 +9,7 @@
                 {% endif %}
                 (услуги):
             </h2></div>
-        <div class="section__text">Мы оказываем полный спектр услуг по обслуживанию, ремонту, тюнингу автомобилей
-            {% if page.priceBrand is not null %}
-            {{ page.priceBrand.name }}
-                {% if page.priceModel is not null %}
-                    {{ page.priceModel.name }}
-                {% endif %}
-            {% else %}
-                авто
-            {% endif %}
-            .</div>
+        <div class="section__text">Мы оказываем полный спектр услуг по обслуживанию, ремонту, тюнингу автомобилей Mercedes.</div>
         <div class="row">
             {% for section in sections %}
                 {% if section.priceServices is not empty %}
