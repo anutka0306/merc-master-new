@@ -1872,3 +1872,8 @@ a.link_to_blog{
     width: 158px;
     padding-left: 0;
 }
+.slick__main li img{
+    object-fit: cover;
+    object-position: 0 0;
+    height: 120px;
+}
