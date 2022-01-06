@@ -1223,6 +1223,9 @@ label {
     align-items: center;
     margin-bottom: 25px;
 }
+.contacts__item .contacts__info p:last-child{
+    margin-bottom: 0;
+}
 .contacts__icon {
     margin-right: 15px;
     color: #f73d31;
