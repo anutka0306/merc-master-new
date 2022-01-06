@@ -59,6 +59,22 @@ class NaschirabotyController extends AbstractController
             $value->images = $images;
         }
 
+        foreach ($works as $key => $value){
+            if(is_null($value->getBlogImg())){
+                $text = $value->getText();
+                $pattern = '/<img.*\/>/';
+                preg_match($pattern, $text, $matches);
+                if(!empty($matches)) {
+                    $first_img = $matches[0];
+                    $pattern1 = '/(src="[^"]*")/';
+                    preg_match($pattern1, $first_img, $match_src);
+                    if(!empty($match_src[0])){
+                        $value->previewImg = str_replace(array("src=","\""),"",$match_src[0]);
+                    }
+                }
+            }
+        }
+
         $form = $this->createForm(
             SalonFilterType::class,
             null,
