@@ -1874,6 +1874,7 @@ a.link_to_blog{
 }
 .slick__main li img{
     object-fit: cover;
-    object-position: 0 0;
+    object-position: center center;
     height: 120px;
+    width: 100%;
 }
