@@ -1888,6 +1888,7 @@ a.link_to_blog{
     text-align: left !important;
     margin-bottom: 5px;
     font-weight: bold;
+    margin-top: 10px !important;
 }
 .contacts_descr{
     font-size: 15px;
