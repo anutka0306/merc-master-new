@@ -816,7 +816,8 @@ class PageController extends AbstractController
 
                         if(isset($media_out[0])) {
                             foreach ($media_out[0] as $key => $value){
-                                $media_out[0][$key] = str_replace("image='http://merc-master.ru/wp-content", "'", $media_out[0][$key]);
+                                //$media_out[0][$key] = str_replace("image='http://merc-master.ru/wp-content", "'", $media_out[0][$key]);
+                                $media_out[0][$key] = str_replace("image='", "'", $media_out[0][$key]);
                             }
 
 
