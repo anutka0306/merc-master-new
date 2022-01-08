@@ -279,7 +279,17 @@ class PageController extends AbstractController
             );
 
             // parameters to template
-            return $this->render('sitemap/index.html.twig', ['pagination' => $pagination,'page'=>$page, 'topMenu'=>$topMenu, 'leftMenu'=>$leftMenu]);
+            return $this->render('sitemap/index.html.twig', [
+                'pagination' => $pagination,
+                'page'=>$page,
+                'topMenu'=>$topMenu,
+                'leftMenu'=>$leftMenu,
+                'phone' => $this->phone,
+                'phone2' => $this->phone2,
+                'address' => $this->address->getValue(),
+                'address2' => $this->address2->getValue(),
+
+                ]);
         }
 
         throw $this->createNotFoundException('Page is instance of '.get_class($page));
