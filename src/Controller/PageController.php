@@ -417,6 +417,7 @@ class PageController extends AbstractController
         }
         $models = $this->price_model_repository->findAll();
         $video = $this->videoRepository->findBy([],[],4);
+        $form = $this->createForm(AskPriceType::class);
 
         return $this->render('v2/pages/model.html.twig', [
             'page' => $model,
@@ -435,6 +436,7 @@ class PageController extends AbstractController
             'map' => $map,
             'models' => $models,
             'video' => $video,
+            'form' => $form->createView(),
         ]);
     }
     

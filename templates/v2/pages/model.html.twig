@@ -13,6 +13,11 @@
 
 {% block body %}
     {{ include('elements/_content.html.twig') }}
+
+    <div style="margin: 0 auto 50px auto; display: flex; max-width: 1140px; text-align: center;">
+    {{ include('elements/ask_price_form.html.twig') }}
+    </div>
+
     {{ price_list(page) }}
    {# {{ brand_models_service(page.priceBrand, page.priceBrand.path) }}#}
     {{ service_list(page) }}
