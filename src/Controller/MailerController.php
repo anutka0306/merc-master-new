@@ -123,8 +123,11 @@ class MailerController extends AbstractController
      * @Route("/callback_form", name="callback_form")
      */
     public function callback_form(Request $request, MailerInterface $mailer){
-        $token = "1737028189:AAEFd51Z6vSHslgX-CNMtItwWD6Iy5EIP74";
-        $chat_id = "-1001465266572";# Заявки VAG-PIK
+        /*$token = "1737028189:AAEFd51Z6vSHslgX-CNMtItwWD6Iy5EIP74";
+        $chat_id = "-1001465266572";# Заявки VAG-PIK*/
+
+        $token = "2102312578:AAF6iR_1pAUR4GY1Vg8TwgF3CsIBCKWQyBg";
+        $chat_id = "-1001677654724";# Заявки VAG-PIK
 
         $arr = array(
             "Заявка с" => " с формы сайта  ",
@@ -160,8 +163,10 @@ class MailerController extends AbstractController
      * @Route ("/ask_price_form", name="ask_price_form")
      */
     public function ask_price_form(Request $request){
-        $token = "1737028189:AAEFd51Z6vSHslgX-CNMtItwWD6Iy5EIP74";
-        $chat_id = "-1001465266572";# Заявки VAG-PIK
+        /*$token = "1737028189:AAEFd51Z6vSHslgX-CNMtItwWD6Iy5EIP74";
+        $chat_id = "-1001465266572";# Заявки VAG-PIK*/
+        $token = "2102312578:AAF6iR_1pAUR4GY1Vg8TwgF3CsIBCKWQyBg";
+        $chat_id = "-1001677654724";# Заявки VAG-PIK
 
         $arr = array(
             "Заявка с" => " с формы запроса цены на ремонт  ",
@@ -190,8 +195,10 @@ class MailerController extends AbstractController
      * @Route ("/ask_detail_form", name="ask_price_form")
      */
     public function ask_detail_form(Request $request){
-        $token = "1737028189:AAEFd51Z6vSHslgX-CNMtItwWD6Iy5EIP74";
-        $chat_id = "-1001465266572";# Заявки VAG-PIK
+       /* $token = "1737028189:AAEFd51Z6vSHslgX-CNMtItwWD6Iy5EIP74";
+        $chat_id = "-1001465266572";# Заявки VAG-PIK*/
+        $token = "2102312578:AAF6iR_1pAUR4GY1Vg8TwgF3CsIBCKWQyBg";
+        $chat_id = "-1001677654724";# Заявки VAG-PIK
 
         $arr = array(
             "Заявка с" => " с формы запроса цены на на коллектор  ",
