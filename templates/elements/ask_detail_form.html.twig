@@ -1,0 +1,57 @@
+<section class="ask-price">
+    <div class="ask-price__wrapper container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-12">
+                <img src="{{ asset('img/ask-price-img.jpg') }}" alt="Запрос прайса">
+            </div>
+            <div class="col-md-6 col-sm-6 col-12">
+                {{ form_start(collectorForm, {'attr': {'novalidate': 'novalidate'}}) }}
+                {{ form_widget(collectorForm) }}
+                <button type="submit" class="ask_detail_form_button button">Отправить</button>
+                {{ form_end(collectorForm) }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    $(document).ready(function(){
+
+        $(".ask_detail_form_button").click(function (e){
+            e.preventDefault();
+            //alert('hello');
+
+            if($('#ask_collector_name').val() == ''){
+                alert('Заполните поле Имя');
+            }
+            if($('#ask_collector_tel').val().length < 11){
+                alert('Неверный формат номера телефона');
+                return;
+            }
+            let phone = $('#ask_collector_tel').val();
+            let name = $('#ask_collector_name').val();
+            let detail = $('#ask_collector_detail').val();
+            $.ajax({
+                url:     "/ask_detail_form",
+                type:     "POST", //метод отправки
+                dataType: "html", //формат данных
+
+                data: {
+                    'phone' : phone,
+                    'name': name,
+                    'detail': detail,
+                },
+                success: function(response) { //Данные отправлены успешно
+                    //$('.callback-popup-body').html('<p style="text-align: center; font-weight: 700; padding: 20px;">Спасибо! Ваша заявка отправлена.</p>');
+                    console.log(response);
+                },
+                error: function(response) { // Данные не отправлены
+                    console.log('error');
+                }
+            });
+
+            ResultShow();
+
+        });
+    });
+</script>

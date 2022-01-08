@@ -10,6 +10,7 @@ use App\Entity\Simple;
 use App\Entity\Vacancy;
 use App\Entity\Video;
 use App\Entity\ServiceWithout;
+use App\Form\AskCollectorType;
 use App\Form\AskPriceType;
 use App\Form\SalonFilterType;
 use App\Repository\ContentRepository;
@@ -615,6 +616,11 @@ class PageController extends AbstractController
             if($pos = strpos($str, '[video_block]')){
                 $blocksOrder[$pos] = '[video_block]';
             }
+
+            if($pos = strpos($str, '[zapror_detali]')){
+                $blocksOrder[$pos] = '[zapror_detali]';
+            }
+
             ksort($blocksOrder);
             $count = 0;
             foreach ($blocksOrder as $key => $value){
@@ -622,12 +628,13 @@ class PageController extends AbstractController
                 unset($blocksOrder[$key]);
                 $count++;
             }
-            $str = str_replace(array('[nashi_raboti_block]', '[price_zapros_form]', '[video_block]'), '%textBlock%', $str);
+            $str = str_replace(array('[nashi_raboti_block]', '[price_zapros_form]', '[video_block]', '[zapror_detali]'), '%textBlock%', $str);
 
             $textParts = explode('%textBlock%', $str);
 
 
             $form = $this->createForm(AskPriceType::class);
+            $collectorForm = $this->createForm(AskCollectorType::class);
             $models = $this->price_model_repository->findAll();
 
 
@@ -644,6 +651,7 @@ class PageController extends AbstractController
             'textBlocksOrder' => $blocksOrder,
             'textParts' => $textParts,
             'form' => $form->createView(),
+            'collectorForm' => $collectorForm->createView(),
             'nashiRaboty' => $nashiRaboty,
             'models' => $models,
         ]);
@@ -707,6 +715,9 @@ class PageController extends AbstractController
             if($pos = strpos($str, '[video_block]')){
                 $blocksOrder[$pos] = '[video_block]';
             }
+            if($pos = strpos($str, '[zapror_detali]')){
+                $blocksOrder[$pos] = '[zapror_detali]';
+            }
             ksort($blocksOrder);
             $count = 0;
             foreach ($blocksOrder as $key => $value){
@@ -714,11 +725,12 @@ class PageController extends AbstractController
                 unset($blocksOrder[$key]);
                 $count++;
             }
-            $str = str_replace(array('[nashi_raboti_block]', '[price_zapros_form]', '[video_block]'), '%textBlock%', $str);
+            $str = str_replace(array('[nashi_raboti_block]', '[price_zapros_form]', '[video_block]', '[zapror_detali]'), '%textBlock%', $str);
 
             $textParts = explode('%textBlock%', $str);
 
             $form = $this->createForm(AskPriceType::class);
+            $collectorForm = $this->createForm(AskCollectorType::class);
 
             $models = $this->price_model_repository->findAll();
             $brand = $this->priceBrandRepository->findOneBy(['name'=>'Mercedes']);
@@ -742,6 +754,7 @@ class PageController extends AbstractController
                 'textBlocksOrder' => $blocksOrder,
                 'textParts' => $textParts,
                 'form' => $form->createView(),
+                'collectorForm' => $collectorForm->createView(),
                 'nashiRaboty' => $nashiRaboty,
                 'models' => $models,
                 'brand'=> $brand,

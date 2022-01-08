@@ -1847,6 +1847,13 @@ a.link_to_blog{
 #ask_price input::-moz-placeholder, #ask_price textarea::-moz-placeholder, #ask_price select::-moz-placeholder          {color:#666; font-size: 13px; padding-right: 10px;}/* Firefox 19+ */
 #ask_price input:-moz-placeholder, #ask_price textarea:-moz-placeholder, #ask_price select:-moz-placeholder           {color:#666; font-size: 13px; padding-right: 10px;}/* Firefox 18- */
 #ask_price input:-ms-input-placeholder, #ask_price textarea:-ms-input-placeholder, #ask_price select:-ms-input-placeholder      {color:#666; font-size: 13px; padding-right: 10px;}
+
+#ask_collector .askForm_input{
+    margin-left: 25px;
+    margin-right: 0;
+    padding-left: 10px;
+    padding-right: 0;
+}
 /* Форма запроса прайса конец */
 
 /* Галерея внутри текста страниц Наши работы */
