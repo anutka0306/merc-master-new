@@ -1870,6 +1870,7 @@ a.link_to_blog{
     background: #fff;
     margin-left: 5px;
     margin-right: 5px;
+    object-fit: cover;
 }
 /* Галерея внутри текста страниц Наши работы конец */
 
