@@ -6,7 +6,11 @@
             </div>
             <div class="col-lg-3 d-none d-lg-block">
                 <span class="nav__description">Специализированный <br>
-                    автосервис ПИК</span>
+                    автосервис {% if brandName is defined %}
+                        {{ brandName|upper }}
+                    {% else %}
+                        ПИК
+                    {%  endif %}</span>
             </div>
             <div class="col-lg-3 d-none d-lg-block">
                 <p class="copyright">© {{ 'now'|date('Y') }} / Все права защищены<br>
