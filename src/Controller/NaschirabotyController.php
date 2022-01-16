@@ -15,6 +15,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Repository\ConfigRepository;
+use Knp\Component\Pager\PaginatorInterface;
 
 class NaschirabotyController extends AbstractController
 {
@@ -28,10 +29,16 @@ class NaschirabotyController extends AbstractController
      */
     protected $configRepository;
 
-    public function __construct(SalonManager $salon_manager, ConfigRepository $configRepository)
+    /**
+     * @var PaginatorInterface
+     */
+    protected $paginator;
+
+    public function __construct(SalonManager $salon_manager, ConfigRepository $configRepository, PaginatorInterface $paginator)
     {
         $this->salon_manager = $salon_manager;
         $this->configRepository = $configRepository;
+        $this->paginator = $paginator;
     }
 
     /**
@@ -84,6 +91,11 @@ class NaschirabotyController extends AbstractController
         $form->handleRequest($request);
 
         $availableSalons = $this->salon_manager->getSalonsByFilterForm($form, null);
+        $pagination = $this->paginator->paginate(
+            $works, /* query NOT result */
+            $request->query->getInt('page', 1), /*page number*/
+            32 /*limit per page*/
+        );
 
         return $this->render('v2/pages/naschiraboty/index.html.twig', [
             'page' => $page,
@@ -97,6 +109,7 @@ class NaschirabotyController extends AbstractController
             'phone2' => $this->phone2,
             'address' => $this->address->getValue(),
             'address2' => $this->address2->getValue(),
+            'pagination' => $pagination,
         ]);
     }
 
