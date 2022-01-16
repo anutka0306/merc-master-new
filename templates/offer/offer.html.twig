@@ -1,5 +1,5 @@
 {% extends 'v2/base.html.twig' %}
-
+{% block canonical %}{{ app.request.schemeAndHttpHost~page.path|trim('/', 'right') }}{% endblock %}
 {% block header_line %}
     {{ include('v2/blocks/include/header.html.twig', {brands : brands ?? null, 'topMenu': topMenu, 'leftMenu': leftMenu}) }}
 {% endblock %}
