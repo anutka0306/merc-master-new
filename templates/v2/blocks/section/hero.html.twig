@@ -83,7 +83,11 @@
                                 {% endif %}
 
                         </span><br>
-                         в Санкт-Петербурге.</h1>
+                        {% if withoutSPB is not defined %}
+                            в Санкт-Петербурге.</h1>
+                        {% else %}
+                            </h1>
+                        {% endif %}
                     <p class="header__text">Оказываем любые услуги по ремонту<br>
                         и обслуживанию автомобилей, с гарантией.</p>
                     <a class="button" href="/#FBForm2">Записаться сейчас</a>

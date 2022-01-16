@@ -5,7 +5,7 @@
 
 {% block header_banner %}
 
-    {{ include('v2/blocks/section/hero.html.twig',{ h1 : block('h1') ?? page.h1 }) }}
+    {{ include('v2/blocks/section/hero.html.twig',{ h1 : block('h1') ?? page.h1, customH1 : 'Карта сайта', withoutSPB: true }) }}
 {% endblock %}
 
 {% block breadcrumbs %}{% endblock %}
