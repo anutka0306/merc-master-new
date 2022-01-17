@@ -203,7 +203,7 @@ class PageGeneratorService
             }
             $servicePage = new Service();
             $servicePage->setName($priceCategory->getName() .' '. $price_brand->getName())
-                ->setText('')
+                ->setText('<p></p>')
                 ->setBrandId($price_brand->getId())
                 ->setPath($price_brand->getPath().$priceCategory->getSlug().'/')
                 ->setParent($this->content_repository->findOneBy(['brand_id' => $price_brand->getId(), 'path' => $price_brand->getPath()]))
@@ -218,7 +218,7 @@ class PageGeneratorService
                 }
                 $servicePage = new Service();
                 $servicePage->setName($priceCategory->getName(). ' '. $price_brand->getName(). ' '. $price_model->getName())
-                    ->setText('')
+                    ->setText('<p></p>')
                     ->setModelId($price_model->getId())
                     ->setPath($price_model->getPath().$priceCategory->getSlug().'/')
                     ->setParent($this->content_repository->findOneBy(['model_id' => $price_model->getId(), 'path' => $price_model->getPath()]))

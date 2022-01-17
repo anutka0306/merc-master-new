@@ -665,7 +665,25 @@ class PageController extends AbstractController
             'nashiRaboty' => $nashiRaboty,
             'models' => $models,
         ]);
-    }
+    }else{
+            $form = $this->createForm(AskPriceType::class);
+            $collectorForm = $this->createForm(AskCollectorType::class);
+            $models = $this->price_model_repository->findAll();
+            return $this->render('v2/pages/root-service.html.twig', [
+                'page' => $rootService,
+                'brands' => $brands,
+                'topMenu' => $topMenu,
+                'leftMenu' => $leftMenu,
+                'pageWork' => $work,
+                'phone' => $this->phone,
+                'phone2'=> $this->phone2,
+                'address' => $this->address->getValue(),
+                'address2'=> $this->address2->getValue(),
+                'form' => $form->createView(),
+                'collectorForm' => $collectorForm->createView(),
+                'models' => $models,
+            ]);
+        }
         }
     
     private function simple(Simple $simple, $topMenu, $leftMenu)
@@ -766,6 +784,32 @@ class PageController extends AbstractController
                 'form' => $form->createView(),
                 'collectorForm' => $collectorForm->createView(),
                 'nashiRaboty' => $nashiRaboty,
+                'models' => $models,
+                'brand'=> $brand,
+                'video' => $video,
+            ]);
+        }
+        else{
+            $form = $this->createForm(AskPriceType::class);
+            $collectorForm = $this->createForm(AskCollectorType::class);
+
+            $models = $this->price_model_repository->findAll();
+            $brand = $this->priceBrandRepository->findOneBy(['name'=>'Mercedes']);
+            $video = $this->videoRepository->findBy([],[],4);
+            $this->phone = $this->configRepository->findOneBy(['name' => 'phone']);
+            $this->phone2 = $this->configRepository->findOneBy(['name' => 'phone2']);
+            $this->address = $this->configRepository->findOneBy(['name' => 'address']);
+            $this->address2 = $this->configRepository->findOneBy(['name' => 'address2']);
+            return $this->render('v2/pages/simple.html.twig', [
+                'page' => $simple,
+                'topMenu' => $topMenu,
+                'leftMenu' => $leftMenu,
+                'phone' => $this->phone,
+                'phone2' => $this->phone2,
+                'address' => $this->address->getValue(),
+                'address2' => $this->address2->getValue(),
+                'form' => $form->createView(),
+                'collectorForm' => $collectorForm->createView(),
                 'models' => $models,
                 'brand'=> $brand,
                 'video' => $video,
