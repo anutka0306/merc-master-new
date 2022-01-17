@@ -10,7 +10,7 @@
                     <div class="col-md-6 text-right big_padding d-flex flex-column justify-content-between akcii_akcii-left">
                     <div class="akcii_content-wrapper">
                         <h3 class="akcii_services-heading">Акция
-                            <br><a href="/offers/{{ item.slug}}" class="link_heading"><span class="btn_small-text to-popup_header"> {{ item.name }}</span></a><br> <span class="akcii_akcii_subhead">{{ item.description}} </span></h3>
+                            <br>{#<a href="/offers/{{ item.slug}}" class="link_heading">#}<span class="btn_small-text to-popup_header"> {{ item.name }}</span>{#</a>#}<br> <span class="akcii_akcii_subhead">{{ item.description}} </span></h3>
 
                         <h3 class="akcii_services-heading heading-dark">от {{ item.newPrice}} руб <br><span class="akcii_akcii_subhead">запчасти и работы</span>
                         </h3>
@@ -26,7 +26,7 @@
                     <div class="col-md-6 text_left big_padding d-flex flex-column justify-content-between akcii_akcii-right">
                     <img src="/img/mobilekey.jpg" alt="" class="hidden-md" style="width:100%">
                     <h3 class="akcii_services-heading heading_white">Акция
-                        <br><a href="/offers/{{ item.slug}}" class="link_heading" style="color:white;"><span class="to-popup_header"> {{ item.name }}</span></a><br> <span class="akcii_akcii_subhead">{{ item.description }}</span></h3>
+                        <br>{#<a href="/offers/{{ item.slug}}" class="link_heading" style="color:white;">#}<span style="color:white;" class="to-popup_header"> {{ item.name }}</span>{#</a>#}<br> <span class="akcii_akcii_subhead">{{ item.description }}</span></h3>
 
 
                     <h3 class="akcii_services-heading heading-yellow">от {{ item.newPrice}} руб <br><span class="akcii_akcii_subhead">запчасти и работы</span>
@@ -49,7 +49,7 @@
                 {% if loop.index == 1 %}
                     <div class="col-md-6 text-right big_padding d-flex flex-column justify-content-between akcii_akcii-2-left">
                 <div class="akcii-2-column-wrapper">
-                    <a href="/offers/{{ item.slug}}" class="link_heading"><h2 class="akcii_section-heading to-popup_header">{{ item.name|upper }}</h2></a>
+                    {#<a href="/offers/{{ item.slug}}" class="link_heading">#}<h2 class="akcii_section-heading to-popup_header">{{ item.name|upper }}</h2>{#</a>#}
                     <h3 class="hidden-md mobile_sunheading">Акция на замену вихревых заслонок<br><span style="color:red;">15 550 </span>руб<br>запчасти и работы</h3>
                     <span class="akcii-2_subhead">
                             {{ item.description }}
@@ -65,14 +65,14 @@
             </div>
             {% else %}
                 <div class="col-md-6 text_left big_padding d-flex flex-column  justify-content-between akcii_akcii-2--right">
-                <a href="/offers/{{ item.slug}}" class="link_heading"> <h2 class="akcii_section-heading to-popup_header">{{ item.name }}</h2></a><a>
+                {#<a href="/offers/{{ item.slug}}" class="link_heading">#} <h2 class="akcii_section-heading to-popup_header">{{ item.name }}</h2>{#</a>#}
 
                     <h3 class="akcii_services-heading">{{ item.description }}</h3>
 
                     <h3 class="akcii-2_subhead yellow-border pl20">{{ item.newPrice}} рублей <br><span>запчасти и работы</span> </h3>
-                </a><div class=" btn_small-right-wrapper hidden-sm"><a>
+                <div class=" btn_small-right-wrapper hidden-sm">
 
-                    </a><a href="javascript:PopUp2Show()" class="btn_small-right popup-link _mPS2id-h mPS2id-highlight mPS2id-highlight-last"><span class="btn_small-text">Записаться</span></a>
+                    <a href="javascript:PopUp2Show()" class="btn_small-right popup-link _mPS2id-h mPS2id-highlight mPS2id-highlight-last"><span class="btn_small-text">Записаться</span></a>
 
                 </div>
             </div>
