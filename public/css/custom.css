@@ -1902,3 +1902,77 @@ a.link_to_blog{
     font-size: 15px;
     margin: 0;
 }
+/* Главная страница блок с преимуществами, которые в конетенет*/
+.advanatges_main{
+    margin-left: -50px;
+    margin-right: -50px;
+    background: #efefef;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.advantages_main_items{
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1320px;
+}
+@media (max-width: 860px) {
+    .advantages_main_items{
+        flex-direction: column;
+        align-items: center;
+    }
+    .advantages_main_items div{
+        width: 90%;
+    }
+}
+.advantages_main_items div{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.advantages_main_items div h2{
+    font-size: 24px;
+    line-height:29px;
+    padding-left:64px;
+    text-align: left;
+}
+.advantages_main_items div h2:before{
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+    font-weight: 900;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    font-size: 18px;
+    background: #0b0b0b;
+    color: snow;
+    margin-right: 7px;
+    border-radius: 50%;
+}
+.advantages_main_items div:nth-child(1) h2:before{
+    content: '\f085';
+}
+.advantages_main_items div:nth-child(2) h2:before{
+    content: '\f0ad';
+}
+.advantages_main_items div:nth-child(3) h2:before{
+    content: '\f164';
+}
+.advantages_main_items div p{
+    font-size: 15px;
+    padding-left: 64px;
+    line-height: 24px;
+}
+
+.advantages_main_text{
+    max-width: 1320px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin: 0 auto;
+}
+.advantages_main_text h2{
+    font-size: 24px;
+}
+.advantages_main_text p{
+    font-size: 16px;
+}
