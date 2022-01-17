@@ -1,6 +1,7 @@
 
 {% extends 'v2/base.html.twig' %}
-{#{% block title %} {{ page.metaTitle ? page.metaTitle : (page.h1~' - ') }} {% endblock %}#}
+{% block title %} {{ page.metaTitle ? page.metaTitle : (page.h1~'. Автосервис Мерседес ПИК') }} {% endblock %}
+{% block description %}⭐ ⭐ ⭐ ⭐ ⭐  {{ page.h1 }}. Профильный автосервис Mercedes.  ✅  Заезд день в день!  Цена и стоимость на сайте. ✅ Гарантия.  ✅  Качество. Автосервис «ПИК».{% endblock %}
 
 {% block header_line %}
     {{ include('v2/blocks/include/header.html.twig', {models : models ?? null, 'topMenu': topMenu, 'leftMenu': leftMenu}) }}

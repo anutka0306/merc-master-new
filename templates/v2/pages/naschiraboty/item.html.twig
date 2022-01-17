@@ -1,6 +1,6 @@
 {% extends 'v2/base.html.twig' %}
-{#{% block title %} {{ page.h1~' - наши работы – ' }} {% endblock %}
-{% block description %}{{ '⭐⭐⭐⭐⭐ '~ page.h1~' – примеры наших работ. Портфолио. ' }}{% endblock %}#}
+{% block title %} {{ page.h1~'. Наши работы. Автосервис Мерседес «ПИК»' }} {% endblock %}
+{% block description %}Наша работа: {{ page.h1 }}. Специализированный автосервис по Mercedes.  ✅Большой опыт. ✅ Запчасти в наличии. ✅ Без выходных Автосервис «ПИК».{% endblock %}
 {% block canonical %}{{ app.request.schemeAndHttpHost~'/'~page.url~'/' }}{% endblock %}
 {% block header_line %}
 {{ include('v2/blocks/include/header.html.twig', {'brands' : brands, 'topMenu' : topMenu, 'leftMenu': leftMenu}) }}

@@ -2,10 +2,10 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>{% block title %}{{ page.metaTitle ?? (page.h1~' Автосервис ПИК в Санкт-Петербурге.') }}{% endblock %}</title>
+    <title>{% block title %}{{ page.metaTitle ?? (page.h1~'. Автосервис Мерседес ПИК.') }}{% endblock %}</title>
     <meta name="author">
 
-    <meta name="description" content="{% block description %}{% if phone is defined %}{{ (page.h1 ~ '  в Санкт-Петербурге.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день  обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ '~phone.value) }}{% else %}{{ (page.h1 ~ '  в Санкт-Петербурге.✔ Ежедневно 9:00 - 21:00 ✔ Ремонт в день  обращения ✔ Стоимость и цены. ✔ Гарантия 1 год! Профильный автосервис «ПИК» - ☎ ') }}{% endif %}{% endblock %}"/>
+    <meta name="description" content="{% block description %}{{ (page.h1 ~ ' . Профильный автосервис мерседес в Санкт-Петербурге. Автосервис ПИК. ✔ Гарантия. ✔ Качество.') }}{% endblock %}"/>
     <meta name="keywords" content="{% block keywords %}{% endblock %}"/>
     <meta http-equiv="Last-Modified" content="{% block last_modified %}{{ page.modifyDate|date('D, d M Y H:i:s') }}{% endblock%} GMT">
     <link rel="canonical" href="{% block canonical %}{{ app.request.schemeAndHttpHost~page.path }}{% endblock %}"/>
