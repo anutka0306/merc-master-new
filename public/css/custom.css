@@ -691,7 +691,7 @@ h1 {
 
 /* About Block О компании в цифрах*/
 .numbers-section {
-    padding: 130px 0;
+    padding: 60px 0;
     position: relative;
 }
 section {
@@ -1148,7 +1148,7 @@ label {
 }
 /* Team block */
 .team-section {
-    padding: 140px 0;
+    padding: 70px 0;
 }
 .team__photo {
     width: 185px;
@@ -1333,7 +1333,7 @@ label {
 
 /* Price list block*/
 .price-list__block{
-    padding-bottom: 100px;
+    padding-bottom: 30px;
 }
 .price-list__ul-wrapper{
     display: flex;
