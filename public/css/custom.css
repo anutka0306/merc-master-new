@@ -159,6 +159,7 @@ header{
     color: #fff;
     column-gap: 16px;
     font-weight: 300;
+    font-size: 16px;
 }
 .nav__contacts{
     padding-right: 20px;
@@ -212,8 +213,8 @@ header{
 .header__inner {
     color: #2a2e47;
     /*margin-top: 80px;*/
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 90px;
+    padding-bottom: 90px;
     position: relative;
     z-index: 10;
     background: linear-gradient(
@@ -271,13 +272,13 @@ h1 {
 }
 .header__text {
     margin: 30px 0;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 30px;
 }
 .button {
     background-color: #f73d31;
     text-transform: uppercase;
-    padding: 15px 20px 13px;
+    padding: 16px 20px 13.2px;
     border: none;
     color: #fff;
     font-family: sans-serif;
@@ -306,6 +307,9 @@ h1 {
     column-gap: 20px;
     font-size: 18px;
     font-weight: 500;
+}
+.header-info-menu__text{
+    font-size: 16px;
 }
 .header-info-menu__icon {
     width: 40px;
@@ -352,10 +356,11 @@ h1 {
 
 /* Content text block*/
 .content__text{
-    padding-top: 90px;
-    padding-bottom: 65px;
+    padding-top: 120px;
+    /*padding-bottom: 65px;*/
     color: #2a2e47;
     position: relative;
+    margin-bottom: 120px;
 }
 .section__heading {
     text-align: center;
@@ -1350,6 +1355,7 @@ label {
     background-color: #ededef;
     text-transform: inherit;
     position: relative;
+    font-size: 20px;
 }
 .uk-accordion .uk-accordion-title:before{
     display: none;
@@ -1394,8 +1400,12 @@ label {
     -webkit-transition: all ease 0.2s;
     transition: all ease 0.2s;
 }
+.services-prices{
+    margin-bottom: 120px !important;
+}
 .services-prices h3, .services-prices a{
     font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
 }
 .price-list__ul-wrapper ul.price-list{
     width: 100%;
@@ -1877,6 +1887,7 @@ a.link_to_blog{
 /* Галерея на главной */
 .slick__main{
     width: 90% !important;
+    margin-bottom: 90px !important;
 }
 .slick__main li{
     margin-left: 30px;
@@ -1932,7 +1943,7 @@ a.link_to_blog{
     padding-right: 10px;
 }
 .advantages_main_items div h2{
-    font-size: 24px;
+    font-size: 20px;
     line-height:29px;
     padding-left:64px;
     text-align: left;
@@ -1959,7 +1970,7 @@ a.link_to_blog{
     content: '\f164';
 }
 .advantages_main_items div p{
-    font-size: 15px;
+    font-size: 16px;
     padding-left: 64px;
     line-height: 24px;
 }
@@ -1969,6 +1980,7 @@ a.link_to_blog{
     padding-right: 50px;
     padding-left: 50px;
     margin: 0 auto;
+    margin-top: 90px;
 }
 .advantages_main_text h2{
     font-size: 24px;
