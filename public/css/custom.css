@@ -1465,8 +1465,8 @@ label {
 .price-list li span b, .price-list li span strong{
     color: #2B2F47;
 }
-.price-list li span{
-    font-size: 16px;
+.price-list li span, .price-list li span a{
+    font-size: 16px !important;
 }
 
 @media (max-width: 1025px) {
