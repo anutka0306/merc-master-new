@@ -278,7 +278,7 @@ h1 {
 .button {
     background-color: #f73d31;
     text-transform: uppercase;
-    padding: 16px 20px 13.2px;
+    padding: 12.2px 20px 12.2px;
     border: none;
     color: #fff;
     font-family: sans-serif;
@@ -377,7 +377,7 @@ h1 {
     line-height: 30px;
     font-weight: 300;
     color: #2a2e47;
-    padding: 0 30px;
+    padding: 0 30px 90px 30px;
 
 }
 .section__heading-text ul, .section__heading-text ol{
@@ -408,10 +408,17 @@ h1 {
 .brands__list_h3 h3{
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 40px;
+    text-align: center;
 }
 .brands__list .slick-prev:before, .brands__list .slick-next:before{
     color: #2a2e47 !important;
+}
+.brands__list .slick-prev:before{
+    margin-left: 10px;
+}
+.brands__list .slick-next:before{
+    margin-left: -15px;
 }
 .brands__list .slick-prev{
     left: 0 !important;
@@ -492,7 +499,7 @@ h1 {
     position: relative;
 }
 .b5 {
-    padding-bottom: 100px;
+    padding-bottom: 120px;
     background-color: #d9ddeb;
     text-align: center;
 }
@@ -518,9 +525,9 @@ h1 {
     z-index: 1;
 }
 .section__title h2{
-    font-size: 36px;
+    font-size: 40px;
     text-transform: uppercase;
-    font-family: 'Cambria';
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     line-height: 1.4;
     font-weight: bold;
     padding-top: 50px;
@@ -558,7 +565,7 @@ h1 {
     -webkit-box-shadow: 0 5px 30px rgb(255 198 0 / 30%), inset 0 -4px 0 rgb(0 0 0 / 15%);
     box-shadow: 0 5px 30px rgb(255 198 0 / 30%), inset 0 -4px 0 rgb(0 0 0 / 15%);
     border-radius: 20px;
-    background-color: #ffc600;
+    background-color: #f73d31;
     position: relative;
     overflow: hidden;
     min-height: 2vw;
@@ -566,6 +573,9 @@ h1 {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.2px;
+}
+.btn_big span{
+    color: #ffffff;
 }
 #diagnos .btn_big {
     display: block;
@@ -581,11 +591,11 @@ h1 {
 }
 @media (min-width: 1240px) {
     .b5 {
-        padding-bottom: 130px;
+        padding-bottom: 120px;
         background: #d9ddeb url(/img/wrench.svg) -120px calc(100% + 190px) no-repeat;
     }
     .b5 .section__text {
-        margin-bottom: 40px;
+        margin-bottom: 90px;
     }
     .section__text {
         max-width: 750px;
@@ -596,17 +606,19 @@ h1 {
 @media (min-width: 768px) {
     .b5 {
         margin-bottom: -1px;
-        padding-bottom: 80px;
+        padding-bottom: 120px;
     }
     .section__title h2{
-        font-size: 50px;
+        font-size: 40px;
     }
     .section__text {
         font-size: 21px;
     }
 }
 /* Advantages */
-
+.offers-section{
+    padding-top: 120px;
+}
 .offers{
     padding-top: 50px;
 }
@@ -636,7 +648,7 @@ h1 {
 /* Advantages2 Диагностика */
 .diagnostics-section {
     background-color: #d9ddeb;
-    padding: 140px 0 80px;
+    padding: 140px 0 30px;
     clip-path: polygon(100% 17%, 100% 70%, 100% 100%, 0 100%, 0% 70%, 0 0);
     text-align: center;
     position: relative;
@@ -684,19 +696,28 @@ h1 {
     .diagnostics img{
         max-width: 220px;
     }
+    .diagnostics-section{
+        padding-top: 265px;
+    }
+}
+@media (max-width: 689px){
+    .diagnostics__ul{
+        flex-direction: column;
+        margin-left: 20px !important;
+    }
 }
 @media (max-width: 400px) {
     .diagnostics img{
         max-width: 160px;
     }
     .diagnostics-section{
-        padding-top: 180px;
+        padding-top: 265px;
     }
 }
 
 /* About Block О компании в цифрах*/
 .numbers-section {
-    padding: 60px 0;
+    padding: 120px 0;
     position: relative;
 }
 section {
@@ -754,7 +775,7 @@ section {
     font-weight: 700;
 }
 .numbers__text {
-    font-size: 21px;
+    font-size: 20px;
 }
 @media screen and (max-width: 576px) {
     .numbers {
@@ -896,6 +917,29 @@ label {
     font-size: 22px;
     max-width: 280px;
 }
+.form__input.phoneN2-popup, .form__input.phoneN1-popup{
+    width: 330px;
+    padding: 7px 5px;
+    max-width: 330px;
+}
+@media (max-width: 1400px) {
+    .form__input.phoneN2-popup, .form__input.phoneN1-popup{
+        width: inherit;
+        max-width: inherit;
+    }
+}
+@media (max-width: 1200px) {
+    .form__input.phoneN2-popup, .form__input.phoneN1-popup{
+        width: 235px;
+        max-width: 235px;
+    }
+}
+@media (max-width: 361px) {
+    .form__input.phoneN2-popup, .form__input.phoneN1-popup{
+        width: 217px;
+        max-width: 217px;
+    }
+}
 .form .button{
     z-index: 1;
 }
@@ -997,8 +1041,15 @@ label {
     line-height: 1;
     margin-top: 0;
 }
+.akcii_services-heading{
+    font-family: 'Cambria' !important;
+    font-size: 18px;
+}
 .akcii_services-heading .link_heading span{
     color: #fff !important;
+}
+.akcii-2_subhead.yellow-border.pl20{
+    margin-bottom: 0;
 }
 .akcii_akcii_subhead {
     font-size: 18px;
@@ -1009,7 +1060,7 @@ label {
 }
 .btn_new-small {
     background-color: #2d314a;
-    padding: 10px 0;
+    padding: 12px 0;
     width: 280px;
     text-align: center;
     display: block;
@@ -1033,7 +1084,7 @@ label {
 }
 .btn_small-right-wrapper {
     background-color: #ffc600;
-    padding: 10px 0;
+    padding: 12px 0;
     max-width: 280px;
     text-align: center;
     border-radius: 5px;
@@ -1104,7 +1155,7 @@ label {
 
 /* Quote Section */
 .quote-section {
-    padding: 160px 0 140px;
+    padding: 120px 0 120px;
     background: linear-gradient(
             90deg
             , #f8f9fd 65%, #2a2e47 35%);
@@ -1153,7 +1204,7 @@ label {
 }
 /* Team block */
 .team-section {
-    padding: 70px 0;
+    padding: 120px 0;
 }
 .team__photo {
     width: 185px;
@@ -1338,7 +1389,7 @@ label {
 
 /* Price list block*/
 .price-list__block{
-    padding-bottom: 30px;
+    /*padding-bottom: 30px;*/
 }
 .price-list__ul-wrapper{
     display: flex;
@@ -1356,6 +1407,7 @@ label {
     text-transform: inherit;
     position: relative;
     font-size: 20px;
+    padding-left: 20px;
 }
 .uk-accordion .uk-accordion-title:before{
     display: none;
@@ -1470,6 +1522,9 @@ label {
     max-width: 1200px;
     padding: 0 15px;
     overflow: hidden;
+}
+.rey_box{
+    margin-bottom: 120px;
 }
 .rey_examples_box {
     display: grid;
@@ -1777,17 +1832,23 @@ a.link_to_blog{
     align-items: center;
     margin: 0 auto;
     width: 320px;
+    padding-bottom: 90px;
 }
 .ourWorks__block_to a.link_to_service{
     max-width: 50%;
 }
 .diagnostics__ul{
-    max-width: 320px;
+    max-width: 100%;
     text-align: left;
     margin: 0 auto;
-    font-size: 17px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 500;
     list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 90px;
+
 }
 .fa-warning:before, .fa-exclamation-triangle:before {
     content: "\f071";
@@ -1819,8 +1880,16 @@ a.link_to_blog{
 /* Наши работы на страницах услуг - новый блок end*/
 
 /* Блок видео ленты в страницах */
+.video-line{
+    margin-bottom: 120px;
+}
 .video-line__wrapper .row .video-line__elem iframe{
     max-width: 100%;
+}
+.video-line h2{
+    font-size: 40px;
+    font-family: 'Museo Sans Cyrl', sans-serif;
+    font-weight: bold;
 }
 /* Блок видео ленты в страницах конец*/
 
