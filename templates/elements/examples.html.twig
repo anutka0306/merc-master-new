@@ -13,11 +13,20 @@
                 </div>
                 {% endif %}
                 <div class="rey_examples_box_img">
-                    {% if pageWork.mainImg is defined and pageWork.mainImg is not null %}
+                    {% if pageWork.model is not null and pageWork.model.photoBig is not null and pageWork.model.photoBig is not empty %}
+                        <img src="/img/models/big/{{ pageWork.model.photoBig }}" width="100%">
+                    {% elseif pageWork.model is not null and pageWork.model.priceBrand.photoBig is not null and pageWork.model.priceBrand.photoBig is not empty %}
+                        <img src="/img/brands/big/{{ pageWork.model.priceBrand.photoBig }}" width="100%">
+                    {% elseif pageWork.mainImg is not null and pageWork.mainImg is not empty %}
                         <img src="/img/nashiraboty_main/{{ pageWork.mainImg }}" width="100%">
                     {% else %}
                         <img src="/img/merc/merc-main.png" width="100%">
                     {% endif %}
+                    {#{% if pageWork.mainImg is defined and pageWork.mainImg is not null %}
+                        <img src="/img/nashiraboty_main/{{ pageWork.mainImg }}" width="100%">
+                    {% else %}
+                        <img src="/img/merc/merc-main.png" width="100%">
+                    {% endif %}#}
                 </div>
             </div>
             <div class="rey_bg_grey_light rey_examples_box_right">
