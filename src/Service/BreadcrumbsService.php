@@ -3,6 +3,7 @@
 namespace App\Service;
 
 use App\Dto\BreadcrumbsItemDTO;
+use App\Entity\Brand;
 use App\Entity\Content;
 use App\Entity\Contracts\PageInterface;
 use App\Entity\Model;
@@ -47,14 +48,21 @@ class BreadcrumbsService
         if ($page instanceof Content && $page->getId() === 1) {
             $item->name = 'Ремонт Mercedes';
         }
+
         $chain[] = $item;
 
         if($page instanceof Model){
             $parent = $this->content_repository->findOneBy(['path' => '/']);
+            $parent->setName('Ремонт '. $parent->getName());
         }
 
         else {
             $parent = $page->getParent();
+            if($parent) {
+                if ($parent->getPath() == '/') {
+                    $parent->setName('Ремонт ' . $parent->getName());
+                }
+            }
         }
             if (null === $parent) {
                 return $chain;
