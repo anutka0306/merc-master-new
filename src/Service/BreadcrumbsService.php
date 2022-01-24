@@ -53,14 +53,14 @@ class BreadcrumbsService
 
         if($page instanceof Model){
             $parent = $this->content_repository->findOneBy(['path' => '/']);
-            $parent->setName('Ремонт '. $parent->getName());
+            $parent->setName('Ремонт '. str_replace('Ремонт', '',$parent->getName()));
         }
 
         else {
             $parent = $page->getParent();
             if($parent) {
                 if ($parent->getPath() == '/') {
-                    $parent->setName('Ремонт ' . $parent->getName());
+                    $parent->setName('Ремонт ' . str_replace('Ремонт', '',$parent->getName()));
                 }
             }
         }
