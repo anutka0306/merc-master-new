@@ -1995,9 +1995,12 @@ a.link_to_blog{
 .advanatges_main{
     margin-left: -50px;
     margin-right: -50px;
-    background: #efefef;
+    background-color: #2a2e47;
     padding-top: 30px;
     padding-bottom: 30px;
+    background-image: url(../img/wheel_bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
 }
 .advantages_main_items{
     display: flex;
@@ -2006,6 +2009,16 @@ a.link_to_blog{
     justify-content: space-between;
     margin: 0 auto;
     max-width: 1320px;
+}
+.advantages_main_items h2, .advantages_main_items p, .advantages_main_text h2, .advantages_main_text p{
+    color: #ffffff;
+}
+.advantages_main_text p{
+    text-align: center;
+}
+.advantages_main_text h2{
+    text-transform: uppercase;
+    font-weight: 700;
 }
 @media (max-width: 860px) {
     .advantages_main_items{
@@ -2033,7 +2046,7 @@ a.link_to_blog{
     height: 100px;
     padding: 10px;
     font-size: 18px;
-    background: #0b0b0b;
+    background: #ee3428;
     color: snow;
     margin-right: 7px;
     border-radius: 50%;
@@ -2061,7 +2074,7 @@ a.link_to_blog{
     margin-top: 90px;
 }
 .advantages_main_text h2{
-    font-size: 24px;
+    font-size: 28px;
 }
 .advantages_main_text p{
     font-size: 16px;
