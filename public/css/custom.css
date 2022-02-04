@@ -1021,11 +1021,38 @@ label {
 /* Акции */
 .akcii_akcii-left {
     background-image: url(/img/turbina.png);
-    background-color: #ffc600;
+    background-color: #e8e9f2;
     background-size: 260px;
     background-repeat: no-repeat;
     /* background-position: right bottom;*/
     background-position: 20% 87%;
+}
+
+@media (max-width: 1500px) {
+    .akcii_akcii-left{
+        background-size: 230px;
+    }
+}
+@media (max-width: 1436px) {
+    .akcii_akcii-left{
+        background-size: 220px;
+        background-position: 10% 87%;
+    }
+}
+
+@media (max-width: 1308px) {
+    .akcii_akcii-left{
+        background-position: 3% 87%;
+    }
+}
+@media (max-width: 1232px) {
+    .akcii_akcii-left{
+        background-size: 190px;
+    }
+}
+
+.akcii_akcii-left .akcii_services-heading, .akcii_akcii-left .akcii_services-heading .link_heading span, .akcii_akcii-left .akcii_akcii_subhead, .akcii_akcii-right .akcii_services-heading, .akcii_akcii-right .akcii_services-heading .link_heading span, .akcii_akcii-right .akcii_akcii_subhead, .akcii_services-heading span{
+    color: #2a2e47 !important;
 }
 
 .big_padding {
@@ -1033,7 +1060,7 @@ label {
 }
 .akcii_akcii-right {
     background-image: url(/img/silent.png);
-    background-color: #2d314a;
+    background-color: #f8f9fd;
     background-size: 260px;
     background-repeat: no-repeat;
     background-position: 80% bottom;
@@ -1071,7 +1098,7 @@ label {
     max-width: 280px;
 }
 .btn_new-small {
-    background-color: #2d314a;
+    background-color: #f73d31;
     padding: 12px 0;
     width: 280px;
     text-align: center;
@@ -1088,18 +1115,21 @@ label {
     text-transform: uppercase;
 }
 .btn_small-text {
-    color: white;
+    /*color: white;*/
     text-transform: uppercase;
     font-family: Cambria;
     font-size: 16px;
     font-weight: 400;
 }
 .btn_small-right-wrapper {
-    background-color: #ffc600;
+    background-color: #f73d31;
     padding: 12px 0;
     max-width: 280px;
     text-align: center;
     border-radius: 5px;
+}
+.btn_small-right-wrapper a span.btn_small-text {
+    color: #ffffff !important;
 }
 .btn_small-right .btn_small-text {
     color: #2a2e47;
@@ -1146,7 +1176,7 @@ label {
     margin-top: 40px;
 }
 .btn_small-right-wrapper {
-    background-color: #ffc600;
+    background-color: #f73d31;
     padding: 10px 0;
     max-width: 280px;
     text-align: center;
@@ -1865,7 +1895,7 @@ a.link_to_blog{
 .fa-warning:before, .fa-exclamation-triangle:before {
     content: "\f071";
     margin-right: 10px;
-    color: #2A2E47;
+    color: #f64439;
 }
 
 @media (max-width: 1200px) {
