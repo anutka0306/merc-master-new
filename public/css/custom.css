@@ -2170,3 +2170,25 @@ a.link_to_blog{
         justify-content: space-evenly;
     }
 }
+
+.specialist_consult{
+    display: flex;
+}
+.specialist_description{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.specialist_description_name{
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.specialist_description_role{
+    color: #ffffff;
+    display: block;
+}
