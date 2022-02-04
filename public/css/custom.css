@@ -1923,10 +1923,18 @@ a.link_to_blog{
 
 /* Блок видео ленты в страницах */
 .video-line{
-    margin-bottom: 120px;
+    background-color: #d9ddeb;
+    padding: 180px 0 120px;
+    clip-path: polygon(100% 0%, 100% 70%, 100% 100%, 0 100%, 0% 70%, 0 27%);
+    text-align: center;
+    position: relative;
+    background-image: url(../img/wheel_bg_2.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
 }
 .video-line__wrapper .row .video-line__elem iframe{
     max-width: 100%;
+    margin-top: 50px;
 }
 .video-line h2{
     font-size: 40px;
