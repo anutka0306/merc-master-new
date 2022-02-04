@@ -14,6 +14,7 @@
 {% block body %}
     {{ include('elements/_content.html.twig', {'page':page}) }}
     {{ price_list(page) }}
+    {{ include('elements/youtube_block_1.html.twig') }}
     {#{{ brands_service_block() }}#}
     {{ brand_models_service(brand) }}
     {{ service_list(page) }}

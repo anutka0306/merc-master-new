@@ -414,6 +414,9 @@ h1 {
     padding: 30px;
     background-color: #ffffff;
 }
+.brands__list_h3{
+    padding-top: 90px;
+}
 .brands__list_h3 h3{
     text-transform: uppercase;
     font-weight: 700;
@@ -586,7 +589,7 @@ h1 {
 .btn_big span{
     color: #ffffff;
 }
-#diagnos .btn_big {
+#diagnos .btn_big, .youtube_block_1 .btn_big {
     display: block;
     clear: both;
     max-width: 300px;
@@ -2078,4 +2081,54 @@ a.link_to_blog{
 }
 .advantages_main_text p{
     font-size: 16px;
+}
+
+.youtube_block_1{
+    background: #d9ddeb;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.youtube_block_1 h2{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #2a2e47;
+    font-weight: bold;
+}
+.youtube_block_1 p{
+    text-align: center;
+}
+.youtube_block_1__video_wrapper{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.youtube_block_1__video_wrapper .small__videos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-items: center;
+}
+.youtube_block_1__video_wrapper .small__videos iframe{
+    padding-bottom: 10px;
+}
+.youtube_block_1__video_wrapper .big__video{
+    padding: 10px;
+}
+.youtube_block_1 .btn_big{
+    font-size: 14px;
+    margin-top: 50px;
+}
+@media (max-width: 1200px) {
+    .youtube_block_1__video_wrapper{
+        flex-direction: column;
+    }
+    .youtube_block_1__video_wrapper .big__video{
+        display: flex;
+        justify-content: center;
+    }
+    .youtube_block_1__video_wrapper .small__videos{
+        justify-content: space-evenly;
+    }
 }
