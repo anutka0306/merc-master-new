@@ -408,7 +408,7 @@ h1 {
 
 }
 .section__heading-text ul, .section__heading-text ol{
-    padding-left: 50px;
+    /*padding-left: 50px;*/
     text-align: left;
     margin: 0 auto;
 }
