@@ -51,44 +51,46 @@
 
             </div>
         </div>
-        <div class="header__logo">
-            <a href="/"><img src="/img/lexus/logo.png" alt="ПИК" width="199" height="44"></a>
-        </div>
-        <span class="nav__description">Специализированный <br>
-            автосервис <span class="nav__description_red">MERCEDES</span> </span>
-{% if (phone is defined and phone is not null) and (address is defined and address is not null) %}
-        <div class="nav__address">
-            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                <div>
-                   {{ address }}<br>
-                    <a style="display: block" href="tel:{{ phone.value }}">
-                        {{ phone.title }}
-                    </a>
-                </div>
-        </div>
-{% endif %}
-        {% if (phone2 is defined and phone2 is not null) and (address2 is defined and address2 is not null) %}
+        <div class="header__intermediate-wrapper">
+            <div class="header__logo">
+                <a href="/"><img src="/img/lexus/logo.png" alt="ПИК" width="199" height="44"></a>
+            </div>
+            <span class="nav__description">Специализированный <br>
+                автосервис <span class="nav__description_red">MERCEDES</span> </span>
+    {% if (phone is defined and phone is not null) and (address is defined and address is not null) %}
             <div class="nav__address">
                 <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                <div>
-                    {{ address2 }}<br>
-                    <a style="display: block" href="tel:{{ phone2.value }}">
-                        {{ phone2.title }}
-                    </a>
+                    <div>
+                       {{ address }}<br>
+                        <a style="display: block" href="tel:{{ phone.value }}">
+                            {{ phone.title }}
+                        </a>
+                    </div>
+            </div>
+    {% endif %}
+            {% if (phone2 is defined and phone2 is not null) and (address2 is defined and address2 is not null) %}
+                <div class="nav__address">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                    <div>
+                        {{ address2 }}<br>
+                        <a style="display: block" href="tel:{{ phone2.value }}">
+                            {{ phone2.title }}
+                        </a>
+                    </div>
+                </div>
+            {% endif %}
+
+            <div class="nav__contacts">
+                <i class="fas fa-phone" aria-hidden="true"></i>
+                <div class="nav__phone">
+                    <span class="phone-number"><a href="{% if phone is defined %}tel:{{ phone.value }}{% endif %}">{% if phone is defined %}{{ phone.title }}{% endif %}</a></span>
+                    <a class="phone-message" href="javascript:PopUpShow();">Заказать обратный звонок</a>
                 </div>
             </div>
-        {% endif %}
-
-        <div class="nav__contacts">
-            <i class="fas fa-phone" aria-hidden="true"></i>
-            <div class="nav__phone">
-                <span class="phone-number"><a href="{% if phone is defined %}tel:{{ phone.value }}{% endif %}">{% if phone is defined %}{{ phone.title }}{% endif %}</a></span>
-                <a class="phone-message" href="javascript:PopUpShow();">Заказать обратный звонок</a>
+            <div class="nav__contacts trubka">
+                <a href="tel:+78129159153"><span>
+                            <i class="fas fa-phone" aria-hidden="true" style="font-size:40px"></i></span></a>
             </div>
-        </div>
-        <div class="nav__contacts trubka">
-            <a href="tel:+78129159153"><span>
-                        <i class="fas fa-phone" aria-hidden="true" style="font-size:40px"></i></span></a>
         </div>
     </div>
 
