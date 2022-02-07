@@ -941,9 +941,10 @@ section {
     text-align: center;
 }
 .subscribe__heading {
-    text-align: left;
+    text-align: center;
     margin-bottom: 0;
-    font-weight: 700;
+    font-family: 'MuseoSansCyrl700';
+    text-transform: uppercase;
 }
 .form__text {
     margin-top: 10px;
@@ -956,6 +957,10 @@ section {
 .subscribe__form .form {
     display: flex;
     flex-direction: column;
+}
+.subscribe__form .form__text{
+    text-align: center;
+    line-height: 1.5;
 }
 .subscribe__form .form__text span.phone-number{
     display: block;
@@ -1369,7 +1374,7 @@ label {
 }
 
 .message__heading, .message__text {
-    max-width: 300px;
+    max-width: 400px;
 }
 .message__text {
     font-size: 22px;
@@ -2134,7 +2139,7 @@ a.link_to_blog{
     margin-left: -50px;
     margin-right: -50px;
     background-color: #2a2e47;
-    padding-top: 30px;
+    padding-top: 60px;
     padding-bottom: 30px;
     background-image: url(../img/wheel_bg.png);
     background-repeat: no-repeat;
@@ -2170,32 +2175,40 @@ a.link_to_blog{
 .advantages_main_items div{
     padding-left: 10px;
     padding-right: 10px;
+    position: relative;
 }
 .advantages_main_items div h2{
-    font-size: 20px;
-    line-height:29px;
+    font-size: 18px;
+    line-height:5px;
     padding-left:64px;
     text-align: left;
+    text-transform: uppercase;
+    font-family: 'MuseoSansCyrl700';
 }
-.advantages_main_items div h2:before{
+.advantages_main_items div:before{
     font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
     font-weight: 900;
-    width: 100px;
-    height: 100px;
+    width: 65px;
+    height: 65px;
     padding: 10px;
-    font-size: 18px;
+    font-size: 25px;
     background: #ee3428;
     color: snow;
     margin-right: 7px;
     border-radius: 50%;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.advantages_main_items div:nth-child(1) h2:before{
+.advantages_main_items div:nth-child(1):before{
     content: '\f085';
 }
-.advantages_main_items div:nth-child(2) h2:before{
+.advantages_main_items div:nth-child(2):before{
     content: '\f0ad';
 }
-.advantages_main_items div:nth-child(3) h2:before{
+.advantages_main_items div:nth-child(3):before{
     content: '\f164';
 }
 .advantages_main_items div p{
@@ -2270,6 +2283,11 @@ a.link_to_blog{
 
 .specialist_consult{
     display: flex;
+}
+@media (max-width: 768px) {
+    .specialist_consult{
+        display: none;
+    }
 }
 .specialist_description{
     margin-left: 30px;
