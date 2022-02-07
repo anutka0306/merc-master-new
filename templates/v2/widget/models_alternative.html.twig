@@ -1,39 +1,41 @@
 {% if models|length > 0 %}
-<div class="container brands__list_h3">
-    <h3>выберите модель Вашего {{ curBrand[0]['name'] }}</h3>
-</div>
-<div class="container brands__list">
-    <div class="row">
-        <div class="col-md-9">
-            <div class="brands__list_slider">
-                {% for row in models|batch(2) %}
+    <section class="brand-model__block">
+        <div class="container brands__list_h3">
+            <h3>выберите модель Вашего {{ curBrand[0]['name'] }}</h3>
+        </div>
+        <div class="container brands__list">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="brands__list_slider">
+                        {% for row in models|batch(2) %}
 
-                    <div class="brands__list_slider_item">
-                        {% for model in row %}
-                            <a class="brands__list_slider_item_link" href="{{ model.path }}">
-                                {% if model.photo is not null %}
-                                    <img src="/img/models/{{ model.photo }}" alt="{{ model.name }}" width="160" height="90">
-                                {% endif %}
-                            </a>
-                            <a class="brands__list_slider_item_link" href="{{ model.path }}">{{ model.name }}</a>
+                            <div class="brands__list_slider_item">
+                                {% for model in row %}
+                                    <a class="brands__list_slider_item_link" href="{{ model.path }}">
+                                        {% if model.photo is not null %}
+                                            <img src="/img/models/{{ model.photo }}" alt="{{ model.name }}" width="160" height="90">
+                                        {% endif %}
+                                    </a>
+                                    <a class="brands__list_slider_item_link" href="{{ model.path }}">{{ model.name }}</a>
+                                {% endfor %}
+                            </div>
+
                         {% endfor %}
                     </div>
+                </div>
+                <div class="quiz_content-push col-md-3">
+                    <div class="content-push-header">
+                        <img data-src="/img/WhatsApp_Image.png" src="{{ asset('img/WhatsApp_Image.png') }}" alt="Директор" class="director_pic lazyloaded">
+                        <h3>Константин Олегович</h3>
+                        <span class="quiz-slide-1_dolzhnost">Руководитель</span>
+                        <span class="quiz-slide-1_header-descr">Обслуживаться в Автоцентре ПИК выгодно, Вы получаете бонусы и скидки!</span>
+                    </div>
+                    {#<div class="content-push-main">
+                        <img data-src="images/quiz/MAGAZINE.png" src="{{ asset('img/MAGAZINE.png') }}" alt="" class="content-push-image lazyloaded">
+                    </div>#}
 
-                {% endfor %}
+                </div>
             </div>
         </div>
-        <div class="quiz_content-push col-md-3">
-            <div class="content-push-header">
-                <img data-src="/img/WhatsApp_Image.png" src="{{ asset('img/WhatsApp_Image.png') }}" alt="Директор" class="director_pic lazyloaded">
-                <h3>Константин Олегович</h3>
-                <span class="quiz-slide-1_dolzhnost">руководитель</span>
-                <span class="quiz-slide-1_header-descr">Обслуживаться в Автоцентре ПИК выгодно, Вы получаете бонусы и скидки!</span>
-            </div>
-            {#<div class="content-push-main">
-                <img data-src="images/quiz/MAGAZINE.png" src="{{ asset('img/MAGAZINE.png') }}" alt="" class="content-push-image lazyloaded">
-            </div>#}
-
-        </div>
-    </div>
-</div>
+    </section>
 {% endif %}

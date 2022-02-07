@@ -1,3 +1,33 @@
+@font-face {
+    font-family: "MuseoSansCyrl900";
+    src: url("../assets/fonts/MuseoSansCyrl/MuseoSansCyrl900/MuseoSansCyrl900.otf");
+    src: url("../assets/fonts/MuseoSansCyrl/MuseoSansCyrl900/MuseoSansCyrl900.otf?#iefix")format("embedded-opentype"),
+    url("../assets/fonts/MuseoSansCyrl/MuseoSansCyrl900/MuseoSansCyrl900.woff") format("woff"),
+    url("../assets/fonts/MuseoSansCyrl/MuseoSansCyrl900/MuseoSansCyrl900.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "MuseoSansCyrl700";
+    src: url("../assets/fonts/MuseoSansCyrl/MuseoSansCyrl700/MuseoSansCyrl700.otf");
+    src: url("../assets/fonts/MuseoSansCyrl/MuseoSansCyrl700/MuseoSansCyrl700.otf?#iefix")format("embedded-opentype"),
+    url("../assets/fonts/MuseoSansCyrl/MuseoSansCyrl700/MuseoSansCyrl700.woff") format("woff"),
+    url("../assets/fonts/MuseoSansCyrl/MuseoSansCyrl700/MuseoSansCyrl700.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "MuseoSansCyrl300";
+    src: url("../assets/fonts/MuseoSansCyrl/MuseoSansCyrl300/MuseoSansCyrl300.otf");
+    src: url("../assets/fonts/MuseoSansCyrl/MuseoSansCyrl300/MuseoSansCyrl300.otf?#iefix")format("embedded-opentype"),
+    url("../assets/fonts/MuseoSansCyrl/MuseoSansCyrl300/MuseoSansCyrl300.woff") format("woff"),
+    url("../assets/fonts/MuseoSansCyrl/MuseoSansCyrl300/MuseoSansCyrl300.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -12,7 +42,7 @@ ul{
 }
 html{
     overflow-x: hidden;
-    font-family: 'Museo Sans Cyrl', sans-serif;
+    font-family: 'MuseoSansCyrl300', sans-serif;
     font-size: 18px;
     color: #2a2e47;
     overflow-x: hidden;
@@ -387,7 +417,7 @@ h1 {
     /*padding-bottom: 65px;*/
     color: #2a2e47;
     position: relative;
-    margin-bottom: 120px;
+   /* margin-bottom: 120px;*/
 }
 .section__heading {
     text-align: center;
@@ -404,8 +434,12 @@ h1 {
     line-height: 30px;
     font-weight: 300;
     color: #2a2e47;
-    padding: 0 30px 90px 30px;
+    padding: 0 30px 30px 30px;
 
+}
+.section__h2, .youtube_block_1 h2{
+    text-transform: uppercase;
+    font-family: 'MuseoSansCyrl900', sans-serif;
 }
 .section__heading-text ul, .section__heading-text ol{
     /*padding-left: 50px;*/
@@ -424,9 +458,12 @@ h1 {
     }
 }
 /* Brands List*/
+.brand-model__block{
+    background-color: #f8f9fd;
+}
 .brands__list{
     padding: 30px;
-    background-color: #F2F4FA;
+    /*background-color: #F2F4FA;*/
 }
 .brands__list_slider{
     padding: 30px;
@@ -460,7 +497,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #f2f4fa;
+    /*background-color: #f2f4fa;*/
     padding-bottom: 200px;
 }
 .content-push-header {
@@ -628,7 +665,7 @@ h1 {
         margin-bottom: 90px;
     }
     .section__text {
-        max-width: 750px;
+        /*max-width: 750px;*/
         margin: auto;
         font-size: 24px;
     }
@@ -650,7 +687,7 @@ h1 {
     padding-top: 120px;
 }
 .offers{
-    padding-top: 50px;
+    /*padding-top: 50px;*/
 }
 .offer {
     display: flex;
@@ -667,12 +704,14 @@ h1 {
 .offer__heading {
     max-width: 200px;
     font-weight: 900;
-    margin: 5px 0 10px;
+    margin: 0;
+    line-height: 1.1;
 }
 .offer__text {
     font-weight: 300;
-    font-family: 'Museo Sans Cyrl', sans-serif;
+    font-family: 'MuseoSansCyrl300', sans-serif;
     font-size: 18px;
+    margin-top: 10px;
 }
 
 /* Advantages2 Диагностика */
@@ -796,8 +835,9 @@ section {
 }
 .numbers__heading {
     font-size: 40px;
-    font-family: 'Museo Sans Cyrl', sans-serif;
+    font-family: 'MuseoSansCyrl900', sans-serif;
     font-weight: bold;
+    text-transform: uppercase;
 }
 .numbers__number {
     color: #f73d31;
@@ -1037,13 +1077,30 @@ label {
 }
 
 /* Акции */
+.akcii_akcii .row, .akcii_akcii-2 .row{
+    justify-content: space-between;
+}
+.akcii_akcii-left, .akcii_akcii-right{
+    width: 49.65%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.akcii_akcii-2-left, .akcii_akcii-2--right{
+    width: 49.65%;
+    margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+    .akcii_akcii-left, .akcii_akcii-right, .akcii_akcii-2-left, .akcii_akcii-2--right{
+        width: 100%;
+    }
+}
 .akcii_akcii-left {
     background-image: url(/img/turbina.png);
     background-color: #e8e9f2;
     background-size: 260px;
     background-repeat: no-repeat;
     /* background-position: right bottom;*/
-    background-position: 20% 87%;
+    background-position: 95% 87%;
 }
 
 @media (max-width: 1500px) {
@@ -1054,18 +1111,27 @@ label {
 @media (max-width: 1436px) {
     .akcii_akcii-left{
         background-size: 220px;
-        background-position: 10% 87%;
+        background-position: 95% 87%;
     }
 }
 
 @media (max-width: 1308px) {
     .akcii_akcii-left{
-        background-position: 3% 87%;
+        background-position: 97% 87%;
     }
 }
 @media (max-width: 1232px) {
     .akcii_akcii-left{
         background-size: 190px;
+    }
+}
+@media (max-width: 768px) {
+    .akcii_content-wrapper{
+        margin-left: 0 !important;
+    }
+    .akcii_akcii-left{
+        background-position: 80% 90%;
+        background-size: 260px;
     }
 }
 
@@ -1088,7 +1154,8 @@ label {
     margin: 0 10px 0 auto;
     text-align: left;*/
     width: 350px;
-    margin-left: auto;
+    margin-right: auto;
+    margin-left: 100px;
 }
 .akcii_akcii .akcii_services-heading {
     color: #ffffff;
@@ -1162,13 +1229,19 @@ label {
     background-image: url(/img/aakcii-2-left.png);
     background-repeat: no-repeat;
     background-size: 60%;
-    background-position: left bottom;
+    background-position: right bottom;
     background-repeat: no-repeat;
 }
 .akcii-2-column-wrapper {
     max-width: 350px;
-    margin-left: auto;
+    margin-right: auto;
+    margin-left: 100px;
     text-align: left;
+}
+@media (max-width: 768px) {
+    .akcii-2-column-wrapper{
+        margin-left: 0 !important;
+    }
 }
 .akcii_section-heading {
     color: #2a2e47;
@@ -1225,12 +1298,12 @@ label {
     margin-bottom: 40px;
     font-weight: 800;
     line-height: 1.1;
-    font-family: 'Museo Sans Cyrl', sans-serif;
+    font-family: 'MuseoSansCyrl900', sans-serif;
 }
 .quote__text {
     line-height: 30px;
     font-size: 21px;
-    font-family: 'Museo Sans Cyrl', sans-serif;
+    font-family: 'MuseoSansCyrl300', sans-serif;
 }
 .quote__author {
     display: flex;
@@ -1274,21 +1347,21 @@ label {
     margin-top: 25px;
     font-weight: 900;
     font-size: 22px;
-    font-family: 'Museo Sans Cyrl', sans-serif;
+    font-family: 'MuseoSansCyrl900', sans-serif;
     text-align: center;
 }
 .team__post {
     color: #f73d31;
     margin: 16px 0;
     text-transform: uppercase;
-    font-family: 'Museo Sans Cyrl', sans-serif;
+    font-family: 'MuseoSansCyrl700', sans-serif;
     text-align: center;
     font-weight: 600;
 }
 .team__text {
     line-height: 24px;
     font-size: 16px;
-    font-family: 'Museo Sans Cyrl', sans-serif;
+    font-family: 'MuseoSansCyrl300', sans-serif;
     text-align: center;
 }
 .container_subscribe {
@@ -1463,11 +1536,12 @@ label {
     margin: 0 auto;
 }
 .uk-accordion .uk-accordion-title{
-    background-color: #ededef;
+    background-color: #f8f9fd;
     text-transform: inherit;
     position: relative;
     font-size: 20px;
     padding-left: 20px;
+    color: #2a2e47;
 }
 .uk-accordion .uk-accordion-title:before{
     display: none;
@@ -1515,8 +1589,12 @@ label {
 .services-prices{
     margin-bottom: 120px !important;
 }
-.services-prices h3, .services-prices a{
-    font-family: 'Montserrat', sans-serif;
+.services-prices a{
+    font-family: 'MuseoSansCyrl700', sans-serif;
+}
+.services-prices h3{
+    font-family: 'MuseoSansCyrl900';
+    text-transform: uppercase;
     font-size: 40px;
 }
 .price-list__ul-wrapper ul.price-list{
@@ -1956,8 +2034,9 @@ a.link_to_blog{
 }
 .video-line h2{
     font-size: 40px;
-    font-family: 'Museo Sans Cyrl', sans-serif;
+    font-family: 'MuseoSansCyrl900', sans-serif;
     font-weight: bold;
+    text-transform: uppercase;
 }
 /* Блок видео ленты в страницах конец*/
 
@@ -2146,7 +2225,7 @@ a.link_to_blog{
 }
 .youtube_block_1 h2{
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;*/
     font-size: 40px;
     color: #2a2e47;
     font-weight: bold;
