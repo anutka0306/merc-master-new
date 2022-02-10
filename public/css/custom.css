@@ -750,7 +750,8 @@ h1 {
 }
 .diagnostics img {
     border-radius: 4px;
-    max-width: 255px;
+    width: 300px;
+    height: 300px;
 }
 .diagnostics h5{
     font-weight: bold;
@@ -760,21 +761,33 @@ h1 {
 .diagnostics-section__inner{
     position: relative;
     z-index: 10;
+    max-width: 1320px;
+    margin: 0 auto;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1400px) {
     .diagnostics img{
-        max-width: 200px;
+        width: 250px;
+        height: 250px;
     }
 }
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
     .diagnostics img{
-        max-width: 160px;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 992px) {
+    .diagnostics img{
+        width: 160px;
+        height: 160px;
     }
 }
 @media (max-width: 768px) {
     .diagnostics img{
-        max-width: 220px;
+        width: 220px;
+        height: 220px;
     }
     .diagnostics-section{
         padding-top: 265px;
@@ -788,7 +801,8 @@ h1 {
 }
 @media (max-width: 400px) {
     .diagnostics img{
-        max-width: 160px;
+        width: 160px;
+        height: 160px;
     }
     .diagnostics-section{
         padding-top: 265px;
