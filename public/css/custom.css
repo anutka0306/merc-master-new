@@ -2318,3 +2318,9 @@ a.link_to_blog{
     color: #ffffff;
     display: block;
 }
+
+.text__main_page{
+    max-width: 1320px;
+    margin: 50px auto;
+    text-align: center;
+}
