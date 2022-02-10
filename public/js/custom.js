@@ -118,14 +118,24 @@ $(document).ready(function () {
                     slidesToShow: 5,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true
+                    dots: false
                 }
             },
+            {
+                breakpoint: 1150,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            },
+
 
             {
                 breakpoint: 880,
                 settings: {
-                    slidesToShow: 4,
+                    slidesToShow: 3,
                     slidesToScroll: 2
                 }
             },

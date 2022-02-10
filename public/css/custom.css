@@ -2129,8 +2129,14 @@ a.link_to_blog{
 .slick__main li img{
     object-fit: cover;
     object-position: center center;
-    height: 120px;
-    width: 100%;
+    height: 168px;
+    width: 168px;
+}
+
+@media (max-width: 480px) {
+    .slick__main li img{
+        width: 100%;
+    }
 }
 
 /* Страница Контакты */
