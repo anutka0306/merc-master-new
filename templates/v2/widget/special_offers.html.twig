@@ -3,7 +3,7 @@
     {% for row in items|batch(2) %}
         {% if loop.index%2 %}
             <section class="akcii_akcii">
-            <div class="">
+            <div class="akcii_akcii__subwrapper">
             <div class="row">
             {% for item in row %}
                 {% if loop.index == 1 %}
@@ -24,6 +24,7 @@
                 </div>
                 {% else %}
                     <div class="col-md-6 text_left big_padding d-flex flex-column justify-content-between akcii_akcii-right">
+                        <div class="akcii_content-wrapper">
                     <img src="/img/mobilekey.jpg" alt="" class="hidden-md" style="width:100%">
                     <h3 class="akcii_services-heading heading_white">Акция
                         <br>{#<a href="/offers/{{ item.slug}}" class="link_heading" style="color:white;">#}<span style="color:white;" class="btn_small-text to-popup_header"> {{ item.name }}</span>{#</a>#}<br> <span class="akcii_akcii_subhead">{{ item.description }}</span></h3>
@@ -35,6 +36,7 @@
                         <a href="javascript:PopUp2Show()" class="btn_small-right popup-link _mPS2id-h mPS2id-highlight"><span class="btn_small-text ">Записаться</span></a>
 
                     </div>
+                        </div>
                 </div>
                 {% endif %}
             {% endfor %}
@@ -43,7 +45,7 @@
             </section>
         {% else %}
             <section class="akcii_akcii-2">
-            <div class="">
+            <div class="akcii_akcii__subwrapper2">
             <div class="row">
             {% for item in row %}
                 {% if loop.index == 1 %}
@@ -65,7 +67,9 @@
             </div>
             {% else %}
                 <div class="col-md-6 text_left big_padding d-flex flex-column  justify-content-between akcii_akcii-2--right">
-                {#<a href="/offers/{{ item.slug}}" class="link_heading">#} <h2 class="akcii_section-heading to-popup_header">{{ item.name }}</h2>{#</a>#}
+                {#<a href="/offers/{{ item.slug}}" class="link_heading">#}
+                    <div class="akcii-2-column-wrapper">
+                    <h2 class="akcii_section-heading to-popup_header">{{ item.name }}</h2>{#</a>#}
 
                     <h3 class="akcii_services-heading">{{ item.description }}</h3>
 
@@ -75,6 +79,7 @@
                     <a href="javascript:PopUp2Show()" class="btn_small-right popup-link _mPS2id-h mPS2id-highlight mPS2id-highlight-last"><span class="btn_small-text">Записаться</span></a>
 
                 </div>
+                    </div>
             </div>
                 {% endif %}
 

@@ -1107,17 +1107,51 @@ label {
 }
 
 /* Акции */
+.akcii_akcii{
+    background: linear-gradient(90deg, #e8e9f2 50%, #f8f9fd 50%);
+    margin-top: 10px;
+}
+.akcii_akcii__subwrapper{
+    max-width: 1320px;
+    margin: 0 auto;
+    background: #fff;
+}
+.akcii_akcii__subwrapper2{
+    background-image: url(/img/akcii-2-right-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 50%;
+}
+@media (max-width: 1680px) {
+    .akcii_akcii__subwrapper2 {
+        background-image: url(/img/akcii-2-right-bg2.jpg);
+        background-position: right top;
+        background-repeat: repeat-y;
+    }
+}
 .akcii_akcii .row, .akcii_akcii-2 .row{
     justify-content: space-between;
+    max-width: 1320px;
+    margin: 10px auto 0;
+    height: 425px;
+}
+@media (max-width: 768px) {
+    .akcii_akcii .row, .akcii_akcii-2 .row{
+        height: auto;
+    }
+    .akcii_akcii__subwrapper2{
+        background-image: none;
+    }
+    .akcii_akcii-2--right {
+         background-image: url(/img/akcii-2-right-bg.jpg);
+    }
 }
 .akcii_akcii-left, .akcii_akcii-right{
     width: 49.65%;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 .akcii_akcii-2-left, .akcii_akcii-2--right{
     width: 49.65%;
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
 }
 @media (max-width: 768px) {
     .akcii_akcii-left, .akcii_akcii-right, .akcii_akcii-2-left, .akcii_akcii-2--right{
@@ -1130,7 +1164,7 @@ label {
     background-size: 260px;
     background-repeat: no-repeat;
     /* background-position: right bottom;*/
-    background-position: 95% 87%;
+    background-position: 95% 66%;
 }
 
 @media (max-width: 1500px) {
@@ -1139,17 +1173,15 @@ label {
     }
 }
 @media (max-width: 1436px) {
-    .akcii_akcii-left{
-        background-size: 220px;
-        background-position: 95% 87%;
+    .akcii_akcii__subwrapper2{
+        background-image: none;
+    }
+    .akcii_akcii-2--right {
+         background-image: url(/img/akcii-2-right-bg.jpg);
     }
 }
 
-@media (max-width: 1308px) {
-    .akcii_akcii-left{
-        background-position: 97% 87%;
-    }
-}
+
 @media (max-width: 1232px) {
     .akcii_akcii-left{
         background-size: 190px;
@@ -1170,22 +1202,21 @@ label {
 }
 
 .big_padding {
-    padding: 50px!important;
+    padding: 50px;
 }
 .akcii_akcii-right {
     background-image: url(/img/silent.png);
     background-color: #f8f9fd;
     background-size: 260px;
     background-repeat: no-repeat;
-    background-position: 80% bottom;
+    background-position: 80% 66%;
 }
 .akcii_content-wrapper {
     /*width: 200px;
     margin: 0 10px 0 auto;
     text-align: left;*/
-    width: 350px;
     margin-right: auto;
-    margin-left: 100px;
+    margin-top: 30px;
 }
 .akcii_akcii .akcii_services-heading {
     color: #ffffff;
@@ -1259,14 +1290,13 @@ label {
     background-image: url(/img/aakcii-2-left.png);
     background-repeat: no-repeat;
     background-size: 60%;
-    background-position: right bottom;
+    background-position: 140% bottom;
     background-repeat: no-repeat;
 }
 .akcii-2-column-wrapper {
-    max-width: 350px;
     margin-right: auto;
-    margin-left: 100px;
     text-align: left;
+    margin-top: 30px;
 }
 @media (max-width: 768px) {
     .akcii-2-column-wrapper{
@@ -1308,7 +1338,7 @@ label {
     max-width: 280px;
 }
 .akcii_akcii-2--right {
-    background-image: url(/img/akcii-2-right-bg.jpg);
+    /*background-image: url(/img/akcii-2-right-bg.jpg);*/
 }
 @media (min-width: 600px) {
     .hidden-md {
