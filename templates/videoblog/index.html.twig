@@ -1,0 +1,37 @@
+{% extends 'v2/base.html.twig' %}
+
+
+{% block canonical %}{{ app.request.schemeAndHttpHost~'/videoblog' }}{% endblock %}
+
+{% block header_line %}
+    {{ include('v2/blocks/include/header.html.twig', {brands : brands ?? null, 'topMenu': topMenu, 'leftMenu': leftMenu}) }}
+{% endblock %}
+{% block header_banner %}
+    {{ include('v2/blocks/section/hero.html.twig',{ 'customH1' : page.h1 }) }}
+{% endblock %}
+
+{% block body %}
+    {% block breadcrumbs %}
+    {% endblock %}
+<section class="videoblog">
+    <div class="video-line__wrapper container">
+        <div class="row">
+            {% for item in video %}
+                    <div class="col-md-4 col-sm-6 col-12 video-line__elem">
+                        <iframe width="560" height="275" src="{{ item.link }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video-line__elem_name">
+                            {% if item.detailLink is not empty and item.detailLink is not null %}
+                            <a href="/videoblog/{{ item.detailLink }}"> {{ item.name }}</a>
+                            {% else %}
+                                <span>{{ item.name }}</span>
+                                {% endif %}
+                        </div>
+                        <div class="video-line__elem_shortText">{{ item.shortText|raw }}...</div>
+                    </div>
+            {% endfor %}
+
+        </div>
+
+    </div>
+</section>
+{% endblock %}

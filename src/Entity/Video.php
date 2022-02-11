@@ -56,6 +56,11 @@ class Video implements PageInterface
      */
     private $category;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $detail_link;
+
 
     public function __construct()
     {
@@ -167,5 +172,17 @@ class Video implements PageInterface
     public function getImgFolder(): string
     {
         return 'video/blog/';
+    }
+
+    public function getDetailLink(): ?string
+    {
+        return $this->detail_link;
+    }
+
+    public function setDetailLink(string $detail_link): self
+    {
+        $this->detail_link = $detail_link;
+
+        return $this;
     }
 }
