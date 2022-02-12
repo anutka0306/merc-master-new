@@ -13,5 +13,14 @@
 {% block body %}
     {% block breadcrumbs %}
     {% endblock %}
-
+<section class="videoblog__page">
+    <div class="container">
+        <div class="videoblog__page_video">
+            <iframe width="90%" src="{{ page.link }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="videoblog__page_text">
+            {{ page.text|raw }}
+        </div>
+    </div>
+</section>
 {% endblock %}

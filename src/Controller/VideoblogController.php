@@ -65,7 +65,7 @@ class VideoblogController extends AbstractController
         $video = $this->videoRepository->findAll();
         foreach ($video as $item){
             if(!is_null($item->getText()) and !empty($item->getText())) {
-                $item->shortText = mb_strcut($item->getText(), 0, 100);
+                $item->shortText = mb_strcut($item->getText(), 0, 50);
             }
             else{
                 $item->shortText = '';

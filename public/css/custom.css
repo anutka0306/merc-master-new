@@ -2374,3 +2374,54 @@ a.link_to_blog{
     margin: 50px auto;
     text-align: center;
 }
+
+/*Видеоблог раздел*/
+.video-line__elem_wrapper{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 180px;
+    border: 1px solid #eaeaea;
+}
+.video-line__elem_name, .video-line__elem_name a, .video-line__elem_name span{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #2a2e47;
+    font-family: 'MuseoSansCyrl700', sans-serif;
+    font-size: 16px;
+}
+.video-line__elem_readMore{
+    width: 50%;
+}
+.video-line__elem_readMore a{
+    color: #2a2e47;
+    font-family: 'MuseoSansCyrl700', sans-serif;
+    font-size: 13px;
+}
+
+.videoblog__page_video{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.videoblog__page_text{
+    margin: 0 auto 50px;
+    width: 90%;
+}
+
+.videoblog__page_video iframe{
+    height: 550px;
+}
+ @media (max-width: 992px) {
+     .videoblog__page_video iframe{
+         height: 350px;
+     }
+ }
+
+@media (max-width: 484px) {
+    .videoblog__page_video iframe{
+        height: 250px;
+    }
+}
