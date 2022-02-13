@@ -26,8 +26,50 @@
 {% endblock %}
 
 {% block body %}
+    <section class="videoblog">
+        <div class="video-line__wrapper container">
+            <div class="h1__inner-page">
+                <div class="uk-section uk-container">
+                    <h1>Наши работы</h1>
+                </div>
+            </div>
+            <div class="row">
+                {% for work in pagination %}
+                    <div class="col-md-4 col-sm-6 col-12 video-line__elem">
+                        <a href="/{{ work.url }}/">
+                            {% if work.blogImg is not empty and work.blogImg is not null %}
+                                <img class="blog__image" src="/img/nashiraboty_small/{{ work.blogImg }}" alt="{{ work.name }}">
+                            {% elseif work.previewImg is defined and  work.previewImg is not empty %}
+                                <img class="blog__image" src={{ work.previewImg }} alt="{{ work.name }}">
+                            {% else %}
 
-            <div class="container nashiraboty__wrapper">
+                                <img class="blog__image" src="/img/nashiraboty_small/no-foto.png" alt="{{ work.name }}">
+                            {% endif %}
+                        </a>
+                        <div class="video-line__elem_wrapper">
+                            <div class="video-line__elem_name">
+                            <a href="/{{ work.url }}/">{{ work.name }}</a>
+                            </div>
+                            <div class="video-line__elem_shortText">{% if work.shortText is not empty %}{{ work.shortText|raw }}...{% endif %}</div>
+                            <div class="video-line__elem_readMore">
+                            <a href="/{{ work.url }}/" class="nashiraboty__item_more">Читать больше ></a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+
+            </div>
+            <div class="navigation container">
+                {{ knp_pagination_render(pagination) }}
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+            {#<div class="container nashiraboty__wrapper">
                 <div class="h1__inner-page">
                     <div class="uk-section uk-container">
                         <h1>Наши работы</h1>
@@ -35,11 +77,11 @@
                 </div>
                 <div class="row">
 
-            {#{{ naschiraboty_slider(page) }}#}
+            #}{#{{ naschiraboty_slider(page) }}#}{#
             {% for work in pagination %}
-                {#{% for image in work.images %}
+                #}{#{% for image in work.images %}
                         {{ dump(image) }}
-                {% endfor %}#}
+                {% endfor %}#}{#
 
                 <div class="col-md-3 col-sm-6 col-12 nashiraboty__item">
                     <a href="/{{ work.url }}/">
@@ -61,6 +103,6 @@
                     {{ knp_pagination_render(pagination) }}
                 </div>
             </div>
-
+#}
 {% endblock %}
 

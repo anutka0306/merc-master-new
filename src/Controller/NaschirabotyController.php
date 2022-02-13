@@ -64,6 +64,7 @@ class NaschirabotyController extends AbstractController
         foreach ($works as $key => $value){
             $images = $value->getAttach();
             $value->images = $images;
+            $value->setShortText(mb_strcut($value->getShortText(), 0, 50));
         }
 
         foreach ($works as $key => $value){
