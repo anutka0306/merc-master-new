@@ -8,6 +8,7 @@ use App\Entity\Content;
 use App\Entity\Contracts\PageInterface;
 use App\Entity\Model;
 use App\Entity\RootService;
+use App\Entity\Service;
 use App\Repository\ContentRepository;
 
 class BreadcrumbsService
@@ -50,7 +51,7 @@ class BreadcrumbsService
             $item->name = 'Ремонт Mercedes';
         }
 
-        if($page instanceof RootService){
+        if($page instanceof RootService or $page instanceof Service){
             $item->name = $item->name . ' Mercedes';
         }
 
