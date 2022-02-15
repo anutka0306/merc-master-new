@@ -527,6 +527,8 @@ class PageController extends AbstractController
     
     private function rootService(RootService $rootService, PriceBrandRepository $priceBrandRepository, $topMenu, $leftMenu, NaschirabotyRepository $naschirabotyRepository)
     {
+        $rootService->setH1($rootService->getH1().' Mercedes');
+
         if(is_null($rootService->getAdvIcon1())) {
             if ($rootService->getParent() !== null && $rootService->getParent()->getAdvIcon1() !== null) {
                 $rootService->setAdvIcon1($rootService->getParent()->getAdvIcon1());

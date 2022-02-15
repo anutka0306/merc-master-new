@@ -7,6 +7,7 @@ use App\Entity\Brand;
 use App\Entity\Content;
 use App\Entity\Contracts\PageInterface;
 use App\Entity\Model;
+use App\Entity\RootService;
 use App\Repository\ContentRepository;
 
 class BreadcrumbsService
@@ -47,6 +48,10 @@ class BreadcrumbsService
         $item  = new BreadcrumbsItemDTO($page->getName(), $page->getPath());
         if ($page instanceof Content && $page->getId() === 1) {
             $item->name = 'Ремонт Mercedes';
+        }
+
+        if($page instanceof RootService){
+            $item->name = $item->name . ' Mercedes';
         }
 
         $chain[] = $item;
