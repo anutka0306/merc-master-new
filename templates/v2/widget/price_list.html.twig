@@ -17,12 +17,25 @@
                                             <span>
                                                 {% if service.path  and service.published %}
                                                     {% if withoutLinks is defined and withoutLinks %}
-                                                        <span>{{ service.nameInPriceList ?? service.name }}</span>
+                                                        {% if page.brandAndModelName is defined and page.brandAndModelName is not empty %}
+                                                        <span>{{ service.nameInPriceList ?? service.name ~ ' ' ~ page.brandAndModelName }}</span>
                                                         {% else %}
-                                                    <a href="{{ service.path }}">{{ service.nameInPriceList ?? service.name }}</a>
+                                                            <span>{{ service.nameInPriceList ?? service.name ~ ' Mercedes' }}</span>
+                                                            {% endif %}
+                                                        {% else %}
+                                                        {% if page.brandAndModelName is defined and page.brandAndModelName is not empty %}
+                                                    <a href="{{ service.path }}">{{ service.nameInPriceList ?? service.name ~ ' ' ~ page.brandAndModelName }}</a>
+                                                            {% else %}
+                                                            <a href="{{ service.path }}">{{ service.nameInPriceList ?? service.name ~ ' Mercedes'}}</a>
+                                                            {% endif %}
+
                                                         {% endif %}
                                                 {% else %}
-                                                    {{ service.name }} {{ page.brandAndModelName }}
+                                                    {% if page.brandAndModelName is defined and page.brandAndModelName is not empty %}
+                                                        {{ service.name }} {{ page.brandAndModelName }}
+                                                    {% else %}
+                                                        {{ service.name ~ ' Mercedes'}}
+                                                    {% endif %}
                                                 {% endif %}
                                                 <b>от {{ service.price|number_format(0, '', ' ') }}&nbsp;р.</b>
                                             </span>

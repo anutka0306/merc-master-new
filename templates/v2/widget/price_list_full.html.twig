@@ -9,9 +9,9 @@
                             <li>
                                 <span>
                                     {% if service.path %}
-                                        <a href="{{ service.path }}">{{ service.nameInPriceList ?? service.name }}</a>
+                                        <a href="{{ service.path }}">{{ service.nameInPriceList ?? service.name ~ ' Mercedes'}}</a>
                                     {% else %}
-                                        {{ service.name }}
+                                        {{ service.name ~ ' Mercedes' }}
                                     {% endif %}
                                         {#<b> {{ service.price|number_format(0, '', ' ') }}&nbsp;р.</b>#}
                                 </span>
