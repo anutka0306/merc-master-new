@@ -24,7 +24,7 @@
                                                             {% endif %}
                                                         {% else %}
                                                         {% if page.brandAndModelName is defined and page.brandAndModelName is not empty %}
-                                                    <a href="{{ service.path }}">{{ service.nameInPriceList ?? service.name ~ ' ' ~ page.brandAndModelName }}</a>
+                                                    <a href="{{ service.path }}">{{ service.nameInPriceList ?? service.name }}</a>
                                                             {% else %}
                                                             <a href="{{ service.path }}">{{ service.nameInPriceList ?? service.name ~ ' Mercedes'}}</a>
                                                             {% endif %}
