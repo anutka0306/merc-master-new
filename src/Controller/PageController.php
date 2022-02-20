@@ -507,6 +507,7 @@ class PageController extends AbstractController
         if(empty($map)){
             $map = null;
         }
+        $service->is_service = true;
 
         return $this->render('v2/pages/service.html.twig', [
             'page' => $service,
@@ -522,7 +523,6 @@ class PageController extends AbstractController
             'address' => $address,
             'address2' => $address2,
             'map' => $map,
-            'is_service' => true,
         ]);
     }
     

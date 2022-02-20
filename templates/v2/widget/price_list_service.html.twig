@@ -15,24 +15,25 @@
                                             <span>
                                                 {% if service.path  and service.published %}
                                                     {% if withoutLinks is defined and withoutLinks %}
-                                                        {% if page.brandAndModelName is defined and page.brandAndModelName is not empty and is_service is not defined %}
+                                                        {% if page.brandAndModelName is defined and page.brandAndModelName is not empty and page.is_service is not defined %}
                                                         <span>{{ service.nameInPriceList ?? service.name ~ ' ' ~ page.brandAndModelName}}</span>
                                                         {% else %}
-                                                            <span>{{ service.nameInPriceList ?? service.name}} {% if is_service is not defined %} Mercedes {% endif %}</span>
+                                                            <span>{{ service.nameInPriceList ?? service.name}} {% if page.is_service is not defined %} Mercedes {% endif %}</span>
                                                         {% endif %}
                                                     {% else %}
-                                                        {% if page.brandAndModelName is defined and page.brandAndModelName is not empty and is_service is defined %}
-                                                        <a href="{{ service.path }}">{{ service.nameInPriceList ?? service.name ~ ' ' ~ page.brandAndModelName }}</a>
+                                                        
+                                                        {% if page.brandAndModelName is defined and page.brandAndModelName is not empty and page.is_service is defined %}
+                                                        <a href="{{ service.path }}">{{ service.nameInPriceList ?? service.name }}</a>
                                                             {% else %}
 
-                                                            <a href="{{ service.path }}">{{ service.nameInPriceList ?? service.name }}{% if is_service is not defined %} Mercedes {% endif %}</a>
+                                                            <a href="{{ service.path }}">{{ service.nameInPriceList ?? service.name }}{% if page.is_service is not defined %} Mercedes {% endif %}</a>
                                                             {% endif %}
                                                     {% endif %}
                                                 {% else %}
-                                                    {% if page.brandAndModelName is defined and page.brandAndModelName is not empty and is_service is not defined%}
+                                                    {% if page.brandAndModelName is defined and page.brandAndModelName is not empty and page.is_service is not defined%}
                                                         {{ service.name }} {{ page.brandAndModelName }}
                                                     {% else %}
-                                                        {{ service.name }} {{ page.brandAndModelName }} {% if is_service is not defined %} Mercedes {% endif %}
+                                                        {{ service.name }} {{ page.brandAndModelName }} {% if page.is_service is not defined %} Mercedes {% endif %}
                                                     {% endif %}
                                                 {% endif %}
                                                 <b>от {{ service.price|number_format(0, '', ' ') }}&nbsp;р.</b>
