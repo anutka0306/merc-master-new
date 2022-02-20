@@ -21,10 +21,10 @@
                                                             <span>{{ service.nameInPriceList ?? service.name ~ ' Mercedes'}}</span>
                                                         {% endif %}
                                                     {% else %}
-                                                        {% if page.brandAndModelName is defined and page.brandAndModelName is not empty and is_service is not defined %}
+                                                        {% if page.brandAndModelName is defined and page.brandAndModelName is not empty and is_service is defined %}
                                                         <a href="{{ service.path }}">{{ service.nameInPriceList ?? service.name ~ ' ' ~ page.brandAndModelName }}</a>
                                                             {% else %}
-                                                            <a href="{{ service.path }}">{{ service.nameInPriceList ?? service.name ~ ' Mercedes' }}</a>
+                                                            <a href="{{ service.path }}">{{ service.nameInPriceList ?? service.name }}</a>
                                                             {% endif %}
                                                     {% endif %}
                                                 {% else %}
