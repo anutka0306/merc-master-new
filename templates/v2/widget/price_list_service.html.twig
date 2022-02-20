@@ -15,20 +15,20 @@
                                             <span>
                                                 {% if service.path  and service.published %}
                                                     {% if withoutLinks is defined and withoutLinks %}
-                                                        {% if page.brandAndModelName is defined and page.brandAndModelName is not empty %}
+                                                        {% if page.brandAndModelName is defined and page.brandAndModelName is not empty and is_service is not defined %}
                                                         <span>{{ service.nameInPriceList ?? service.name ~ ' ' ~ page.brandAndModelName}}</span>
                                                         {% else %}
                                                             <span>{{ service.nameInPriceList ?? service.name ~ ' Mercedes'}}</span>
                                                         {% endif %}
                                                     {% else %}
-                                                        {% if page.brandAndModelName is defined and page.brandAndModelName is not empty %}
+                                                        {% if page.brandAndModelName is defined and page.brandAndModelName is not empty and is_service is not defined %}
                                                         <a href="{{ service.path }}">{{ service.nameInPriceList ?? service.name ~ ' ' ~ page.brandAndModelName }}</a>
                                                             {% else %}
                                                             <a href="{{ service.path }}">{{ service.nameInPriceList ?? service.name ~ ' Mercedes' }}</a>
                                                             {% endif %}
                                                     {% endif %}
                                                 {% else %}
-                                                    {% if page.brandAndModelName is defined and page.brandAndModelName is not empty %}
+                                                    {% if page.brandAndModelName is defined and page.brandAndModelName is not empty and is_service is not defined%}
                                                         {{ service.name }} {{ page.brandAndModelName }}
                                                     {% else %}
                                                         {{ service.name }} {{ page.brandAndModelName ~ ' Mercedes' }}

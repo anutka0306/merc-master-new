@@ -522,6 +522,7 @@ class PageController extends AbstractController
             'address' => $address,
             'address2' => $address2,
             'map' => $map,
+            'is_service' => true,
         ]);
     }
     
